@@ -1,0 +1,16 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+@import 'typography';
+
+.App {
+
+    line-height: 40px;
+    p {
+        font-family: $montserrat !important;
+        font-size: 20px;
+    }
+
+    h1, h2, h3, h4, h5 {
+        font-family: $fraunces !important;
+    }
+}

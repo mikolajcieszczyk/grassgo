@@ -1,0 +1,20 @@
+// Montserrat Font import
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+// Fraunces Font import
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap');
+
+// font-family mixins
+$montserrat: Montserrat, sans-serif;
+$fraunces: Fraunces, sans-serif;
+
+// font weight mixins
+$fw-regular: 400;
+$fw-bold: 700;
+
+// color mixins
+$white: #fff;
+$green: #006466;
+$dark: #0D3236;
+$orange: #FF8864;
+$creme: #FAEBDC;
+$navy-blue: #001819;
