@@ -8,8 +8,6 @@ export default class HeaderSection extends Component {
                 <header>
                     <Navigation />
                 </header>
-
-                
             </>
         )
     }

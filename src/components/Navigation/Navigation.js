@@ -3,12 +3,14 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faBars, faSortDown } from '@fortawesome/free-solid-svg-icons';
 
+import { faInstagram, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons'
+
 
 export default class Navigation extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showMenu: false,
+            showMenu: true,
             collapseFirstLevel: false,
             collapseSecondLevel: false,
         };
@@ -25,11 +27,11 @@ export default class Navigation extends Component {
     }
 
     toggleCollapseFirstLevel() {
-        console.log('first lvl')
+        this.setState({ collapseFirstLevel: !this.state.collapseFirstLevel });
     }
 
     toggleCollapseSecondLevel() {
-        console.log('second lvl')
+        this.setState({ collapseSecondLevel: !this.state.collapseSecondLevel });
     }
 
     render() {
@@ -42,13 +44,14 @@ export default class Navigation extends Component {
                         </div>
                     </div>
 
-                    <ul className="list-unstyled">
+                    <ul className="list-unstyled my-0 py-0">
                         <li>
-                            <a className="scroll-link" href="#about-us"><i className="fas fa-home"></i>about us</a>
+                            <a href="#about-us">about us</a>
                         </li>
-                        <li onClick={this.toggleCollapseFirstLevel}>
-                            <span className="scroll-link"><i className="fas fa-cog"></i>packages <FontAwesomeIcon icon={faSortDown} /></span>
-                            <ul className="nav-collapse__first-level">
+                        <li>
+                            <span onClick={this.toggleCollapseFirstLevel}>packages <FontAwesomeIcon icon={faSortDown} className="ml-2"/></span>
+                            <ul className={this.state.collapseFirstLevel ? 'nav-collapse__first-level' : 'collapse-inactive'}
+                            >
                                 <li>
                                     standard
                                 </li>   
@@ -56,8 +59,9 @@ export default class Navigation extends Component {
                                     premium
                                 </li>
                                 <li>
-                                    <span className="scroll-link"><i className="fas fa-cog"></i>eco <FontAwesomeIcon icon={faSortDown} /></span>
-                                    <ul className="nav-collapse__second-level">
+                                    <span className="m-0 p-0 d-inline" onClick={this.toggleCollapseSecondLevel}>eco
+                                    <FontAwesomeIcon icon={faSortDown} className="ml-3" /></span>
+                                    <ul className={this.state.collapseSecondLevel ? 'nav-collapse__second-level' : 'collapse-inactive'}>
                                         <li>basic</li>
                                         <li>medium</li>
                                         <li>advanced</li>
@@ -66,15 +70,28 @@ export default class Navigation extends Component {
                             </ul>
                         </li>
                         <li>
-                            <a className="scroll-link" href="#one-off"><i className="fas fa-user"></i>one-off</a>
+                            <a href="#one-off"><i className="fas fa-user"></i>one-off</a>
                         </li>
                         <li>
-                            <a className="scroll-link" href="#commercial"><i className="fas fa-pencil-alt"></i>commercial</a>
+                            <a href="#commercial"><i className="fas fa-pencil-alt"></i>commercial</a>
                         </li>
                         <li>
-                            <a className="scroll-link" href="#contact"><i className="fas fa-envelope"></i>contact</a>
+                            <a href="#contact"><i className="fas fa-envelope"></i>contact</a>
                         </li>
                     </ul>
+
+                    <div className="nav__footer ml-2 d-flex flex-column">
+                        <span>
+                            Grassgo Gardeners
+                        </span>
+                        <span>by</span>
+                        <span>NortHillGardens</span>
+                        <div className="nav__footer--social mt-4">
+                            <FontAwesomeIcon icon={faInstagram} className="fa mx-1" />
+                            <FontAwesomeIcon icon={faTwitter} className="fa mx-1" />
+                            <FontAwesomeIcon icon={faFacebook} className="fa mx-1" />
+                        </div>
+                    </div>
                 </nav>
 
 

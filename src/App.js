@@ -5,9 +5,8 @@ function App() {
     <div className="App">
       <HeaderSection />
       <section>
-        {/*  */}
+        <h1>yo</h1>
       </section>
-      <h1>elo</h1>
     </div>
   );
 }
