@@ -18,16 +18,12 @@ export default class AboutUs extends Component {
 
 
     changeSlide() {
-        console.log('dziala');
         this.setState({
             firstSlide: !this.state.firstSlide,
         })
-        console.log(this.state.firstSlide);
     }
 
     render() {
-        console.log(this.state.firstSlide);
-
         return (
             <section className="about-us">
                 <div
