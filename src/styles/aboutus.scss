@@ -1,0 +1,78 @@
+.about-us {
+    // color: red;
+}
+
+.about-us__first-slide {
+    display: grid;
+    grid-template-columns: 30% 50% auto;
+    grid-template-rows: 100vh;
+    justify-items: center;
+    align-items: center;
+
+    .first-slide--img {
+        // width: 711px;
+        // height: 710px;
+    }
+
+    .first-slide--content {
+        justify-self: start;
+
+        h1 {
+            font-size: 60px;
+            color: $green;
+        }
+    }
+
+    .first-slide--arrow {
+        width: 50px;
+        height: 70px;
+    }
+}
+
+.about-us__second-slide {
+    display: grid;
+    grid-template-columns: auto 50% 30%;
+    grid-template-rows: 100vh;
+    justify-items: center;
+    align-items: center;
+
+    .second-slide--img {
+        // width: 711px;
+        // height: 710px;
+    }
+
+    .second-slide--content {
+        justify-self: start;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-size: 60px;
+            color: $green;
+        }
+
+        .go-northill-btn {
+            align-self: flex-end;
+            border-radius: 23px;
+            background-color: $green;
+            font-weight: 700;
+            border: none;
+
+            a {
+                color: $white;
+                border: none;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .second-slide--arrow {
+        width: 50px;
+        height: 70px;
+        transform: scaleX(-1);
+    }
+}
+
+.slide-inactive {
+    display: none;
+}

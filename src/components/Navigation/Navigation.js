@@ -10,7 +10,7 @@ export default class Navigation extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showMenu: true,
+            showMenu: false,
             collapseFirstLevel: false,
             collapseSecondLevel: false,
         };
@@ -36,7 +36,7 @@ export default class Navigation extends Component {
 
     render() {
         return (
-            <>
+            <header>
                 <nav className={this.state.showMenu ? 'sidebar active' : 'sidebar'}>
                     <div className="hide-sidebar-btn">
                         <div onClick={this.toggleMenu} className="dismiss">
@@ -102,7 +102,7 @@ export default class Navigation extends Component {
                     </a>
                 </div>
 
-            </>
+            </header>
         )
     }
 }

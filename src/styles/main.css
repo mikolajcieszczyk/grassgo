@@ -116,6 +116,63 @@ a.btn-customized:hover {
   font-size: 10px;
 }
 
+.about-us__first-slide {
+  display: grid;
+  grid-template-columns: 30% 50% auto;
+  grid-template-rows: 100vh;
+  justify-items: center;
+  align-items: center;
+}
+.about-us__first-slide .first-slide--content {
+  justify-self: start;
+}
+.about-us__first-slide .first-slide--content h1 {
+  font-size: 60px;
+  color: #006466;
+}
+.about-us__first-slide .first-slide--arrow {
+  width: 50px;
+  height: 70px;
+}
+
+.about-us__second-slide {
+  display: grid;
+  grid-template-columns: auto 50% 30%;
+  grid-template-rows: 100vh;
+  justify-items: center;
+  align-items: center;
+}
+.about-us__second-slide .second-slide--content {
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+}
+.about-us__second-slide .second-slide--content h1 {
+  font-size: 60px;
+  color: #006466;
+}
+.about-us__second-slide .second-slide--content .go-northill-btn {
+  align-self: flex-end;
+  border-radius: 23px;
+  background-color: #006466;
+  font-weight: 700;
+  border: none;
+}
+.about-us__second-slide .second-slide--content .go-northill-btn a {
+  color: #FFFCFB;
+  border: none;
+  text-decoration: none;
+}
+.about-us__second-slide .second-slide--arrow {
+  width: 50px;
+  height: 70px;
+  transform: scaleX(-1);
+}
+
+.slide-inactive {
+  display: none;
+}
+
 body {
   line-height: 40px;
   color: #0D3236;

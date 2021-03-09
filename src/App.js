@@ -1,12 +1,13 @@
-import HeaderSection from './components/HeaderSection/HeaderSection';
+import Navigation from 'components/Navigation/Navigation';
+import AboutUs from 'components/AboutUs/AboutUs';
 
 function App() {
   return (
     <div className="App">
-      <HeaderSection />
-      <section>
-        <h1>yo</h1>
-      </section>
+      
+        <Navigation />
+      
+        <AboutUs />
     </div>
   );
 }
