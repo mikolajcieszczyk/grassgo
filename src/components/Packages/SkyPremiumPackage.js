@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import SeaImage from 'assets/images/sea-image.png';
+import SkyImage from 'assets/images/sky-image.png';
 import { Button } from 'react-bootstrap';
 
-
-export default class SeaStandardPackage extends Component {
+export default class SkyPremiumPackage extends Component {
     constructor() {
         super();
 
@@ -22,24 +21,22 @@ export default class SeaStandardPackage extends Component {
 
     render() {
         return (
-            <section className="d-flex flex-column justify-content-center align-items-center sea-standard-package pb-5 mt-5">
-                <div className="sea-standard-package__heading mb-5">
-                    <h1>Sea</h1>
-                    <h3>Standard package</h3>
+            <section className="d-flex flex-column justify-content-center align-items-center sky-premium-package pb-5">
+                <div className="sky-premium-package__heading mb-5">
+                    <h1>Sky</h1>
+                    <h3>Premium package</h3>
                 </div>
-                <div className="d-flex justify-content-around sea-standard-package__content">
+                <div className="d-flex justify-content-around sky-premium-package__content">
                     <div className="content__image">
-                        <img className="w-75 img-fluid" src={SeaImage} />
+                        <img className="w-75 img-fluid" src={SkyImage} />
                     </div>
                     <div className="d-flex flex-column content__text">
                         <p>
-                            Everything you need to keep your garden looking tiptop. Included are all your
-                            essential services, from grass cutting to hedge trimming.
-                            Naturally, this package can be adapted to fit your gardens specific needs. For
-                            example, you can add additional services such as Japanese knotweed removal
-                            or remove other services such as lawn mowing if you have an artificial lawn. The
-                            Standard package is recommended to people with smaller gardens as all
-                            general gardening requirements are included as part of the service.
+                            Gardening service, with all the trimmings. As well as including all the services
+                            from the [standard] package, your garden will also benefit from our additional
+                            expert services as well as free bedding plants and rock salt.
+                            We would highly recommend this service to any client with a large garden or
+                            who wants their garden to be regularly maintained to a very high standard.
                         </p>
 
                         <div
@@ -52,14 +49,21 @@ export default class SeaStandardPackage extends Component {
                                     <li>edging of lawns</li>
                                     <li>weeding / hoeing</li>
                                     <li>general clearance of beds</li>
+                                    <li>fertilising plants</li>
+                                    <li>supply seasonal bedding plants</li>
+                                    <li>aeration, scarification and sanding of lawns</li>
+                                    <li>planting new plants</li>
                                 </ul>
 
                                 <ul className="sea-content__hidden--list">
                                     <li>monitoring gardens</li>
-                                    <li>grass cutting</li>
-                                    <li>edging of lawns</li>
-                                    <li>weeding / hoeing</li>
-                                    <li>general clearance of beds</li>
+                                    <li>hedge and shrub trimming</li>
+                                    <li>leaf removal</li>
+                                    <li>deadheading</li>
+                                    <li>snow removal and spreading salt</li>
+                                    <li>spraying of weeds</li>
+                                    <li>drain cover cleaning</li>
+                                    <li>winter plant protection</li>
                                 </ul>
                             </div>
 

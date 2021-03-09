@@ -54,3 +54,172 @@
         justify-self: flex-end;
     }
 }
+
+.sky-premium-package {
+    background: $white;
+    height: 100%;
+    min-height: 120vh;
+
+    div {
+        width: 90%;
+    }
+
+    .sky-premium-package__heading {
+        color: $green;
+        padding-left: 15%;
+
+        h1 {
+            font-size: 90px;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-family: $montserrat;
+        }
+    }
+
+    .see-more-btn,
+    .book-now-btn {
+        width: 218px;
+        height: 45px;
+        align-self: flex-end;
+        border-radius: 23px;
+        background-color: $green;
+        font-weight: 700;
+        border: none;
+
+        a {
+            color: $white;
+            border: none;
+            text-decoration: none;
+        }
+    }
+
+    .sea-content__hidden--list {
+        padding-left: 4% !important;
+    }
+
+    .booking-info {
+        p {
+            font-size: 10px;
+            line-height: 25px;
+        }
+    }
+
+    .book-now-btn {
+        background-color: $orange;
+        justify-self: flex-end;
+    }
+}
+
+.earth-eco-package {
+    background: $green;
+    height: 100%;
+    min-height: 120vh;
+    color: $white;
+
+    div {
+        width: 90%;
+    }
+
+    .earth-eco-package__heading {
+        padding-left: 15%;
+
+        h1 {
+            font-size: 90px;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-family: $montserrat;
+        }
+    }
+
+    .see-more-btn,
+    .book-now-btn,
+    .earth__see-more-btn {
+        width: 218px;
+        height: 45px;
+        align-self: flex-end;
+        border-radius: 23px;
+        background-color: $green;
+        font-weight: 700;
+        border: none;
+
+        a {
+            color: $white;
+            border: none;
+            text-decoration: none;
+        }
+    }
+
+    .earth__see-more-btn {
+        background: $white;
+        color: $green;
+    }
+
+    .earth-content__hidden {
+        display: grid;
+        grid-template-columns: repeat(3, 25%);
+        grid-template-rows: 100%;
+        justify-content: center;
+        column-gap: 5%;
+    }
+
+    .card-title {
+        h1,
+        span {
+            font-family: $fraunces;
+            color: $green;
+        }
+
+        h1 {
+           font-size: 100px; 
+        }
+
+        span {
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+    }
+
+    .card-text {
+        color: $dark;
+
+        p {
+
+            font-size: 17px;
+            line-height: 30px;
+        }
+    }
+
+    .booking-info {
+        p {
+            font-size: 10px;
+            line-height: 25px;
+        }
+    }
+
+    .book-now-btn {
+        background-color: $orange;
+        justify-self: flex-end;
+    }
+
+    .expanded-card {
+        width: 90%;
+
+        .card-body {
+            width: 100%;
+
+            div {
+                width: 100%;
+                padding: 2%;
+                padding-top: 0;
+            }
+        }
+
+        .card__buttons--book-now {
+            background: $orange;
+        }
+    }
+}

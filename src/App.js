@@ -1,6 +1,8 @@
 import Navigation from 'components/Navigation/Navigation';
 import AboutUs from 'components/AboutUs/AboutUs';
 import SeaStandardPackage from 'components/Packages/SeaStandardPackage';
+import SkyPremiumPackage from 'components/Packages/SkyPremiumPackage';
+import EarthEcoPackage from 'components/Packages/EarthEcoPackage';
 
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
       <Navigation />
       <AboutUs />
       <SeaStandardPackage />
+      <SkyPremiumPackage />
+      <EarthEcoPackage />
     </div>
   );
 }
