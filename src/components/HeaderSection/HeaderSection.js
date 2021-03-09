@@ -4,14 +4,13 @@ import Navigation from 'components/Navigation/Navigation';
 export default class HeaderSection extends Component {
     render() {
         return (
-            <header>
-                <section>
+            <>
+                <header>
                     <Navigation />
-                    <div className="header__content">
-                        {/* grassgo */}
-                    </div>
-                </section>
-            </header>
+                </header>
+
+                
+            </>
         )
     }
 }

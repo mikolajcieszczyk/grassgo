@@ -8,7 +8,7 @@ export default class Navigation extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showMenu: true,
+            showMenu: false,
             collapseFirstLevel: false,
             collapseSecondLevel: false,
         };
@@ -36,16 +36,13 @@ export default class Navigation extends Component {
         return (
             <>
                 <nav className={this.state.showMenu ? 'sidebar active' : 'sidebar'}>
-
-
-
                     <div className="hide-sidebar-btn">
                         <div onClick={this.toggleMenu} className="dismiss">
                             <FontAwesomeIcon icon={faTimes} />
                         </div>
                     </div>
 
-                    <ul className="list-unstyled menu-elements">
+                    <ul className="list-unstyled">
                         <li>
                             <a className="scroll-link" href="#about-us"><i className="fas fa-home"></i>about us</a>
                         </li>
@@ -77,15 +74,14 @@ export default class Navigation extends Component {
                         <li>
                             <a className="scroll-link" href="#contact"><i className="fas fa-envelope"></i>contact</a>
                         </li>
-
-                        
                     </ul>
                 </nav>
 
 
                 <div className="content">
                     <a onClick={this.toggleMenu} className="btn-customized open-menu" href="#">
-                        <FontAwesomeIcon icon={faBars} className="fa-2x" />
+                        <FontAwesomeIcon icon={faBars} className="fa-3x" />
+                        <span className="nav__content-hamburger-signature">menu</span>
                     </a>
                 </div>
 
