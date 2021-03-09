@@ -10,7 +10,9 @@ body {
     line-height: 40px;
     color: $dark;
 
-    p {
+    p,
+    ul,
+    li {
         font-family: $montserrat !important;
         font-size: 20px;
     }
@@ -19,19 +21,20 @@ body {
     h2,
     h3,
     h4,
-    h5 {
+    h5,
+        {
         font-family: $fraunces !important;
     }
 }
 
 section {
-    height: 100vh;
+    height: 120vh;
 }
 
 header {
     height: 100vh;
 
-    background-image: url('https://placekitten.com/g/800/600');
+    background-image: url('../assets/images/header_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
 }

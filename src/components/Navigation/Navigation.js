@@ -5,6 +5,8 @@ import { faTimes, faBars, faSortDown } from '@fortawesome/free-solid-svg-icons';
 
 import { faInstagram, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
+import NavFooterBranding from 'assets/images/nav-footer-branding.png';
+
 
 export default class Navigation extends Component {
     constructor(props) {
@@ -49,12 +51,12 @@ export default class Navigation extends Component {
                             <a href="#about-us">about us</a>
                         </li>
                         <li>
-                            <span onClick={this.toggleCollapseFirstLevel}>packages <FontAwesomeIcon icon={faSortDown} className="ml-2"/></span>
+                            <span onClick={this.toggleCollapseFirstLevel}>packages <FontAwesomeIcon icon={faSortDown} className="ml-2" /></span>
                             <ul className={this.state.collapseFirstLevel ? 'nav-collapse__first-level' : 'collapse-inactive'}
                             >
                                 <li>
                                     standard
-                                </li>   
+                                </li>
                                 <li>
                                     premium
                                 </li>
@@ -81,11 +83,9 @@ export default class Navigation extends Component {
                     </ul>
 
                     <div className="nav__footer ml-2 d-flex flex-column">
-                        <span>
-                            Grassgo Gardeners
-                        </span>
-                        <span>by</span>
-                        <span>NortHillGardens</span>
+
+                        <div className="nav-footer-branding" />
+
                         <div className="nav__footer--social mt-4">
                             <FontAwesomeIcon icon={faInstagram} className="fa mx-1" />
                             <FontAwesomeIcon icon={faTwitter} className="fa mx-1" />

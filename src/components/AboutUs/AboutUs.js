@@ -10,7 +10,7 @@ export default class AboutUs extends Component {
         super();
 
         this.state = {
-            firstSlide: false,
+            firstSlide: true,
         }
 
         this.changeSlide = this.changeSlide.bind(this);

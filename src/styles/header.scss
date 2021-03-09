@@ -116,7 +116,10 @@ a.btn-customized {
     bottom: 50px;
     left: 15%;
 
-    span {
-        font-size: 10px;
+    .nav-footer-branding {
+        width: 150px;
+        height: 100px;
+        background: url('../assets/images/nav-footer-branding.png');
+        background-size: cover;
     }
 }

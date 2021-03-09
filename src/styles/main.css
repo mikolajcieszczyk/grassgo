@@ -112,8 +112,11 @@ a.btn-customized:hover {
   bottom: 50px;
   left: 15%;
 }
-.nav__footer span {
-  font-size: 10px;
+.nav__footer .nav-footer-branding {
+  width: 150px;
+  height: 100px;
+  background: url("../assets/images/nav-footer-branding.png");
+  background-size: cover;
 }
 
 .about-us__first-slide {
@@ -173,11 +176,60 @@ a.btn-customized:hover {
   display: none;
 }
 
+.sea-standard-package {
+  background: #FAEBDC;
+  height: 100%;
+  min-height: 120vh;
+}
+.sea-standard-package div {
+  width: 90%;
+}
+.sea-standard-package .sea-standard-package__heading {
+  color: #006466;
+  padding-left: 15%;
+}
+.sea-standard-package .sea-standard-package__heading h1 {
+  font-size: 90px;
+}
+.sea-standard-package .sea-standard-package__heading h3 {
+  font-size: 30px;
+  font-family: Montserrat, sans-serif;
+}
+.sea-standard-package .see-more-btn,
+.sea-standard-package .book-now-btn {
+  width: 218px;
+  height: 45px;
+  align-self: flex-end;
+  border-radius: 23px;
+  background-color: #006466;
+  font-weight: 700;
+  border: none;
+}
+.sea-standard-package .see-more-btn a,
+.sea-standard-package .book-now-btn a {
+  color: #FFFCFB;
+  border: none;
+  text-decoration: none;
+}
+.sea-standard-package .sea-content__hidden--list {
+  padding-left: 4% !important;
+}
+.sea-standard-package .booking-info p {
+  font-size: 10px;
+  line-height: 25px;
+}
+.sea-standard-package .book-now-btn {
+  background-color: #FF8864;
+  justify-self: flex-end;
+}
+
 body {
   line-height: 40px;
   color: #0D3236;
 }
-body p {
+body p,
+body ul,
+body li {
   font-family: Montserrat, sans-serif !important;
   font-size: 20px;
 }
@@ -190,12 +242,12 @@ body h5 {
 }
 
 section {
-  height: 100vh;
+  height: 120vh;
 }
 
 header {
   height: 100vh;
-  background-image: url("https://placekitten.com/g/800/600");
+  background-image: url("../assets/images/header_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

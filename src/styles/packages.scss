@@ -1,0 +1,56 @@
+.sea-standard-package {
+    background: $creme;
+    height: 100%;
+    min-height: 120vh;
+
+    div {
+        width: 90%;
+    }
+
+    .sea-standard-package__heading {
+        color: $green;
+        padding-left: 15%;
+
+        h1 {
+            font-size: 90px;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-family: $montserrat;
+        }
+    }
+
+    .see-more-btn,
+    .book-now-btn {
+        width: 218px;
+        height: 45px;
+        align-self: flex-end;
+        border-radius: 23px;
+        background-color: $green;
+        font-weight: 700;
+        border: none;
+
+        a {
+            color: $white;
+            border: none;
+            text-decoration: none;
+        }
+    }
+
+    .sea-content__hidden--list {
+        padding-left: 4% !important;
+    }
+
+    .booking-info {
+        p {
+            font-size: 10px;
+            line-height: 25px;
+        }
+    }
+
+    .book-now-btn {
+        background-color: $orange;
+        justify-self: flex-end;
+    }
+}
