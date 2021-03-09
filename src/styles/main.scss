@@ -2,15 +2,26 @@
 
 @import 'typography';
 
-.App {
+@import 'header';
 
+body {
     line-height: 40px;
+    color: $dark;
+
     p {
         font-family: $montserrat !important;
         font-size: 20px;
     }
 
-    h1, h2, h3, h4, h5 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
         font-family: $fraunces !important;
     }
+}
+
+section {
+    height: 100vh;
 }

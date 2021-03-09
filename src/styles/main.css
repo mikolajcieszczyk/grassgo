@@ -1,15 +1,98 @@
 @import url(bootstrap/dist/css/bootstrap.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap");
-.App {
-  line-height: 40px;
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: -255px;
+  z-index: 999;
+  background: #001819;
+  color: #FFFCFB;
+  font-family: Montserrat, sans-serif !important;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all .3s;
+  text-align: left;
 }
-.App p {
+
+.sidebar.active {
+  left: 0;
+}
+
+.content {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.open-menu {
+  position: relative;
+  bottom: 620px;
+  left: 10px;
+  z-index: 997;
+  box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.2);
+}
+
+a.btn-customized {
+  margin-left: 2%;
+  color: #001819;
+  box-shadow: none;
+}
+
+.dismiss {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  transition: all .3s;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sidebar .hide-sidebar-btn {
+  padding: 40px 20px;
+}
+
+.sidebar ul li a,
+.sidebar ul li span {
+  display: block;
+  padding: 10px 20px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: none;
+}
+
+.nav-collapse__first-level {
+  list-style-type: none;
+}
+
+.nav-collapse__second-level {
+  list-style-type: none;
+}
+
+body {
+  line-height: 40px;
+  color: #0D3236;
+}
+body p {
   font-family: Montserrat, sans-serif !important;
   font-size: 20px;
 }
-.App h1, .App h2, .App h3, .App h4, .App h5 {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5 {
   font-family: Fraunces, sans-serif !important;
+}
+
+section {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=main.css.map */
