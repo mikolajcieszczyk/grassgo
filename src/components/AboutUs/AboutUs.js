@@ -77,7 +77,7 @@ export default class AboutUs extends Component {
                         </p>
 
                         <Button className="go-northill-btn py-2 px-4">
-                            <a href="http://northhillgardens.co.uk/" target="_blank">go to North Hill Gardens site</a>
+                            <a href="http://northhillgardens.co.uk/" target="_blank" rel="noreferrer">go to North Hill Gardens site</a>
                         </Button>
                     </div>
                     <img

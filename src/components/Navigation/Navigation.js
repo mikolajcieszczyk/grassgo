@@ -5,7 +5,6 @@ import { faTimes, faBars, faSortDown } from '@fortawesome/free-solid-svg-icons';
 
 import { faInstagram, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
-import NavFooterBranding from 'assets/images/nav-footer-branding.png';
 
 
 export default class Navigation extends Component {
