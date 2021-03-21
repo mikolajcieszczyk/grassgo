@@ -3,6 +3,7 @@ import AboutUs from 'components/AboutUs/AboutUs';
 import SeaStandardPackage from 'components/Packages/SeaStandardPackage';
 import SkyPremiumPackage from 'components/Packages/SkyPremiumPackage';
 import EarthEcoPackage from 'components/Packages/EarthEcoPackage';
+import OneOffServicesPackage from 'components/Packages/OneOffServicesPackage';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <SeaStandardPackage />
       <SkyPremiumPackage />
       <EarthEcoPackage />
+      <OneOffServicesPackage />
     </div>
   );
 }
