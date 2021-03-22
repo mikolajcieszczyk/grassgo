@@ -1,78 +1,123 @@
+// .about-us {
+//   // color: red;
+// }
+
+// .about-us__first-slide {
+//   display: grid;
+//   grid-template-columns: 30% 60% auto;
+//   grid-template-rows: 100vh;
+//   justify-items: center;
+//   align-items: center;
+
+//   .first-slide--img {
+//     // width: 711px;
+//     // height: 710px;
+//   }
+
+//   .first-slide--content {
+//     justify-self: start;
+
+//     h1 {
+//       font-size: 60px;
+//       color: $green;
+//     }
+//   }
+
+//   .first-slide--arrow {
+//     width: 50px;
+//     height: 70px;
+//   }
+// }
+
+// .about-us__second-slide {
+//   display: grid;
+//   grid-template-columns: auto 50% 30%;
+//   grid-template-rows: 100vh;
+//   justify-items: center;
+//   align-items: center;
+
+//   .second-slide--img {
+//     // width: 711px;
+//     // height: 710px;
+//   }
+
+//   .second-slide--content {
+//     justify-self: start;
+//     display: flex;
+//     flex-direction: column;
+
+//     h1 {
+//       font-size: 60px;
+//       color: $green;
+//     }
+
+//     .go-northill-btn {
+//       align-self: flex-end;
+//       border-radius: 23px;
+//       background-color: $green;
+//       font-weight: 700;
+//       border: none;
+
+//       a {
+//         color: $white;
+//         border: none;
+//         text-decoration: none;
+//       }
+//     }
+//   }
+
+//   .second-slide--arrow {
+//     width: 50px;
+//     height: 70px;
+//     transform: scaleX(-1);
+//   }
+// }
+
+// .slide-inactive {
+//   display: none;
+// }
+
+// @media (max-width: 992px) {
+//   .about-us__first-slide {
+//     grid-template-rows: auto auto auto auto;
+//     grid-template-columns: 100%;
+
+//     .first-slide--arrow {
+//       margin-top: 5%;
+//     }
+//   }
+// }
+
+
 .about-us {
-    // color: red;
-}
 
-.about-us__first-slide {
-    display: grid;
-    grid-template-columns: 30% 50% auto;
-    grid-template-rows: 100vh;
-    justify-items: center;
-    align-items: center;
+    // .first-slide--img {
+    //     background-image: url('../assets/images/about-us-first-image.png');
+    //     background-size: 100%;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    // }
 
-    .first-slide--img {
-        // width: 711px;
-        // height: 710px;
-    }
+    // .first-slide--img {
+    //     width: 700px;
+    // }
 
-    .first-slide--content {
-        justify-self: start;
-
-        h1 {
-            font-size: 60px;
-            color: $green;
-        }
-    }
-
-    .first-slide--arrow {
-        width: 50px;
-        height: 70px;
-    }
-}
-
-.about-us__second-slide {
-    display: grid;
-    grid-template-columns: auto 50% 30%;
-    grid-template-rows: 100vh;
-    justify-items: center;
-    align-items: center;
-
-    .second-slide--img {
-        // width: 711px;
-        // height: 710px;
-    }
-
-    .second-slide--content {
-        justify-self: start;
-        display: flex;
-        flex-direction: column;
-
-        h1 {
-            font-size: 60px;
-            color: $green;
-        }
-
-        .go-northill-btn {
-            align-self: flex-end;
-            border-radius: 23px;
-            background-color: $green;
-            font-weight: 700;
-            border: none;
-
-            a {
-                color: $white;
-                border: none;
-                text-decoration: none;
-            }
-        }
-    }
-
+    .first-slide--arrow,
     .second-slide--arrow {
         width: 50px;
         height: 70px;
-        transform: scaleX(-1);
     }
-}
 
-.slide-inactive {
-    display: none;
+    .go-northill-btn {
+      border-radius: 23px;
+      background-color: $green;
+      font-weight: 700;
+      border: none;
+
+      a {
+        color: $white;
+        border: none;
+        text-decoration: none;
+      }
+    }
 }

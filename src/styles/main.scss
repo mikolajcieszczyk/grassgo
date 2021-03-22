@@ -25,12 +25,16 @@ body {
         {
         font-family: $fraunces !important;
     }
+
+    h1 {
+        font-weight: $fw-bold;
+    }
 }
 
 section {
-    height: 120vh;
-    padding-left: 5%;
-    padding-right: 5%;
+    min-height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 header {

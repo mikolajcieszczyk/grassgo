@@ -119,70 +119,27 @@ a.btn-customized:hover {
   background-size: cover;
 }
 
-.about-us__first-slide {
-  display: grid;
-  grid-template-columns: 30% 50% auto;
-  grid-template-rows: 100vh;
-  justify-items: center;
-  align-items: center;
-}
-.about-us__first-slide .first-slide--content {
-  justify-self: start;
-}
-.about-us__first-slide .first-slide--content h1 {
-  font-size: 60px;
-  color: #006466;
-}
-.about-us__first-slide .first-slide--arrow {
+.about-us .first-slide--arrow,
+.about-us .second-slide--arrow {
   width: 50px;
   height: 70px;
 }
-
-.about-us__second-slide {
-  display: grid;
-  grid-template-columns: auto 50% 30%;
-  grid-template-rows: 100vh;
-  justify-items: center;
-  align-items: center;
-}
-.about-us__second-slide .second-slide--content {
-  justify-self: start;
-  display: flex;
-  flex-direction: column;
-}
-.about-us__second-slide .second-slide--content h1 {
-  font-size: 60px;
-  color: #006466;
-}
-.about-us__second-slide .second-slide--content .go-northill-btn {
-  align-self: flex-end;
+.about-us .go-northill-btn {
   border-radius: 23px;
   background-color: #006466;
   font-weight: 700;
   border: none;
 }
-.about-us__second-slide .second-slide--content .go-northill-btn a {
+.about-us .go-northill-btn a {
   color: #FFFCFB;
   border: none;
   text-decoration: none;
-}
-.about-us__second-slide .second-slide--arrow {
-  width: 50px;
-  height: 70px;
-  transform: scaleX(-1);
-}
-
-.slide-inactive {
-  display: none;
 }
 
 .sea-standard-package {
   background: #FAEBDC;
   height: 100%;
   min-height: 120vh;
-}
-.sea-standard-package div {
-  width: 90%;
 }
 .sea-standard-package .sea-standard-package__heading {
   color: #006466;
@@ -199,7 +156,6 @@ a.btn-customized:hover {
 .sea-standard-package .book-now-btn {
   width: 218px;
   height: 45px;
-  align-self: flex-end;
   border-radius: 23px;
   background-color: #006466;
   font-weight: 700;
@@ -369,6 +325,7 @@ a.btn-customized:hover {
 .one-off-package .one-off-package__header h1 {
   font-family: Fraunces, sans-serif;
   font-size: 60px;
+  font-weight: 700;
 }
 .one-off-package .carousel-book-now-div .book-now-btn {
   width: 218px;
@@ -392,6 +349,53 @@ a.btn-customized:hover {
   color: #006466;
 }
 
+.commercial-and-public-section {
+  background: #FAEBDC;
+  height: 100%;
+  min-height: 120vh;
+}
+.commercial-and-public-section div {
+  width: 90%;
+}
+.commercial-and-public-section .commercial-and-public__heading {
+  color: #006466;
+}
+.commercial-and-public-section .commercial-and-public__heading h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+.commercial-and-public-section .commercial-and-public__heading h3 {
+  font-size: 30px;
+  font-family: Montserrat, sans-serif;
+}
+.commercial-and-public-section .see-more-btn,
+.commercial-and-public-section .book-now-btn {
+  width: 218px;
+  height: 45px;
+  align-self: flex-end;
+  border-radius: 23px;
+  background-color: #006466;
+  font-weight: 700;
+  border: none;
+}
+.commercial-and-public-section .see-more-btn a,
+.commercial-and-public-section .book-now-btn a {
+  color: #FFFCFB;
+  border: none;
+  text-decoration: none;
+}
+.commercial-and-public-section .sea-content__hidden--list {
+  padding-left: 4% !important;
+}
+.commercial-and-public-section .booking-info p {
+  font-size: 10px;
+  line-height: 25px;
+}
+.commercial-and-public-section .book-now-btn {
+  background-color: #FF8864;
+  justify-self: flex-end;
+}
+
 body {
   line-height: 40px;
   color: #0D3236;
@@ -409,11 +413,14 @@ body h4,
 body h5 {
   font-family: Fraunces, sans-serif !important;
 }
+body h1 {
+  font-weight: 700;
+}
 
 section {
-  height: 120vh;
-  padding-left: 5%;
-  padding-right: 5%;
+  min-height: 100vh;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 header {
