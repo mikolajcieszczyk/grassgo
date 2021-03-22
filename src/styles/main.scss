@@ -6,6 +6,7 @@
 @import 'aboutus';
 @import 'packages';
 
+
 body {
     line-height: 40px;
     color: $dark;
@@ -32,13 +33,13 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 110vh;
     padding-left: 10%;
     padding-right: 10%;
 }
 
 header {
-    height: 110vh;
+    height: 100vh;
 
     background-image: url('../assets/images/header_bg.png');
     background-repeat: no-repeat;

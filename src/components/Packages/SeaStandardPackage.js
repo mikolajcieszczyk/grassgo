@@ -7,7 +7,7 @@ export default class SeaStandardPackage extends Component {
     super();
 
     this.state = {
-      hidden: false,
+      hidden: true,
     };
 
     this.hideShowContent = this.hideShowContent.bind(this);

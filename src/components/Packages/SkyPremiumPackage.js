@@ -21,7 +21,7 @@ export default class SkyPremiumPackage extends Component {
 
   render() {
     return (
-      <section className="d-flex align-items-center flex-column sky-premium-package py-5">
+        <section className="d-flex flex-column justify-items-center sky-premium-package py-5">
         <div className="row align-self-start d-none d-lg-block">
           <h1>Sky</h1>
           <h3>Premium package</h3>
