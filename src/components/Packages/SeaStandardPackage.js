@@ -7,7 +7,7 @@ export default class SeaStandardPackage extends Component {
     super();
 
     this.state = {
-      hidden: true,
+      hidden: false,
     };
 
     this.hideShowContent = this.hideShowContent.bind(this);
@@ -21,8 +21,8 @@ export default class SeaStandardPackage extends Component {
 
   render() {
     return (
-      <section className="sea-standard-package py-5">
-        <div className="row d-none d-lg-block">
+      <section className="d-flex align-items-center flex-column sea-standard-package py-5">
+        <div className="row d-none d-lg-block align-self-start">
           <h1>Sea</h1>
           <h3>Standard package</h3>
         </div>
@@ -36,7 +36,7 @@ export default class SeaStandardPackage extends Component {
             <h3>Standard package</h3>
           </div>
 
-          <div className="col-12 col-lg-9 d-lg-flex flex-column">
+          <div className="col-12 col-lg-9 d-flex flex-column">
             <p>
               Everything you need to keep your garden looking tiptop. Included
               are all your essential services, from grass cutting to hedge
@@ -60,30 +60,37 @@ export default class SeaStandardPackage extends Component {
             </Button>
           </div>
 
-          <div className={this.state.hidden ? "d-none" : "col-12"}>
+          <div
+            className={
+              this.state.hidden ? "d-none" : "col-12 d-flex flex-column"
+            }
+          >
             <div className="row">
-              <ul className="mt-3 mb-0 pb-0">
-                <li>monitoring gardens</li>
-                <li>grass cutting</li>
-                <li>edging of lawns</li>
-                <li>weeding / hoeing</li>
-                <li>general clearance of beds</li>
-              </ul>
-              <ul className="mt-3">
-                <li>monitoring gardens</li>
-                <li>grass cutting</li>
-                <li>edging of lawns</li>
-                <li>weeding / hoeing</li>
-                <li>general clearance of beds</li>
-              </ul>
+              <div className="col-lg-3"></div>
+              <div className="col-lg-9 d-md-flex">
+                <ul className="mt-3 mb-0 pb-0">
+                  <li>monitoring gardens</li>
+                  <li>grass cutting</li>
+                  <li>edging of lawns</li>
+                  <li>weeding / hoeing</li>
+                  <li>general clearance of beds</li>
+                </ul>
+                <ul className="mt-3">
+                  <li>monitoring gardens</li>
+                  <li>grass cutting</li>
+                  <li>edging of lawns</li>
+                  <li>weeding / hoeing</li>
+                  <li>general clearance of beds</li>
+                </ul>
+              </div>
             </div>
             <div className="row">
-              <p className="col-12">
+              <p className="col-12 col-lg-9">
                 1 visit per fortnight during the vegetation season (March –
                 November)<br></br>1 visit per 4 weeks in winter season (December
                 – February)
               </p>
-              <div className="col-12 text-center">
+              <div className="col-12 col-lg-3 text-center align-self-center">
                 <Button className="book-now-btn">book now</Button>
               </div>
             </div>

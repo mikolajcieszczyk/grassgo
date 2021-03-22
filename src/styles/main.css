@@ -138,8 +138,6 @@ a.btn-customized:hover {
 
 .sea-standard-package {
   background: #FAEBDC;
-  height: 100%;
-  min-height: 120vh;
 }
 .sea-standard-package .sea-standard-package__heading {
   color: #006466;
@@ -181,11 +179,6 @@ a.btn-customized:hover {
 
 .sky-premium-package {
   background: #FFFCFB;
-  height: 100%;
-  min-height: 120vh;
-}
-.sky-premium-package div {
-  width: 90%;
 }
 .sky-premium-package .sky-premium-package__heading {
   color: #006466;
@@ -424,7 +417,7 @@ section {
 }
 
 header {
-  height: 100vh;
+  height: 110vh;
   background-image: url("../assets/images/header_bg.png");
   background-repeat: no-repeat;
   background-size: cover;

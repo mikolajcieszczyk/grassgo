@@ -1,7 +1,5 @@
 .sea-standard-package {
   background: $creme;
-  height: 100%;
-  min-height: 120vh;
 
   .sea-standard-package__heading {
     color: $green;
@@ -52,12 +50,6 @@
 
 .sky-premium-package {
   background: $white;
-  height: 100%;
-  min-height: 120vh;
-
-  div {
-    width: 90%;
-  }
 
   .sky-premium-package__heading {
     color: $green;
