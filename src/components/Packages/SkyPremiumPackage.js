@@ -65,7 +65,7 @@ export default class SkyPremiumPackage extends Component {
             <div className="row">
               <div className="col-lg-3"></div>
               <div className="col-lg-9 d-md-flex">
-                <ul className="mt-3 mb-0 pb-0">
+                <ul className="mb-0 pb-0">
                   <li>monitoring gardens</li>
                   <li>grass cutting</li>
                   <li>edging of lawns</li>
@@ -76,7 +76,7 @@ export default class SkyPremiumPackage extends Component {
                   <li>aeration, scarification and sanding of lawns</li>
                   <li>planting new plants</li>
                 </ul>
-                <ul className="mt-3">
+                <ul className="second-list">
                   <li>monitoring gardens</li>
                   <li>hedge and shrub trimming</li>
                   <li>leaf removal</li>
@@ -89,7 +89,7 @@ export default class SkyPremiumPackage extends Component {
               </div>
             </div>
             <div className="row">
-              <p className="col-12 col-lg-9">
+              <p className="col-12 col-lg-9 date-p">
                 1 visit per fortnight during the vegetation season (March –
                 November)<br></br>1 visit per 4 weeks in winter season (December
                 – February)

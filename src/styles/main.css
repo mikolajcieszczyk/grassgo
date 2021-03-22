@@ -119,6 +119,14 @@ a.btn-customized:hover {
   background-size: cover;
 }
 
+.about-us h1 {
+  font-size: 25px;
+  line-height: 40px;
+}
+.about-us p {
+  font-size: 15px;
+  line-height: 30px;
+}
 .about-us .first-slide--arrow,
 .about-us .second-slide--arrow {
   width: 50px;
@@ -136,19 +144,39 @@ a.btn-customized:hover {
   text-decoration: none;
 }
 
+button {
+  font-size: 15px !important;
+}
+
+.date-p {
+  font-size: 15px !important;
+}
+
+.about-us h1 {
+  color: #006466;
+}
+
 .sea-standard-package {
   background: #FAEBDC;
-}
-.sea-standard-package .sea-standard-package__heading {
   color: #006466;
   padding-left: 15%;
 }
-.sea-standard-package .sea-standard-package__heading h1 {
-  font-size: 90px;
+.sea-standard-package h1 {
+  font-size: 35px;
+  line-height: 40px;
 }
-.sea-standard-package .sea-standard-package__heading h3 {
-  font-size: 30px;
-  font-family: Montserrat, sans-serif;
+.sea-standard-package h3 {
+  font-size: 20px;
+  font-family: Montserrat, sans-serif !important;
+  line-height: 24px;
+}
+.sea-standard-package p {
+  font-size: 15px;
+  line-height: 30px;
+  color: #0D3236;
+}
+.sea-standard-package ul li {
+  color: #0D3236;
 }
 .sea-standard-package .see-more-btn,
 .sea-standard-package .book-now-btn {
@@ -165,9 +193,6 @@ a.btn-customized:hover {
   border: none;
   text-decoration: none;
 }
-.sea-standard-package .sea-content__hidden--list {
-  padding-left: 4% !important;
-}
 .sea-standard-package .booking-info p {
   font-size: 10px;
   line-height: 25px;
@@ -179,17 +204,21 @@ a.btn-customized:hover {
 
 .sky-premium-package {
   background: #FFFCFB;
-}
-.sky-premium-package .sky-premium-package__heading {
   color: #006466;
   padding-left: 15%;
 }
-.sky-premium-package .sky-premium-package__heading h1 {
-  font-size: 90px;
+.sky-premium-package h1 {
+  font-size: 35px;
+  line-height: 40px;
 }
-.sky-premium-package .sky-premium-package__heading h3 {
-  font-size: 30px;
+.sky-premium-package h3 {
+  font-size: 20px;
+  line-height: 24px;
   font-family: Montserrat, sans-serif;
+}
+.sky-premium-package p {
+  font-size: 15px;
+  line-height: 30px;
 }
 .sky-premium-package .see-more-btn,
 .sky-premium-package .book-now-btn {
@@ -223,6 +252,19 @@ a.btn-customized:hover {
   background: #006466;
   color: #FFFCFB;
 }
+.earth-eco-package h1 {
+  font-size: 35px;
+  line-height: 40px;
+}
+.earth-eco-package h3 {
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  line-height: 24px;
+}
+.earth-eco-package p {
+  font-size: 15px;
+  line-height: 30px;
+}
 .earth-eco-package .package-card {
   background-color: #FAEBDC;
 }
@@ -232,16 +274,21 @@ a.btn-customized:hover {
   color: #006466;
   font-weight: 700;
 }
+.earth-eco-package .package-card h1 {
+  font-size: 70px;
+  line-height: 94px;
+}
 .earth-eco-package .package-card span {
   font-size: 30px;
+  line-height: 40px;
+  margin-left: 1%;
+  margin-top: 8%;
 }
 .earth-eco-package .package-card h2 {
   color: #006466;
   font-weight: 700;
   font-size: 15px;
-}
-.earth-eco-package .package-card h1 {
-  font-size: 70px;
+  line-height: 30px;
 }
 .earth-eco-package .package-card p {
   font-size: 13px;
@@ -278,10 +325,15 @@ a.btn-customized:hover {
 .one-off-package {
   background: #fff;
 }
-.one-off-package .one-off-package__header h1 {
+.one-off-package h1 {
   font-family: Fraunces, sans-serif;
-  font-size: 60px;
+  font-size: 35px;
+  line-height: 40px;
   font-weight: 700;
+}
+.one-off-package p {
+  font-size: 15px;
+  line-height: 30px;
 }
 .one-off-package .book-now-btn {
   font-weight: bold;
@@ -301,24 +353,24 @@ a.btn-customized:hover {
   box-shadow: 0px 3px 6px 0px rgba(116, 104, 104, 0.75);
 }
 .my-carousel-item p {
-  font-size: 25;
+  font-size: 25px;
   font-weight: 700;
   color: #006466;
 }
 
 .commercial-and-public-section {
   background: #FAEBDC;
-}
-.commercial-and-public-section .commercial-and-public__heading {
   color: #006466;
 }
-.commercial-and-public-section .commercial-and-public__heading h1 {
-  font-size: 60px;
+.commercial-and-public-section h1 {
   font-weight: 700;
+  font-size: 35px;
+  line-height: 40px;
 }
-.commercial-and-public-section .commercial-and-public__heading h3 {
-  font-size: 30px;
-  font-family: Montserrat, sans-serif;
+.commercial-and-public-section p {
+  font-size: 15px;
+  line-height: 30px;
+  color: #0D3236;
 }
 .commercial-and-public-section .see-more-btn,
 .commercial-and-public-section .book-now-btn {
@@ -347,6 +399,113 @@ a.btn-customized:hover {
   justify-self: flex-end;
 }
 
+@media (min-width: 992px) {
+  body ul li {
+    font-size: 20px !important;
+  }
+
+  button {
+    font-size: 20px !important;
+  }
+
+  .second-list {
+    margin-left: 2%;
+  }
+
+  .about-us h1 {
+    font-size: 40px;
+    line-height: 70px;
+  }
+  .about-us p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .sea-standard-package {
+    background: #FAEBDC;
+    color: #006466;
+    padding-left: 15%;
+  }
+  .sea-standard-package h1 {
+    font-size: 90px;
+    line-height: 75px;
+  }
+  .sea-standard-package h3 {
+    font-size: 30px;
+    font-family: Montserrat, sans-serif !important;
+    line-height: 37px;
+  }
+  .sea-standard-package p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .sky-premium-package {
+    background: #FFFCFB;
+    color: #006466;
+    padding-left: 15%;
+  }
+  .sky-premium-package h1 {
+    font-size: 90px;
+    line-height: 75px;
+  }
+  .sky-premium-package h3 {
+    font-size: 30px;
+    font-family: Montserrat, sans-serif;
+    line-height: 37px;
+  }
+  .sky-premium-package p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .earth-eco-package h1 {
+    font-size: 90px;
+    line-height: 75px;
+  }
+  .earth-eco-package h3 {
+    font-size: 30px;
+    font-family: Montserrat, sans-serif;
+    line-height: 37px;
+  }
+  .earth-eco-package p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .earth-eco-package .package-card h1 {
+    font-size: 100px;
+    line-height: 133px;
+  }
+  .earth-eco-package .package-card p {
+    font-size: 17px;
+  }
+  .earth-eco-package .package-card h2 {
+    font-size: 20px;
+  }
+
+  .one-off-package {
+    background: #fff;
+  }
+  .one-off-package h1 {
+    font-family: Fraunces, sans-serif;
+    font-size: 60px;
+    line-height: 35px;
+    font-weight: 700;
+  }
+  .one-off-package p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .commercial-and-public-section h1 {
+    font-size: 60px;
+    line-height: 50px;
+  }
+  .commercial-and-public-section p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
 body {
   line-height: 40px;
   color: #0D3236;
@@ -367,11 +526,24 @@ body h5 {
 body h1 {
   font-weight: 700;
 }
+body ul {
+  list-style-type: none !important;
+  padding-left: 0;
+}
 
 section {
   min-height: 110vh;
   padding-left: 10%;
   padding-right: 10%;
+}
+section ul li {
+  background: url(https://img.icons8.com/small/16/000000/filled-circle.png) no-repeat top left;
+  background-position: 0 8px;
+  line-height: 1.5625;
+  padding: 0 0 4px 30px;
+  margin-left: 5px;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 header {

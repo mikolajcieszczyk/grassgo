@@ -9,7 +9,7 @@ export default function TabletCarousel() {
     const chevronWidth = 40;
 
     return (
-        <div className="mt-5" style={{ padding: `0 ${chevronWidth}px` }}>
+        <div style={{ padding: `0 ${chevronWidth}px` }}>
             <ItemsCarousel
                 requestToChangeActive={setActiveItemIndex}
                 activeItemIndex={activeItemIndex}
@@ -22,31 +22,31 @@ export default function TabletCarousel() {
                 outsideChevron
                 chevronWidth={chevronWidth}
             >
-                <div className="img-thumbnail my-carousel-item text-center" style={{ height: 200 }}>
+                <div className="img-thumbnail my-carousel-item text-center" style={{ height: 200, width: 200 }}>
                     <span>clean up</span>
                     <img style={{ width: '150px' }} className="img-fluid" src={OneOffSliderImg} />
                 </div>
-                <div className="img-thumbnail my-carousel-item text-center" style={{ height: 200 }}>
+                <div className="img-thumbnail my-carousel-item text-center" style={{ height: 200, width: 200 }}>
                     <span>hedge trim</span>
                     <img style={{ width: '150px' }} className="img-fluid" src={OneOffSliderImg} />
                 </div>
-                <div className="img-thumbnail my-carousel-item text-center" style={{ height: 200 }}>
+                <div className="img-thumbnail my-carousel-item text-center" style={{ height: 200, width: 200 }}>
                     <span>tree surgery</span>
                     <img style={{ width: '150px' }} className="img-fluid" src={OneOffSliderImg} />
                 </div>
-                <div className="img-thumbnail my-carousel-item text-center" style={{ height: 200 }}>
+                <div className="img-thumbnail my-carousel-item text-center" style={{ height: 200, width: 200 }}>
                     <span>lawn care</span>
                     <img style={{ width: '150px' }} className="img-fluid" src={OneOffSliderImg} />
                 </div>
-                <div className="img-thumbnail my-carousel-item text-center" style={{ height: 200 }}>
+                <div className="img-thumbnail my-carousel-item text-center" style={{ height: 200, width: 200 }}>
                     <span>planting</span>
                     <img style={{ width: '150px' }} className="img-fluid" src={OneOffSliderImg} />
                 </div>
-                <div className="img-thumbnail my-carousel-item text-center" style={{ height: 200 }}>
+                <div className="img-thumbnail my-carousel-item text-center" style={{ height: 200, width: 200 }}>
                     <span>pruning </span>
                     <img style={{ width: '150px' }} className="img-fluid" src={OneOffSliderImg} />
                 </div>
-                <div className="img-thumbnail my-carousel-item text-center" style={{ height: 200 }}>
+                <div className="img-thumbnail my-carousel-item text-center" style={{ height: 200, width: 200 }}>
                     <span>japaneese knotweed</span>
                     <img style={{ width: '150px' }} className="img-fluid" src={OneOffSliderImg} />
                 </div>

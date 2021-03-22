@@ -1,0 +1,133 @@
+@media (min-width: 992px) {
+    body {
+        ul li {
+            font-size: 20px !important;
+        }
+    }
+
+    button {
+        font-size: 20px !important;
+    }
+
+    .second-list {
+        margin-left: 2%;
+    }
+
+    .about-us {
+        h1 {
+            font-size: 40px;
+            line-height: 70px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 40px;
+        }
+    }
+
+    .sea-standard-package {
+        background: $creme;
+
+        color: $green;
+        padding-left: 15%;
+
+        h1 {
+            font-size: 90px;
+            line-height: 75px;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-family: $montserrat !important;
+            line-height: 37px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 40px;
+        }
+    }
+
+    .sky-premium-package {
+        background: $white;
+
+        color: $green;
+        padding-left: 15%;
+
+        h1 {
+            font-size: 90px;
+            line-height: 75px;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-family: $montserrat;
+            line-height: 37px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 40px;
+        }
+    }
+
+    .earth-eco-package {
+        h1 {
+            font-size: 90px;
+            line-height: 75px;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-family: $montserrat;
+            line-height: 37px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+        .package-card {
+            h1 {
+                font-size: 100px;
+                line-height: 133px;
+            }
+            p {
+                font-size: 17px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .one-off-package {
+        background: #fff;
+
+        h1 {
+            font-family: $fraunces;
+            font-size: 60px;
+            line-height: 35px;
+            font-weight: $fw-bold;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 40px;
+        }
+    }
+
+    .commercial-and-public-section {
+        h1 {
+            font-size: 60px;
+            line-height: 50px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 40px;
+        }
+    }
+}

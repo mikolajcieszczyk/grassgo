@@ -53,19 +53,19 @@ export default class Navigation extends Component {
                             <span onClick={this.toggleCollapseFirstLevel}>packages <FontAwesomeIcon icon={faSortDown} className="ml-2" /></span>
                             <ul className={this.state.collapseFirstLevel ? 'nav-collapse__first-level' : 'collapse-inactive'}
                             >
-                                <li>
+                                <li className="ml-5">
                                     standard
                                 </li>
-                                <li>
+                                <li className="ml-5">
                                     premium
                                 </li>
                                 <li>
-                                    <span className="m-0 p-0 d-inline" onClick={this.toggleCollapseSecondLevel}>eco
+                                    <span className="ml-5 p-0 d-inline" onClick={this.toggleCollapseSecondLevel}>eco
                                     <FontAwesomeIcon icon={faSortDown} className="ml-3" /></span>
                                     <ul className={this.state.collapseSecondLevel ? 'nav-collapse__second-level' : 'collapse-inactive'}>
-                                        <li>basic</li>
-                                        <li>medium</li>
-                                        <li>advanced</li>
+                                        <li className="ml-5 pl-4">basic</li>
+                                        <li className="ml-5 pl-4">medium</li>
+                                        <li className="ml-5 pl-4">advanced</li>
                                     </ul>
                                 </li>
                             </ul>

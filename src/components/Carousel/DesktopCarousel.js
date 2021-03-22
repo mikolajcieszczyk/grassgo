@@ -28,7 +28,7 @@ export default function DesktopCarousel() {
       >
         <div
           className="img-thumbnail my-carousel-item text-center"
-          style={{ height: 200 }}
+          style={{ height: 250, width: 200 }}
         >
           <p>clean up</p>
           <img
@@ -39,7 +39,7 @@ export default function DesktopCarousel() {
         </div>
         <div
           className="img-thumbnail my-carousel-item text-center"
-          style={{ height: 200 }}
+          style={{ height: 250, width: 200 }}
         >
           <p>hedge trim</p>
           <img
@@ -50,7 +50,7 @@ export default function DesktopCarousel() {
         </div>
         <div
           className="img-thumbnail my-carousel-item text-center"
-          style={{ height: 200 }}
+          style={{ height: 250, width: 200 }}
         >
           <p>tree surgery</p>
           <img
@@ -61,7 +61,7 @@ export default function DesktopCarousel() {
         </div>
         <div
           className="img-thumbnail my-carousel-item text-center"
-          style={{ height: 200 }}
+          style={{ height: 250, width: 200 }}
         >
           <p>lawn care</p>
           <img
@@ -72,7 +72,7 @@ export default function DesktopCarousel() {
         </div>
         <div
           className="img-thumbnail my-carousel-item text-center"
-          style={{ height: 200 }}
+          style={{ height: 250, width: 200 }}
         >
           <p>planting</p>
           <img
@@ -83,7 +83,7 @@ export default function DesktopCarousel() {
         </div>
         <div
           className="img-thumbnail my-carousel-item text-center"
-          style={{ height: 200 }}
+          style={{ height: 250, width: 200 }}
         >
           <p>pruning </p>
           <img
@@ -94,7 +94,7 @@ export default function DesktopCarousel() {
         </div>
         <div
           className="img-thumbnail my-carousel-item text-center"
-          style={{ height: 200 }}
+          style={{ height: 250, width: 200 }}
         >
           <p>japaneese knotweed</p>
           <img

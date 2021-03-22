@@ -25,7 +25,7 @@ export default class AboutUs extends Component {
 
   render() {
     return (
-      <section className="about-us mt-5 d-flex align-items-center">
+      <section className="about-us d-flex align-items-center">
         {/* <div
                     className={this.state.firstSlide ? 'about-us__first-slide' : 'slide-inactive'}
                 >
@@ -85,7 +85,7 @@ export default class AboutUs extends Component {
 
             <div className="col-12 col-lg-1 d-flex align-items-center">
               <img
-                className="first-slide--arrow mx-auto my-5"
+                className="first-slide--arrow mx-auto mt-5"
                 src={ArrowLeft}
                 alt="arrow right"
                 onClick={this.changeSlide}
