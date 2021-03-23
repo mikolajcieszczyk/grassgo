@@ -13,7 +13,7 @@
   font-family: Montserrat, sans-serif !important;
   font-size: 20px;
   font-weight: 700;
-  transition: all .3s;
+  transition: all 0.3s;
   text-align: left;
   line-height: 20px;
 }
@@ -60,7 +60,7 @@ a.btn-customized:hover {
   height: 30px;
   position: absolute;
   top: 20px;
-  transition: all .3s;
+  transition: all 0.3s;
   text-align: center;
   cursor: pointer;
 }
@@ -107,6 +107,56 @@ a.btn-customized:hover {
   display: none;
 }
 
+.rotate-180-start {
+  -webkit-animation: rotate-180-start 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate-180-start 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes rotate-180-start {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotate-180-start {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+.rotate-180-back {
+  -webkit-animation: rotate-180-back 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate-180-back 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes rotate-180-back {
+  0% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+@keyframes rotate-180-back {
+  0% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
 .nav__footer {
   position: absolute;
   bottom: 50px;
@@ -142,18 +192,6 @@ a.btn-customized:hover {
   color: #FFFCFB;
   border: none;
   text-decoration: none;
-}
-
-button {
-  font-size: 15px !important;
-}
-
-.date-p {
-  font-size: 15px !important;
-}
-
-.about-us h1 {
-  color: #006466;
 }
 
 .sea-standard-package {
@@ -529,6 +567,16 @@ body h1 {
 body ul {
   list-style-type: none !important;
   padding-left: 0;
+}
+body button {
+  font-size: 15px !important;
+  font-family: Montserrat, sans-serif !important;
+}
+body .date-p {
+  font-size: 15px !important;
+}
+body .about-us h1 {
+  color: #006466;
 }
 
 section {

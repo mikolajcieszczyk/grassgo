@@ -8,62 +8,70 @@
 @import "rwd";
 
 body {
-    line-height: 40px;
-    color: $dark;
+  line-height: 40px;
+  color: $dark;
 
-    p,
-    ul,
-    li {
-        font-family: $montserrat !important;
-        font-size: 20px;
-    }
+  p,
+  ul,
+  li {
+    font-family: $montserrat !important;
+    font-size: 20px;
+  }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        font-family: $fraunces !important;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: $fraunces !important;
+  }
 
+  h1 {
+    font-weight: $fw-bold;
+  }
+
+  ul {
+    list-style-type: none !important;
+    padding-left: 0;
+  }
+
+  button {
+    font-size: 15px !important;
+    font-family: $montserrat !important;
+  }
+
+  .date-p {
+    font-size: 15px !important;
+  }
+
+  .about-us {
     h1 {
-        font-weight: $fw-bold;
+      color: $green;
     }
-
-    
-
-ul {
-        list-style-type: none !important;
-        padding-left: 0;
-    }
-
-  
-
-    
+  }
 }
 
 section {
-    min-height: 110vh;
-    padding-left: 10%;
-    padding-right: 10%;
+  min-height: 110vh;
+  padding-left: 10%;
+  padding-right: 10%;
 
-    ul li {
-        background: url(https://img.icons8.com/small/16/000000/filled-circle.png) no-repeat top left;
-        background-position: 0 8px;
-        line-height: 1.5625;
-        padding: 0 0 4px 30px;
-        margin-left: 5px;
-        font-size: 15px;
-        line-height: 30px;
-    }
+  ul li {
+    background: url(https://img.icons8.com/small/16/000000/filled-circle.png)
+      no-repeat top left;
+    background-position: 0 8px;
+    line-height: 1.5625;
+    padding: 0 0 4px 30px;
+    margin-left: 5px;
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
 header {
-    height: 100vh;
+  height: 100vh;
 
-    background-image: url("../assets/images/header_bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    
+  background-image: url("../assets/images/header_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

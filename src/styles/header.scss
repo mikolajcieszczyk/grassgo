@@ -1,125 +1,176 @@
 .sidebar {
-    width: 250px;
-    height: 100vh;
-    position: relative;
-    top: 0;
-    left: -255px;
-    z-index: 998;
-    background: $navy-blue;
-    color: $white;
-    font-family: $montserrat !important;
-    font-size: 20px;
-    font-weight: 700;
-    transition: all .3s;
-    text-align: left;
+  width: 250px;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: -255px;
+  z-index: 998;
+  background: $navy-blue;
+  color: $white;
+  font-family: $montserrat !important;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.3s;
+  text-align: left;
 
-    line-height: 20px;
+  line-height: 20px;
 }
 
 .sidebar.active {
-    left: 0;
+  left: 0;
 }
 
 .content {
-    width: 10%;
-    transition: all 0.3s;
+  width: 10%;
+  transition: all 0.3s;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    &:hover {
-        text-decoration: none;
-    }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .open-menu {
-    position: relative;
-    bottom: 95vh;
-    left: 10px;
-    z-index: 997;
+  position: relative;
+  bottom: 95vh;
+  left: 10px;
+  z-index: 997;
 }
 
 .nav__content-hamburger-signature {
-    display: block;
-    line-height: 0;
-    font-family: $montserrat !important;
-    font-size: 15px;
+  display: block;
+  line-height: 0;
+  font-family: $montserrat !important;
+  font-size: 15px;
 }
 
-
 a.btn-customized {
-    margin-left: 5%;
-    color: $navy-blue;
-    box-shadow: none;
+  margin-left: 5%;
+  color: $navy-blue;
+  box-shadow: none;
 
-    &:hover {
-        text-decoration: none;
-    }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .dismiss {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 20px;
-    transition: all .3s;
-    text-align: center;
-    cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  transition: all 0.3s;
+  text-align: center;
+  cursor: pointer;
 }
 
 .sidebar .hide-sidebar-btn {
-    padding: 40px 20px;
+  padding: 40px 20px;
 }
 
 .sidebar ul li a,
 .sidebar ul li span {
-    display: block;
-    padding: 10px 20px;
-    border: 0;
-    color: #fff;
-    cursor: pointer;
-    margin-left: 10%;
+  display: block;
+  padding: 10px 20px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10%;
 }
 
 .sidebar ul li a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .nav-collapse__first-level {
-    display: block;
-    list-style-type: none;
-    margin-left: 5%;
-    text-indent: 5%;
-    line-height: 30px;
+  display: block;
+  list-style-type: none;
+  margin-left: 5%;
+  text-indent: 5%;
+  line-height: 30px;
 
-    li {
-        font-weight: 500;
-    }
+  li {
+    font-weight: 500;
+  }
 }
 
 .nav-collapse__second-level {
-    display: block;
-    list-style-type: none;
-    li {
-        font-weight: 500;
-        line-height: 30px;
-    }
+  display: block;
+  list-style-type: none;
+  li {
+    font-weight: 500;
+    line-height: 30px;
+  }
 }
 
 .collapse-inactive {
-    display: none;
+  display: none;
+}
+
+.rotate-180-start {
+  -webkit-animation: rotate-180-start 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate-180-start 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes rotate-180-start {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotate-180-start {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+.rotate-180-back {
+  -webkit-animation: rotate-180-back 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate-180-back 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes rotate-180-back {
+  0% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+@keyframes rotate-180-back {
+  0% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
 }
 
 .nav__footer {
-    // margin-left: 2%;
-    position: absolute;
-    bottom: 50px;
-    left: 15%;
+  // margin-left: 2%;
+  position: absolute;
+  bottom: 50px;
+  left: 15%;
 
-    .nav-footer-branding {
-        width: 150px;
-        height: 100px;
-        background: url('../assets/images/nav-footer-branding.png');
-        background-size: cover;
-    }
+  .nav-footer-branding {
+    width: 150px;
+    height: 100px;
+    background: url("../assets/images/nav-footer-branding.png");
+    background-size: cover;
+  }
 }

@@ -86,7 +86,7 @@ export default class AboutUs extends Component {
             <div className="col-12 col-lg-1 d-flex align-items-center">
               <img
                 className="first-slide--arrow mx-auto mt-5"
-                src={ArrowLeft}
+                src={ArrowRight}
                 alt="arrow right"
                 onClick={this.changeSlide}
               />
@@ -102,7 +102,7 @@ export default class AboutUs extends Component {
           <div className="col-12 col-lg-1 order-3 order-lg-3 d-flex justify-content-center align-items-center mt-5">
             <img
               className="second-slide--arrow"
-              src={ArrowRight}
+              src={ArrowLeft}
               onClick={this.changeSlide}
               alt="arrow right"
             />
