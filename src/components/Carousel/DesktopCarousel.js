@@ -14,21 +14,21 @@ export default function DesktopCarousel() {
         requestToChangeActive={setActiveItemIndex}
         activeItemIndex={activeItemIndex}
         numberOfCards={4}
-        gutter={15}
+        gutter={0}
         alwaysShowChevrons={true}
         infiniteLoop={true}
         leftChevron={
-          <img style={{ width: "50px" }} class="mr-5" src={ArrowLeft} />
+          <img style={{ width: "50px" }} class="slider-arrow-left mr-5" src={ArrowLeft} />
         }
         rightChevron={
-          <img style={{ width: "50px" }} class="ml-5" src={ArrowRight} />
+          <img style={{ width: "50px" }} class="slider-arrow-right ml-5" src={ArrowRight} />
         }
         outsideChevron
         chevronWidth={chevronWidth}
       >
         <div
           className="img-thumbnail my-carousel-item text-center"
-          style={{ height: 250, width: 200 }}
+          style={{ height: 250, width: 230 }}
         >
           <p>clean up</p>
           <img
@@ -39,7 +39,7 @@ export default function DesktopCarousel() {
         </div>
         <div
           className="img-thumbnail my-carousel-item text-center"
-          style={{ height: 250, width: 200 }}
+          style={{ height: 250, width: 230 }}
         >
           <p>hedge trim</p>
           <img
@@ -50,7 +50,7 @@ export default function DesktopCarousel() {
         </div>
         <div
           className="img-thumbnail my-carousel-item text-center"
-          style={{ height: 250, width: 200 }}
+          style={{ height: 250, width: 230 }}
         >
           <p>tree surgery</p>
           <img
@@ -61,7 +61,7 @@ export default function DesktopCarousel() {
         </div>
         <div
           className="img-thumbnail my-carousel-item text-center"
-          style={{ height: 250, width: 200 }}
+          style={{ height: 250, width: 230 }}
         >
           <p>lawn care</p>
           <img
@@ -72,7 +72,7 @@ export default function DesktopCarousel() {
         </div>
         <div
           className="img-thumbnail my-carousel-item text-center"
-          style={{ height: 250, width: 200 }}
+          style={{ height: 250, width: 230 }}
         >
           <p>planting</p>
           <img
@@ -83,7 +83,7 @@ export default function DesktopCarousel() {
         </div>
         <div
           className="img-thumbnail my-carousel-item text-center"
-          style={{ height: 250, width: 200 }}
+          style={{ height: 250, width: 230 }}
         >
           <p>pruning </p>
           <img
@@ -94,7 +94,7 @@ export default function DesktopCarousel() {
         </div>
         <div
           className="img-thumbnail my-carousel-item text-center"
-          style={{ height: 250, width: 200 }}
+          style={{ height: 250, width: 230 }}
         >
           <p>japaneese knotweed</p>
           <img

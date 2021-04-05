@@ -5,6 +5,8 @@
 @import "header";
 @import "aboutus";
 @import "packages";
+@import "form";
+
 @import "rwd";
 
 body {
@@ -36,7 +38,7 @@ body {
   }
 
   button {
-    font-size: 15px !important;
+    font-size: 17px !important;
     font-family: $montserrat !important;
   }
 
@@ -71,7 +73,28 @@ section {
 header {
   height: 100vh;
 
-  background-image: url("../assets/images/header_bg.png");
+  background-image: url("../assets/images/svg/Ilustracje_v3.1_Desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.slider-arrow-left {
+  position: relative;
+  top: 180px;
+  left: 30vw;
+
+  z-index: 10;
+}
+
+.slider-arrow-right {
+  position: relative;
+  top: 180px;
+  right: 30vw;
+
+  z-index: 10;
+}
+
+.more-dots {
+  // position: relative;
+
 }

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import EarthImage from "assets/images/earth-image.png";
+import EarthImage from "assets/images/svg/Ilustracje_v3.1_2.svg";
 import { Button, Card } from "react-bootstrap";
 
 export default class EarthEcoPackage extends Component {
@@ -57,22 +57,18 @@ export default class EarthEcoPackage extends Component {
 
   render() {
     return (
-      <section className="d-flex align-items-center flex-column earth-eco-package py-5">
-        <div className="row align-self-start d-none d-lg-block">
-          <h1>Earth</h1>
-          <h3>Eco package</h3>
-        </div>
-
+      <section className="d-flex align-items-center flex-column justify-content-center earth-eco-package">
         <div className="row d-flex flex-column flex-lg-row justify-items-center pt-5">
-          <div className="col-12 col-lg-3 text-center">
+          <div className="col-12 col-lg-5 text-center">
             <img className="img-fluid" src={EarthImage} />
           </div>
           <div className="col-12 d-lg-none">
-            <h1>Earth</h1>
-            <h3>Eco package</h3>
+            
           </div>
 
-          <div className="col-12 col-lg-9 d-flex flex-column">
+          <div className="col-12 col-lg-7 d-flex flex-column">
+            <h1>Earth</h1>
+            <h3>Eco package</h3>
             <p>
               Creating harmony between your garden, nature and you. Our brand
               new, biologically focused, gardening service allows you to create

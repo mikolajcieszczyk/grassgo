@@ -1,6 +1,7 @@
 @import url(bootstrap/dist/css/bootstrap.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap");
+/* line 1, header.scss */
 .sidebar {
   width: 250px;
   height: 100vh;
@@ -13,25 +14,36 @@
   font-family: Montserrat, sans-serif !important;
   font-size: 20px;
   font-weight: 700;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-align: left;
   line-height: 20px;
 }
 
+/* line 19, header.scss */
 .sidebar.active {
   left: 0;
 }
 
+/* line 23, header.scss */
 .content {
   width: 10%;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+/* line 30, header.scss */
 .content:hover {
   text-decoration: none;
 }
 
+/* line 35, header.scss */
 .open-menu {
   position: relative;
   bottom: 95vh;
@@ -39,6 +51,7 @@
   z-index: 997;
 }
 
+/* line 42, header.scss */
 .nav__content-hamburger-signature {
   display: block;
   line-height: 0;
@@ -46,29 +59,36 @@
   font-size: 15px;
 }
 
+/* line 49, header.scss */
 a.btn-customized {
   margin-left: 5%;
   color: #001819;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
+/* line 54, header.scss */
 a.btn-customized:hover {
   text-decoration: none;
 }
 
+/* line 59, header.scss */
 .dismiss {
   width: 30px;
   height: 30px;
   position: absolute;
   top: 20px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-align: center;
   cursor: pointer;
 }
 
+/* line 69, header.scss */
 .sidebar .hide-sidebar-btn {
   padding: 40px 20px;
 }
 
+/* line 73, header.scss */
 .sidebar ul li a,
 .sidebar ul li span {
   display: block;
@@ -79,10 +99,12 @@ a.btn-customized:hover {
   margin-left: 10%;
 }
 
+/* line 83, header.scss */
 .sidebar ul li a:hover {
   text-decoration: none;
 }
 
+/* line 87, header.scss */
 .nav-collapse__first-level {
   display: block;
   list-style-type: none;
@@ -90,23 +112,28 @@ a.btn-customized:hover {
   text-indent: 5%;
   line-height: 30px;
 }
+/* line 94, header.scss */
 .nav-collapse__first-level li {
   font-weight: 500;
 }
 
+/* line 99, header.scss */
 .nav-collapse__second-level {
   display: block;
   list-style-type: none;
 }
+/* line 102, header.scss */
 .nav-collapse__second-level li {
   font-weight: 500;
   line-height: 30px;
 }
 
+/* line 108, header.scss */
 .collapse-inactive {
   display: none;
 }
 
+/* line 112, header.scss */
 .rotate-180-start {
   -webkit-animation: rotate-180-start 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: rotate-180-start 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -132,6 +159,7 @@ a.btn-customized:hover {
     transform: rotate(180deg);
   }
 }
+/* line 138, header.scss */
 .rotate-180-back {
   -webkit-animation: rotate-180-back 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: rotate-180-back 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -157,65 +185,98 @@ a.btn-customized:hover {
     transform: rotate(0);
   }
 }
+/* line 164, header.scss */
 .nav__footer {
   position: absolute;
   bottom: 50px;
   left: 15%;
 }
+/* line 170, header.scss */
 .nav__footer .nav-footer-branding {
   width: 150px;
   height: 100px;
   background: url("../assets/images/nav-footer-branding.png");
-  background-size: cover;
+  background-size: contain;
 }
 
+/* line 2, aboutus.scss */
 .about-us h1 {
   font-size: 25px;
   line-height: 40px;
 }
+/* line 7, aboutus.scss */
 .about-us p {
   font-size: 15px;
   line-height: 30px;
 }
+/* line 12, aboutus.scss */
+.about-us .first-slide--img {
+  width: 130%;
+  height: 100%;
+}
+/* line 17, aboutus.scss */
+.about-us .second-slide--img {
+  width: 100%;
+}
+/* line 21, aboutus.scss */
 .about-us .first-slide--arrow,
 .about-us .second-slide--arrow {
   width: 50px;
   height: 70px;
 }
+/* line 27, aboutus.scss */
 .about-us .go-northill-btn {
   border-radius: 23px;
   background-color: #006466;
   font-weight: 700;
   border: none;
 }
+/* line 33, aboutus.scss */
 .about-us .go-northill-btn a {
   color: #FFFCFB;
   border: none;
   text-decoration: none;
 }
 
+/* line 1, packages.scss */
+.packages__bar {
+  width: 100%;
+  height: 200px;
+  background-color: #006466;
+  color: #FFFCFB;
+}
+/* line 8, packages.scss */
+.packages__bar .arrow-down {
+  width: 100px;
+}
+
+/* line 13, packages.scss */
 .sea-standard-package {
   background: #FAEBDC;
   color: #006466;
-  padding-left: 15%;
 }
+/* line 19, packages.scss */
 .sea-standard-package h1 {
   font-size: 35px;
   line-height: 40px;
 }
+/* line 24, packages.scss */
 .sea-standard-package h3 {
   font-size: 20px;
   font-family: Montserrat, sans-serif !important;
   line-height: 24px;
 }
+/* line 30, packages.scss */
 .sea-standard-package p {
   font-size: 15px;
   line-height: 30px;
   color: #0D3236;
 }
+/* line 36, packages.scss */
 .sea-standard-package ul li {
   color: #0D3236;
 }
+/* line 44, packages.scss */
 .sea-standard-package .see-more-btn,
 .sea-standard-package .book-now-btn {
   width: 218px;
@@ -225,126 +286,152 @@ a.btn-customized:hover {
   font-weight: 700;
   border: none;
 }
+/* line 53, packages.scss */
 .sea-standard-package .see-more-btn a,
 .sea-standard-package .book-now-btn a {
   color: #FFFCFB;
   border: none;
   text-decoration: none;
 }
+/* line 61, packages.scss */
 .sea-standard-package .booking-info p {
   font-size: 10px;
   line-height: 25px;
 }
+/* line 67, packages.scss */
 .sea-standard-package .book-now-btn {
   background-color: #FF8864;
   justify-self: flex-end;
 }
 
+/* line 73, packages.scss */
 .sky-premium-package {
   background: #FFFCFB;
   color: #006466;
   padding-left: 15%;
 }
+/* line 79, packages.scss */
 .sky-premium-package h1 {
   font-size: 35px;
   line-height: 40px;
 }
+/* line 84, packages.scss */
 .sky-premium-package h3 {
   font-size: 20px;
   line-height: 24px;
   font-family: Montserrat, sans-serif;
 }
+/* line 90, packages.scss */
 .sky-premium-package p {
   font-size: 15px;
   line-height: 30px;
 }
+/* line 95, packages.scss */
 .sky-premium-package .see-more-btn,
 .sky-premium-package .book-now-btn {
   width: 218px;
   height: 45px;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   border-radius: 23px;
   background-color: #006466;
   font-weight: 700;
   border: none;
 }
+/* line 105, packages.scss */
 .sky-premium-package .see-more-btn a,
 .sky-premium-package .book-now-btn a {
   color: #FFFCFB;
   border: none;
   text-decoration: none;
 }
+/* line 112, packages.scss */
 .sky-premium-package .sea-content__hidden--list {
   padding-left: 4% !important;
 }
+/* line 117, packages.scss */
 .sky-premium-package .booking-info p {
   font-size: 10px;
   line-height: 25px;
 }
+/* line 123, packages.scss */
 .sky-premium-package .book-now-btn {
   background-color: #FF8864;
   justify-self: flex-end;
 }
 
+/* line 129, packages.scss */
 .earth-eco-package {
   background: #006466;
   color: #FFFCFB;
 }
+/* line 133, packages.scss */
 .earth-eco-package h1 {
   font-size: 35px;
   line-height: 40px;
 }
+/* line 138, packages.scss */
 .earth-eco-package h3 {
   font-size: 20px;
   font-family: Montserrat, sans-serif;
   line-height: 24px;
 }
+/* line 144, packages.scss */
 .earth-eco-package p {
   font-size: 15px;
   line-height: 30px;
 }
+/* line 149, packages.scss */
 .earth-eco-package .package-card {
   background-color: #FAEBDC;
 }
+/* line 152, packages.scss */
 .earth-eco-package .package-card h1,
 .earth-eco-package .package-card span {
   font-family: Fraunces, sans-serif;
   color: #006466;
   font-weight: 700;
 }
+/* line 159, packages.scss */
 .earth-eco-package .package-card h1 {
   font-size: 70px;
   line-height: 94px;
 }
+/* line 164, packages.scss */
 .earth-eco-package .package-card span {
   font-size: 30px;
   line-height: 40px;
   margin-left: 1%;
   margin-top: 8%;
 }
+/* line 171, packages.scss */
 .earth-eco-package .package-card h2 {
   color: #006466;
   font-weight: 700;
   font-size: 15px;
   line-height: 30px;
 }
+/* line 180, packages.scss */
 .earth-eco-package .package-card p {
   font-size: 13px;
   padding-bottom: 10px;
   color: #0D3236;
   line-height: 30px;
 }
+/* line 188, packages.scss */
 .earth-eco-package .see-more-btn,
 .earth-eco-package .book-now-btn,
 .earth-eco-package .earth__see-more-btn {
   width: 218px;
   height: 45px;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   border-radius: 23px;
   background-color: #006466;
   font-weight: 700;
   border: none;
 }
+/* line 199, packages.scss */
 .earth-eco-package .see-more-btn a,
 .earth-eco-package .book-now-btn a,
 .earth-eco-package .earth__see-more-btn a {
@@ -352,27 +439,33 @@ a.btn-customized:hover {
   border: none;
   text-decoration: none;
 }
+/* line 206, packages.scss */
 .earth-eco-package .earth__see-more-btn {
   background: #FFFCFB;
   color: #006466;
 }
+/* line 211, packages.scss */
 .earth-eco-package .book-now-btn {
   background-color: #FF8864;
 }
 
+/* line 320, packages.scss */
 .one-off-package {
   background: #fff;
 }
+/* line 323, packages.scss */
 .one-off-package h1 {
   font-family: Fraunces, sans-serif;
   font-size: 35px;
   line-height: 40px;
   font-weight: 700;
 }
+/* line 330, packages.scss */
 .one-off-package p {
   font-size: 15px;
   line-height: 30px;
 }
+/* line 335, packages.scss */
 .one-off-package .book-now-btn {
   font-weight: bold;
   width: 218px;
@@ -382,34 +475,39 @@ a.btn-customized:hover {
   border-radius: 23px;
 }
 
+/* line 345, packages.scss */
 .my-carousel-item {
   margin: 5% auto;
   background-color: #fffcfb;
   border-radius: 10px;
   -webkit-box-shadow: 0px 3px 6px 0px rgba(116, 104, 104, 0.75);
-  -moz-box-shadow: 0px 3px 6px 0px rgba(116, 104, 104, 0.75);
   box-shadow: 0px 3px 6px 0px rgba(116, 104, 104, 0.75);
 }
+/* line 353, packages.scss */
 .my-carousel-item p {
   font-size: 25px;
   font-weight: 700;
   color: #006466;
 }
 
+/* line 360, packages.scss */
 .commercial-and-public-section {
   background: #FAEBDC;
   color: #006466;
 }
+/* line 365, packages.scss */
 .commercial-and-public-section h1 {
   font-weight: 700;
   font-size: 35px;
   line-height: 40px;
 }
+/* line 371, packages.scss */
 .commercial-and-public-section p {
   font-size: 15px;
   line-height: 30px;
   color: #0D3236;
 }
+/* line 377, packages.scss */
 .commercial-and-public-section .see-more-btn,
 .commercial-and-public-section .book-now-btn {
   width: 218px;
@@ -419,141 +517,310 @@ a.btn-customized:hover {
   font-weight: 700;
   border: none;
 }
+/* line 386, packages.scss */
 .commercial-and-public-section .see-more-btn a,
 .commercial-and-public-section .book-now-btn a {
   color: #FFFCFB;
   border: none;
   text-decoration: none;
 }
+/* line 394, packages.scss */
 .commercial-and-public-section .sea-content__hidden--list {
   padding-left: 4% !important;
 }
+/* line 399, packages.scss */
 .commercial-and-public-section .booking-info p {
   font-size: 10px;
   line-height: 25px;
 }
+/* line 405, packages.scss */
 .commercial-and-public-section .book-now-btn {
   background-color: #FF8864;
   justify-self: flex-end;
 }
 
+/* line 2, form.scss */
+.form-section .form__title {
+  font-size: 35px;
+  line-height: 40px;
+  color: #006466;
+}
+/* line 8, form.scss */
+.form-section .form__phone-number {
+  font-family: Montserrat, sans-serif;
+  font-size: 25px;
+  line-height: 63px;
+  color: #0D3236;
+}
+/* line 15, form.scss */
+.form-section .form__mail {
+  font-family: Montserrat, sans-serif;
+  font-size: 25px;
+  line-height: 35px;
+  color: #0D3236;
+}
+/* line 22, form.scss */
+.form-section .next-btn {
+  width: 218px;
+  height: 45px;
+  border-radius: 23px;
+  background-color: #006466;
+  font-weight: 700;
+  border: none;
+}
+/* line 30, form.scss */
+.form-section .next-btn a {
+  color: #FFFCFB;
+  border: none;
+  text-decoration: none;
+}
+/* line 39, form.scss */
+.form-section .form__container .summary-p {
+  font-family: Fraunces, sans-serif !important;
+  color: #006466;
+  font-size: 10px;
+  line-height: 25px;
+}
+/* line 46, form.scss */
+.form-section .form__container .answer-p {
+  font-family: Fraunces, sans-serif !important;
+  color: #006466;
+  font-size: 20px;
+  line-height: 25px;
+}
+/* line 53, form.scss */
+.form-section .form__container label {
+  color: #0D3236;
+  font-family: Montserrat, sans-serif !important;
+  font-size: 15px;
+  line-height: 30px;
+}
+/* line 61, form.scss */
+.form-section .back-btn {
+  font-family: Montserrat, sans-serif !important;
+  font-weight: 700;
+  font-size: 20px !important;
+  line-height: 35px;
+  cursor: pointer;
+}
+/* line 69, form.scss */
+.form-section input#name,
+.form-section input#email,
+.form-section input#tel,
+.form-section input#date,
+.form-section #notes {
+  background: #fff;
+  border: 0;
+  margin-bottom: 2%;
+  padding: 1%;
+  font-family: Montserrat, sans-serif !important;
+  font-size: 20px;
+}
+/* line 82, form.scss */
+.form-section .form-popup__bg {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 25, 26, 0.79);
+  z-index: 50;
+}
+/* line 91, form.scss */
+.form-section .form-popup__bg .form-popup {
+  position: fixed;
+  bottom: 50%;
+  right: 25%;
+  width: 50%;
+  height: 100px;
+  background: #FAEBDC;
+  color: #006466;
+  z-index: 51;
+}
+
+@media (min-width: 768px) {
+  /* line 2, rwd.scss */
+  .second-slide--img {
+    width: 60%;
+  }
+}
 @media (min-width: 992px) {
+  /* line 9, rwd.scss */
   body ul li {
     font-size: 20px !important;
   }
 
+  /* line 14, rwd.scss */
   button {
     font-size: 20px !important;
   }
 
+  /* line 18, rwd.scss */
   .second-list {
     margin-left: 2%;
   }
 
+  /* line 23, rwd.scss */
   .about-us h1 {
     font-size: 40px;
-    line-height: 70px;
+    line-height: 60px;
   }
+  /* line 28, rwd.scss */
   .about-us p {
     font-size: 20px;
-    line-height: 40px;
+    line-height: 35px;
+  }
+  /* line 33, rwd.scss */
+  .about-us .second-slide--img {
+    width: 100%;
   }
 
+  /* line 38, rwd.scss */
   .sea-standard-package {
     background: #FAEBDC;
     color: #006466;
     padding-left: 15%;
   }
+  /* line 44, rwd.scss */
   .sea-standard-package h1 {
     font-size: 90px;
     line-height: 75px;
   }
+  /* line 49, rwd.scss */
   .sea-standard-package h3 {
     font-size: 30px;
     font-family: Montserrat, sans-serif !important;
     line-height: 37px;
   }
+  /* line 55, rwd.scss */
   .sea-standard-package p {
     font-size: 20px;
     line-height: 40px;
   }
 
+  /* line 61, rwd.scss */
   .sky-premium-package {
     background: #FFFCFB;
     color: #006466;
     padding-left: 15%;
   }
+  /* line 67, rwd.scss */
   .sky-premium-package h1 {
     font-size: 90px;
     line-height: 75px;
   }
+  /* line 72, rwd.scss */
   .sky-premium-package h3 {
     font-size: 30px;
     font-family: Montserrat, sans-serif;
     line-height: 37px;
   }
+  /* line 78, rwd.scss */
   .sky-premium-package p {
     font-size: 20px;
     line-height: 40px;
   }
 
+  /* line 85, rwd.scss */
   .earth-eco-package h1 {
     font-size: 90px;
     line-height: 75px;
   }
+  /* line 90, rwd.scss */
   .earth-eco-package h3 {
     font-size: 30px;
     font-family: Montserrat, sans-serif;
     line-height: 37px;
   }
+  /* line 96, rwd.scss */
   .earth-eco-package p {
     font-size: 20px;
     line-height: 40px;
   }
+  /* line 102, rwd.scss */
   .earth-eco-package .package-card h1 {
     font-size: 100px;
     line-height: 133px;
   }
+  /* line 107, rwd.scss */
   .earth-eco-package .package-card p {
     font-size: 17px;
   }
+  /* line 111, rwd.scss */
   .earth-eco-package .package-card h2 {
     font-size: 20px;
   }
 
+  /* line 117, rwd.scss */
   .one-off-package {
     background: #fff;
   }
+  /* line 120, rwd.scss */
   .one-off-package h1 {
     font-family: Fraunces, sans-serif;
     font-size: 60px;
     line-height: 35px;
     font-weight: 700;
   }
+  /* line 127, rwd.scss */
   .one-off-package p {
     font-size: 20px;
     line-height: 40px;
   }
 
+  /* line 134, rwd.scss */
   .commercial-and-public-section h1 {
     font-size: 60px;
     line-height: 50px;
   }
+  /* line 139, rwd.scss */
   .commercial-and-public-section p {
     font-size: 20px;
     line-height: 40px;
   }
+
+  /* line 145, rwd.scss */
+  .form__title {
+    font-size: 50px;
+    line-height: 35px;
+  }
+
+  /* line 150, rwd.scss */
+  .form__phone-number {
+    font-size: 30px !important;
+    line-height: 63px !important;
+  }
+
+  /* line 155, rwd.scss */
+  .form__mail {
+    font-size: 30px !important;
+    line-height: 63px !important;
+  }
+
+  /* line 161, rwd.scss */
+  .form__container p {
+    font-size: 25px !important;
+    line-height: 25px !important;
+  }
+  /* line 166, rwd.scss */
+  .form__container label {
+    font-size: 20px !important;
+    line-height: 35px !important;
+  }
 }
+/* line 12, main.scss */
 body {
   line-height: 40px;
   color: #0D3236;
 }
+/* line 16, main.scss */
 body p,
 body ul,
 body li {
   font-family: Montserrat, sans-serif !important;
   font-size: 20px;
 }
+/* line 23, main.scss */
 body h1,
 body h2,
 body h3,
@@ -561,29 +828,36 @@ body h4,
 body h5 {
   font-family: Fraunces, sans-serif !important;
 }
+/* line 31, main.scss */
 body h1 {
   font-weight: 700;
 }
+/* line 35, main.scss */
 body ul {
   list-style-type: none !important;
   padding-left: 0;
 }
+/* line 40, main.scss */
 body button {
-  font-size: 15px !important;
+  font-size: 17px !important;
   font-family: Montserrat, sans-serif !important;
 }
+/* line 45, main.scss */
 body .date-p {
   font-size: 15px !important;
 }
+/* line 50, main.scss */
 body .about-us h1 {
   color: #006466;
 }
 
+/* line 56, main.scss */
 section {
   min-height: 110vh;
   padding-left: 10%;
   padding-right: 10%;
 }
+/* line 61, main.scss */
 section ul li {
   background: url(https://img.icons8.com/small/16/000000/filled-circle.png) no-repeat top left;
   background-position: 0 8px;
@@ -594,11 +868,27 @@ section ul li {
   line-height: 30px;
 }
 
+/* line 73, main.scss */
 header {
   height: 100vh;
-  background-image: url("../assets/images/header_bg.png");
+  background-image: url("../assets/images/svg/Ilustracje_v3.1_Desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* line 81, main.scss */
+.slider-arrow-left {
+  position: relative;
+  top: 180px;
+  left: 30vw;
+  z-index: 10;
+}
+
+/* line 89, main.scss */
+.slider-arrow-right {
+  position: relative;
+  top: 180px;
+  right: 30vw;
+  z-index: 10;
+}
 /*# sourceMappingURL=main.css.map */

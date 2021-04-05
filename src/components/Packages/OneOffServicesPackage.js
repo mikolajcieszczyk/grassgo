@@ -1,25 +1,19 @@
 import React, { Component } from "react";
 import OneOffCarousel from "./OneOffCarousel";
-import OneOffImage from "assets/images/one-off-image.png";
+import OneOffImage from "assets/images/svg/Ilustracje_v3.1_7.svg";
+import MoreDots from "assets/images/more-dots.png";
 import { Button } from "react-bootstrap";
 
 export default class OneOffServicesPackage extends Component {
   render() {
     return (
-        <section className="d-flex flex-column justify-items-center one-off-package py-2">
-        <div className="row align-self-start d-none d-lg-block mt-5">
-          <h1 className="ml-3">One-off services</h1>
-        </div>
-
+      <section className="d-flex flex-column justify-content-center one-off-package py-2">
         <div className="row d-flex flex-column flex-lg-row justify-items-center pt-5">
-          <div className="col-12 col-lg-3 text-center order-lg-3">
+          <div className="col-12 col-lg-5 text-center order-lg-3">
             <img className="img-fluid" src={OneOffImage} />
           </div>
-          <div className="col-12 d-lg-none">
+          <div className="col-12 col-lg-7 d-flex flex-column">
             <h1>One-off services</h1>
-          </div>
-
-          <div className="col-12 col-lg-9 d-flex flex-column">
             <p>
               If a regular maintenance service is not what you’re looking for,
               then we can also offer you a one-off service suited to your
@@ -34,7 +28,8 @@ export default class OneOffServicesPackage extends Component {
             <OneOffCarousel />
           </div>
 
-          <div className="col-12 order-5 my-5 d-flex justify-content-center justify-content-lg-end">
+          <div className="col-11 order-5 ml-5 mt-3 mb-5 d-flex justify-content-center justify-content-lg-end">
+            <img className="more-dots" src={MoreDots} alt="dots" />
             <Button className="book-now-btn">book now</Button>
           </div>
         </div>

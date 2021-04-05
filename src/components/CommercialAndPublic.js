@@ -3,22 +3,15 @@ import CommercialImage from "assets/images/commercial-image.png";
 import { Button } from "react-bootstrap";
 
 export default class CommercialAndPublic extends Component {
-  render() {
+    render() {
     return (
-      <section className="d-flex flex-column justify-items-center commercial-and-public-section pt-5">
-        <div className="row align-self-start d-none d-lg-block">
-          <h1>Commercial and public space care</h1>
-        </div>
-
+      <section className="d-flex flex-column justify-content-center commercial-and-public-section py-5">
         <div className="row d-flex flex-column flex-lg-row justify-items-center pt-5">
-          <div className="col-12 col-lg-3 text-center">
+          <div className="col-12 col-lg-5 text-center">
             <img className="img-fluid" src={CommercialImage} />
           </div>
-          <div className="col-12 d-lg-none">
+          <div className="col-12 col-lg-7 d-flex flex-column">
             <h1>Commercial and public space care</h1>
-          </div>
-
-          <div className="col-12 col-lg-9 d-flex flex-column">
             <p>
               Our Maintenance service doesn’t just deal in high quality personal
               gardens, we also have several industrial and commercial land
@@ -30,7 +23,7 @@ export default class CommercialAndPublic extends Component {
               from premises if there are not suitable disposal facilities on
               site.
             </p>
-            <div className="col-12 order-5 my-5 d-flex justify-content-center justify-content-lg-end">
+            <div className="col-12 order-5 mt-5 d-flex justify-content-center justify-content-lg-end">
               <Button className="book-now-btn">book now</Button>
             </div>
           </div>

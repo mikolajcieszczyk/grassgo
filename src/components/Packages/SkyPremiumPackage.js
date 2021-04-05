@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import SkyImage from "assets/images/sky-image.png";
+import SkyImage from "assets/images/svg/Ilustracje_v3.1_3.svg";
 import { Button } from "react-bootstrap";
 
 export default class SkyPremiumPackage extends Component {
@@ -21,22 +21,15 @@ export default class SkyPremiumPackage extends Component {
 
   render() {
     return (
-        <section className="d-flex flex-column justify-items-center sky-premium-package py-5">
-        <div className="row align-self-start d-none d-lg-block">
-          <h1>Sky</h1>
-          <h3>Premium package</h3>
-        </div>
-
-        <div className="row d-flex flex-column flex-lg-row justify-items-center pt-5">
-          <div className="col-12 col-lg-3 text-center">
-            <img className="img-fluid" src={SkyImage} />
+      <section className="d-flex flex-column justify-content-center sky-premium-package">
+        <div className="row d-flex flex-column flex-lg-row justify-items-center">
+          <div className="col-12 col-lg-5 text-center">
+            <img className="img-fluid" alt="sky" src={SkyImage} />
           </div>
-          <div className="col-12 d-lg-none">
+
+          <div className="col-12 col-lg-7 d-flex flex-column">
             <h1>Sky</h1>
             <h3>Premium package</h3>
-          </div>
-
-          <div className="col-12 col-lg-9 d-flex flex-column">
             <p>
               Gardening service, with all the trimmings. As well as including
               all the services from the [standard] package, your garden will
