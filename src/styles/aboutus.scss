@@ -1,4 +1,6 @@
 .about-us {
+  height: 100% !important;
+
   h1 {
     font-size: 25px;
     line-height: 40px;
@@ -9,19 +11,40 @@
     line-height: 30px;
   }
 
+  
+
   .first-slide--img {
-    width: 130%;
-    height: 100%;
+    // margin: 180px 0 30px;
+    width: 350px;
+    margin-bottom: 20px;
   }
 
   .second-slide--img {
-    width: 100%;
+    width: 350px;
+    margin-bottom: 20px;
   }
 
   .first-slide--arrow,
   .second-slide--arrow {
-    width: 50px;
-    height: 70px;
+    position: absolute;
+    // top: 5px;
+    width: 30px;
+    height: 50px;
+  }
+
+  .first-slide--arrow {
+    left: 30%;
+  }
+
+  .second-slide--arrow {
+    right: 30%;
+  }
+
+
+  .light-dot,
+  .dark-dot {
+    width: 10px;
+    height: 10px;
   }
 
   .go-northill-btn {
@@ -34,6 +57,41 @@
       color: $white;
       border: none;
       text-decoration: none;
+    }
+  }
+
+  .slideInRight {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @-webkit-keyframes slideInRight {
+    0% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      visibility: visible;
+    }
+
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    0% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      visibility: visible;
+    }
+
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
     }
   }
 }

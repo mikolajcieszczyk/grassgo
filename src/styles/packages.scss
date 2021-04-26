@@ -6,7 +6,22 @@
   color: $white;
 
   .arrow-down {
-    width: 100px;
+    width: 50px;
+    height: 70px;
+  }
+}
+
+.sea-list,
+.sky-list {
+  ul li {
+    background: url(https://img.icons8.com/small/16/000000/filled-circle.png)
+      no-repeat top left;
+    background-position: 0 8px;
+    line-height: 1.5625;
+    padding: 0 0 4px 30px;
+    margin-left: 5px;
+    font-size: 15px;
+    line-height: 30px;
   }
 }
 
@@ -15,6 +30,31 @@
 
   color: $green;
   // padding-left: 15%;
+
+  .sea-img {
+    width: 350px;
+    margin-bottom: 20px;
+  }
+
+  .sky-img {
+    width: 350px;
+    margin-bottom: 20px;
+  }
+
+  .earth-img {
+    width: 350px;
+    margin-bottom: 20px;
+  }
+
+  .one-off-img {
+    width: 350px;
+    margin-bottom: 20px;
+  }
+
+  .commercial-img {
+    width: 350px;
+    margin-bottom: 20px;
+  }
 
   h1 {
     font-size: 35px;
@@ -34,11 +74,11 @@
   }
 
   ul li {
-    color: $dark
+    color: $dark;
   }
 
   .sea-img {
-    // 
+    //
   }
 
   .see-more-btn,
@@ -84,7 +124,7 @@
   h3 {
     font-size: 20px;
     line-height: 24px;
-    font-family: $montserrat;
+    font-family: $montserrat !important;
   }
 
   p {
@@ -127,6 +167,7 @@
 }
 
 .earth-eco-package {
+  height: auto;
   background: $green;
   color: $white;
 
@@ -137,7 +178,7 @@
 
   h3 {
     font-size: 20px;
-    font-family: $montserrat;
+    font-family: $montserrat !important;
     line-height: 24px;
   }
 
@@ -146,42 +187,122 @@
     line-height: 30px;
   }
 
-  .package-card {
-    background-color: $creme;
+  .cards-container {
+    height: auto;
 
-    h1,
-    span {
-      font-family: $fraunces;
-      color: $green;
-      font-weight: 700;
-    }
-
-    h1 {
-      font-size: 70px;
-      line-height: 94px;
-    }
-
-    span {
-      font-size: 30px;
-      line-height: 40px;
-      margin-left: 1%;
-      margin-top: 8%;
-    }
-
-    h2 {
-      color: $green;
-      font-weight: 700;
-      font-size: 15px;
-      line-height: 30px;
-    }
-
-
-
-    p {
-      font-size: 13px;
-      padding-bottom: 10px;
+    .small-card {
+      background: $creme;
       color: $dark;
-      line-height: 30px;
+      border-radius: 10px;
+
+      height: 400px;
+
+      .small-card-title {
+        color: $green;
+
+        h1 {
+          font-family: $fraunces;
+          font-size: 70px;
+          line-height: 94px;
+          font-weight: 800;
+        }
+
+        span {
+          font-size: 30px;
+          line-height: 40px;
+          font-weight: bold;
+        }
+      }
+
+      .small-card-text {
+        font-family: $montserrat;
+        color: $dark;
+        font-size: 13px;
+        line-height: 25px;
+      }
+
+      .see-more-btn {
+        background: $green;
+        color: $white;
+        font-size: 15px;
+        line-height: 35px;
+        font-weight: bold;
+      }
+    }
+
+    .big-card {
+      background: $creme;
+      color: $dark;
+      border-radius: 10px;
+
+      height: auto;
+
+      .big-card-title {
+        color: $green;
+
+        h1 {
+          font-size: 70px;
+          line-height: 94px;
+          font-weight: bold;
+        }
+
+        span {
+          font-family: $fraunces;
+          font-size: 30px;
+          line-height: 40px;
+          font-weight: bold;
+        }
+      }
+
+      .big-card-body {
+        h2 {
+          color: $green;
+          font-family: $fraunces;
+          font-size: 15px;
+          line-height: 30px;
+        }
+
+        p {
+          color: $dark;
+          font-family: $montserrat;
+          font-size: 13px;
+          line-height: 25px;
+        }
+      }
+
+      .big-card-buttons {
+        // position: relative;
+        // bottom: 38px;
+        // left: 34px;
+
+        .take-me-back-btn {
+          background-color: $green !important;
+          color: $white;
+          width: 218px;
+          height: 45px;
+        }
+
+        .all-packages-btn {
+          width: 218px;
+          height: 45px;
+          border-radius: 23px;
+          background-color: $green;
+          color: $creme;
+          font-weight: 700;
+          border: none;
+        }
+
+        .book-now-btn {
+          background-color: $orange;
+          color: white;
+          width: 218px;
+          height: 45px;
+        }
+
+        //   .eco-book-now {
+        //     margin-left: 45px;
+        //   }
+      }
     }
   }
 
@@ -192,7 +313,8 @@
     height: 45px;
     align-self: flex-end;
     border-radius: 23px;
-    background-color: $green;
+    background-color: $creme;
+    color: $green;
     font-weight: 700;
     border: none;
 
@@ -204,7 +326,7 @@
   }
 
   .earth__see-more-btn {
-    background: $white;
+    background: $creme;
     color: $green;
   }
 
@@ -213,111 +335,8 @@
   }
 }
 
-// .earth-eco-package {
-//   background: $green;
-//   color: $white;
-
-//   .earth-eco-package__heading {
-//     padding-left: 15%;
-
-//     h1 {
-//       font-size: 90px;
-//     }
-
-//     h3 {
-//       font-size: 30px;
-//       font-family: $montserrat;
-//     }
-//   }
-
-//   .see-more-btn,
-//   .book-now-btn,
-//   .earth__see-more-btn {
-//     width: 218px;
-//     height: 45px;
-//     align-self: flex-end;
-//     border-radius: 23px;
-//     background-color: $green;
-//     font-weight: 700;
-//     border: none;
-
-//     a {
-//       color: $white;
-//       border: none;
-//       text-decoration: none;
-//     }
-//   }
-
-//   .earth__see-more-btn {
-//     background: $white;
-//     color: $green;
-//   }
-
-//   // .earth-content__hidden {
-//   //   display: grid;
-//   //   grid-template-columns: repeat(3, 25%);
-//   //   grid-template-rows: 100%;
-//   //   justify-content: center;
-//   //   column-gap: 5%;
-//   // }
-
-//   .card-title {
-//     h1,
-//     span {
-//       font-family: $fraunces;
-//       color: $green;
-//     }
-
-//     h1 {
-//       font-size: 100px;
-//     }
-
-//     span {
-//       font-size: 30px;
-//       padding-bottom: 10px;
-//     }
-//   }
-
-//   .card-text {
-//     color: $dark;
-
-//     p {
-//       font-size: 17px;
-//       line-height: 30px;
-//     }
-//   }
-
-//   .booking-info {
-//     p {
-//       font-size: 10px;
-//       line-height: 25px;
-//     }
-//   }
-
-//   .book-now-btn {
-//     background-color: $orange;
-//     justify-self: flex-end;
-//   }
-
-//   // .expanded-card {
-
-//   //   .card-body {
-//   //     width: 100%;
-
-//   //     div {
-//   //       width: 100%;
-//   //       padding: 2%;
-//   //       padding-top: 0;
-//   //     }
-//   //   }
-
-//   //   .card__buttons--book-now {
-//   //     background: $orange;
-//   //   }
-//   // }
-// }
-
 .one-off-package {
+  height: 100%;
   background: #fff;
 
   h1 {
@@ -325,6 +344,7 @@
     font-size: 35px;
     line-height: 40px;
     font-weight: $fw-bold;
+    color: $green;
   }
 
   p {
@@ -342,8 +362,36 @@
   }
 }
 
+#root
+  > div
+  > section.d-flex.flex-column.justify-content-center.one-off-package.py-2
+  > div
+  > div.col-12.order-4
+  > div
+  > div
+  > div.slick-list
+  > div
+  > div
+  > div {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.japanese-div {
+  p {
+    line-height: 25px !important;
+    margin-top: 5px;
+  }
+
+  .japanese-slider-img {
+    width: 130px !important;
+    height: 130px !important;
+  }
+}
+
 .my-carousel-item {
   margin: 5% auto;
+  padding: 20px 0;
   background-color: #fffcfb;
   border-radius: 10px;
   -webkit-box-shadow: 0px 3px 6px 0px rgba(116, 104, 104, 0.75);
@@ -352,8 +400,10 @@
 
   p {
     font-size: 25px;
+    line-height: 35px;
     font-weight: $fw-bold;
     color: $green;
+    margin-bottom: 0;
   }
 }
 
@@ -389,7 +439,6 @@
       text-decoration: none;
     }
   }
-
 
   .sea-content__hidden--list {
     padding-left: 4% !important;

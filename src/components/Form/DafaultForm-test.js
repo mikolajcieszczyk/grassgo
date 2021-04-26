@@ -6,14 +6,17 @@ import DefaultForm from "components/Form/DefaultForm";
 
 const API_PATH = "http://emcie.pl/grassgo/index.php";
 
-let choiceArr = ["Sea Standard Package"];
+let choiceArr = ["package"];
 
 export default class StandardPackageFormStory extends Component {
   constructor() {
     super();
     this.state = {
-      variant: "Sea Standard Package",
-      firstForm: true,
+      whichService: "",
+      variant: "",
+      zeroForm: true,
+      variantForm: false,
+      firstForm: false,
       secondForm: false,
       successMessage: false,
       defaultForm: false,
@@ -36,7 +39,11 @@ export default class StandardPackageFormStory extends Component {
       popup: false,
     };
 
-    this.changeForm = this.changeForm.bind(this);
+    this.whichServiceTrigger = this.whichServiceTrigger.bind(this);
+    this.whichServiceNextBtn = this.whichServiceNextBtn.bind(this);
+    this.whichVariantTrigger = this.whichVariantTrigger.bind(this);
+    this.whichVariantNextBtn = this.whichVariantNextBtn.bind(this);
+    this.changeFormToSecond = this.changeFormToSecond.bind(this);
     this.showDefaultForm = this.showDefaultForm.bind(this);
     this.translateCleanup = this.translateCleanup.bind(this);
     this.translateHedgeTrim = this.translateHedgeTrim.bind(this);
@@ -46,6 +53,92 @@ export default class StandardPackageFormStory extends Component {
     this.translatePruning = this.translatePruning.bind(this);
     this.translateKnotweed = this.translateKnotweed.bind(this);
     this.closePopup = this.closePopup.bind(this);
+  }
+
+  whichServiceTrigger(e) {
+    if (e.target.value === "package") {
+      this.setState({
+        whichService: e.target.value,
+      });
+      console.log(e.target.value);
+    } else if (e.target.value === "oneoff") {
+      this.setState({
+        whichService: e.target.value,
+      });
+      console.log(e.target.value);
+    } else if (e.target.value === "commercialpublic") {
+      this.setState({
+        whichService: e.target.value,
+      });
+      console.log(e.target.value);
+    }
+  }
+
+  whichServiceNextBtn(e) {
+    e.preventDefault();
+
+    console.log("whichService: " + this.state.whichService);
+    console.log(this.state);
+
+    this.setState({
+      zeroForm: !this.state.zeroForm,
+      variantForm: !this.state.variantForm,
+    });
+  }
+
+  whichVariantTrigger(e) {
+    if (e.target.value === "standardpackage") {
+      this.setState({
+        variant: "Sea Standard Package",
+      });
+
+      console.log(this.state.variant);
+    } else if (e.target.value === "premiumpackage") {
+      this.setState({
+        variant: "Sky Premium Package",
+      });
+
+      console.log(this.state.variant);
+    } else if (e.target.value === "ecopackage") {
+      this.setState({
+        variant: "Earth Eco Package",
+      });
+
+      console.log(this.state.variant);
+    }
+  }
+
+  whichVariantNextBtn(e) {
+    e.preventDefault();
+
+    console.log("variant: " + this.state.variant);
+    console.log(this.state);
+
+    choiceArr.push(this.state.variant);
+    console.log(choiceArr);
+
+    this.setState({
+      variantForm: !this.state.variantForm,
+      firstForm: !this.state.firstForm,
+    });
+  }
+
+  // changeFormToFirst() {
+  //   this.setState({
+  //     zeroForm: !this.state.zeroForm,
+  //     firstForm: !this.state.first,
+  //   });
+
+  //   console.log(this.state);
+  // }
+
+  changeFormToSecond() {
+    this.setState({
+      firstForm: !this.state.firstForm,
+      secondForm: !this.state.secondForm,
+    });
+
+    console.log(this.state);
   }
 
   showDefaultForm() {
@@ -155,15 +248,6 @@ export default class StandardPackageFormStory extends Component {
     }
   }
 
-  changeForm() {
-    this.setState({
-      firstForm: !this.state.firstForm,
-      secondForm: !this.state.secondForm,
-    });
-
-    console.log(this.state);
-  }
-
   closePopup() {
     this.setState({
       popupSuccess: false,
@@ -227,7 +311,112 @@ export default class StandardPackageFormStory extends Component {
             <div className="row form__container">
               <form
                 className={
-                    this.state.firstForm && this.state.successMessage === false && this.state.defaultForm === false
+                  this.state.zeroForm
+                    ? "col-12 form d-flex flex-column align-items-center"
+                    : "d-none"
+                }
+              >
+                <p>Let us know which service would you like to book</p>
+                <div>
+                  <input
+                    onClick={this.whichServiceTrigger}
+                    type="radio"
+                    id="package"
+                    name="whichServiceName"
+                    value="package"
+                  />
+                  <label className="ml-2" htmlFor="package">
+                    package
+                  </label>
+                </div>
+                <div>
+                  <input
+                    onClick={this.whichServiceTrigger}
+                    type="radio"
+                    id="oneoff"
+                    name="whichServiceName"
+                    value="oneoff"
+                  />
+                  <label className="ml-2" htmlFor="oneoff">
+                    one off
+                  </label>
+                </div>
+                <div>
+                  <input
+                    onClick={this.whichServiceTrigger}
+                    type="radio"
+                    id="commercialpublic"
+                    name="whichServiceName"
+                    value="commercialpublic"
+                  />
+                  <label className="ml-2" htmlFor="commercialpublic">
+                    commercial and public space
+                  </label>
+                </div>
+
+                <button className="next-btn" onClick={this.whichServiceNextBtn}>
+                  next
+                </button>
+              </form>
+
+              {/* which package form */}
+
+              <form
+                className={
+                  this.state.variantForm &&
+                  this.state.successMessage === false &&
+                  this.state.defaultForm === false
+                    ? "col-12 form d-flex flex-column align-items-center"
+                    : "d-none"
+                }
+              >
+                <p>Let us know which package would you like to book</p>
+                <div>
+                  <input
+                    onClick={this.whichVariantTrigger}
+                    type="radio"
+                    id="standardpackage"
+                    name="whichPackageName"
+                    value="standardpackage"
+                  />
+                  <label className="ml-2" htmlFor="standardpackage">
+                    Sea Standard Package
+                  </label>
+                </div>
+                <div>
+                  <input
+                    onClick={this.whichVariantTrigger}
+                    type="radio"
+                    id="premiumpackage"
+                    name="whichPackageName"
+                    value="premiumpackage"
+                  />
+                  <label className="ml-2" htmlFor="premiumpackage">
+                    Sky Premium Package
+                  </label>
+                </div>
+                <div>
+                  <input
+                    onClick={this.whichVariantTrigger}
+                    type="radio"
+                    id="ecopackage"
+                    name="whichPackageName"
+                    value="ecopackage"
+                  />
+                  <label className="ml-2" htmlFor="ecopackage">
+                    Earth Eco Package
+                  </label>
+                </div>
+                <button className="next-btn" onClick={this.whichVariantNextBtn}>
+                  next
+                </button>
+              </form>
+
+              <form
+                className={
+                  this.state.firstForm &&
+                  this.state.successMessage === false &&
+                  this.state.defaultForm === false
                     ? "col-12 form d-flex flex-column align-items-center"
                     : "d-none"
                 }
@@ -332,7 +521,10 @@ export default class StandardPackageFormStory extends Component {
                   </span> */}
                     </div>
                     <div className="col-6 d-flex justify-content-end">
-                      <Button onClick={this.changeForm} className="next-btn">
+                      <Button
+                        onClick={this.changeFormToSecond}
+                        className="next-btn"
+                      >
                         next
                       </Button>
                     </div>
@@ -341,7 +533,9 @@ export default class StandardPackageFormStory extends Component {
               </form>
               <form
                 className={
-                    this.state.secondForm && this.state.successMessage === false && this.state.defaultForm === false
+                  this.state.secondForm &&
+                  this.state.successMessage === false &&
+                  this.state.defaultForm === false
                     ? "col-12 form d-flex flex-column align-items-center mt-3"
                     : "d-none"
                 }

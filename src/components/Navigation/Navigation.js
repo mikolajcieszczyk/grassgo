@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes, faBars, faSortDown } from "@fortawesome/free-solid-svg-icons";
+import { faTimes, faBars, faSortDown, faSortUp } from "@fortawesome/free-solid-svg-icons";
 
 import {
   faInstagram,
@@ -23,7 +23,8 @@ export default class Navigation extends Component {
     this.toggleCollapseSecondLevel = this.toggleCollapseSecondLevel.bind(this);
   }
 
-  toggleMenu() {
+  toggleMenu(e) {
+    e.preventDefault();
     this.setState({ showMenu: !this.state.showMenu });
   }
 
@@ -53,12 +54,12 @@ export default class Navigation extends Component {
               <span onClick={this.toggleCollapseFirstLevel}>
                 packages
                 <FontAwesomeIcon
-                  icon={faSortDown}
-                  className={
+                  icon={
                     this.state.collapseFirstLevel
-                      ? "ml-2 rotate-180-start"
-                      : "ml-2 rotate-180-back"
-                  }
+                      ? faSortDown
+                      : faSortUp
+                    }
+                  className="ml-2"
                 />
               </span>
               <ul
@@ -77,12 +78,12 @@ export default class Navigation extends Component {
                   >
                     eco
                     <FontAwesomeIcon
-                      icon={faSortDown}
-                      className={
+                      icon={
                         this.state.collapseSecondLevel
-                          ? "ml-3 rotate-180-start"
-                          : "ml-3 rotate-180-back"
+                          ? faSortDown
+                          : faSortUp
                       }
+                      className="ml-3"
                     />
                   </span>
                   <ul

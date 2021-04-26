@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ArrowDown from 'assets/images/arrow-down.png';
+import ArrowDown from 'assets/images/svg/strzalka-down.svg';
 
 export default class PackagesBar extends Component {
     render() {

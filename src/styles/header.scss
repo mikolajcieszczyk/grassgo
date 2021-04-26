@@ -1,7 +1,7 @@
 .sidebar {
   width: 250px;
   height: 100vh;
-  position: relative;
+  position: fixed;
   top: 0;
   left: -255px;
   z-index: 998;
@@ -33,9 +33,9 @@
 }
 
 .open-menu {
-  position: relative;
-  bottom: 95vh;
-  left: 10px;
+  position: fixed;
+  top:  3%;
+  left: -2%;
   z-index: 997;
 }
 
@@ -44,6 +44,7 @@
   line-height: 0;
   font-family: $montserrat !important;
   font-size: 15px;
+  color: white;
 }
 
 a.btn-customized {

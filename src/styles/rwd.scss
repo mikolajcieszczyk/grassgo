@@ -1,6 +1,150 @@
-@media (min-width: 768px) {
+@media (min-width: 767px) {
+  // .earth-eco-package {
+  //   min-height: 220vh !important;
+  // }
+
+  .about-us {
+    height: 100% !important;
+  }
+
+  .first-slide--img,
+  .sea-img,
   .second-slide--img {
-    width: 60%;
+    // margin-top: -200px !important;
+    width: 500px !important;
+  }
+
+  .sky-img {
+    width: 420px !important;
+  }
+
+  .earth-img {
+    width: 500px !important;
+  }
+
+  .one-off-img {
+    width: 500px !important;
+  }
+
+  .commercial-img {
+    width: 500px !important;
+    margin-bottom: 50px;
+  }
+
+  .slick-prev {
+    left: 30% !important;
+  }
+
+  .slick-next {
+    right: 30% !important;
+  }
+
+  .form__title {
+    font-size: 50px !important;
+    line-height: 35px !important;
+  }
+
+  .personal-data-input {
+    width: 75% !important;
+  }
+
+  .first-slide--arrow {
+    left: 40% !important;
+  }
+
+  .second-slide--arrow {
+    right: 40% !important;
+  }
+
+  .japanese-div {
+    p {
+      line-height: 27px !important;
+      margin-top: 5px;
+    }
+
+    .japanese-slider-img {
+      width: 105px !important;
+      height: 100px !important;
+    }
+  }
+
+  .cards-container {
+    // min-height: 390px;
+
+    // height: 390px;
+
+    .small-card {
+      // background: $creme;
+      // color: $dark;
+      // border-radius: 10px;
+
+      .small-card-title {
+        // color: $green;
+
+        h1 {
+          font-size: 100px !important;
+          line-height: 133px !important;
+        }
+
+        span {
+          font-size: 30px;
+          line-height: 40px;
+          font-weight: bold;
+        }
+      }
+
+      .small-card-text {
+        font-size: 17px !important;
+        line-height: 30px !important;
+      }
+
+      .see-more-btn {
+        background: $green;
+        color: $white;
+        font-size: 15px;
+        line-height: 35px;
+        font-weight: bold;
+      }
+    }
+
+    .big-card {
+      // background: $creme;
+      // color: $dark;
+      // border-radius: 10px;
+
+      .big-card-title {
+        h1 {
+          font-size: 100px !important;
+          line-height: 133px !important;
+        }
+      }
+
+      .big-card-body {
+        h2 {
+          color: $green !important;
+          font-family: $fraunces !important;
+          font-size: 20px !important;
+          line-height: 30px !important;
+        }
+
+        p {
+          color: $dark !important;
+          font-family: $montserrat !important;
+          font-size: 17px !important;
+          line-height: 30px !important;
+        }
+
+        .big-card-buttons {
+          position: relative;
+          bottom: 50px;
+
+          .book-now-btn {
+            background-color: $orange;
+            color: white;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -11,6 +155,71 @@
     }
   }
 
+  .sea-text {
+    margin-left: -30px;
+  }
+  .sky-text {
+    margin-left: -45px;
+  }
+
+  .earth-text {
+    margin-left: -10px;
+  }
+
+  .big-card {
+    height: 600px !important;
+
+    .big-card-buttons {
+      position: relative !important;
+      bottom: 45px !important;
+      left: 20px !important;
+
+      // .take-me-back-btn {
+      //   background-color: $green !important;
+      //   color: $white;
+      //   width: 218px;
+      //   height: 45px;
+      //   margin-right: 60px;
+      // }
+
+      .all-packages-btn {
+        background-color: $green !important;
+        color: $white;
+        margin-right: 83px !important;
+        margin-top: 7px !important;
+      }
+
+      .book-now-btn {
+        background-color: $orange;
+        color: white;
+        width: 218px;
+        height: 45px;
+        margin-left: 0.5% !important;
+        margin-bottom: 10px;
+      }
+
+      .eco-book-now {
+        // margin-left: 45px !important;
+      }
+    }
+  }
+
+  .first-slide--img {
+    margin-top: 0 !important;
+  }
+
+  .small-card {
+    height: 600px !important;
+  }
+
+  .slick-prev {
+    left: 40% !important;
+  }
+
+  .slick-next {
+    right: 40% !important;
+  }
+
   button {
     font-size: 20px !important;
   }
@@ -19,7 +228,32 @@
     margin-left: 2%;
   }
 
+  .dark-dot,
+  .light-dot {
+    margin-top: 20px;
+  }
+
+  .first-slide--arrow {
+    left: 44% !important;
+    top: 7px;
+  }
+
+  .second-slide--arrow {
+    right: 44% !important;
+    top: 7px;
+  }
+
+  .dot-second-slide {
+    margin-top: 95px;
+  }
+
+  .arrow-second-slide {
+    top: 75px !important;
+  }
+
   .about-us {
+    height: 110vh !important;
+
     h1 {
       font-size: 40px;
       line-height: 60px;
@@ -42,8 +276,8 @@
     padding-left: 15%;
 
     h1 {
-      font-size: 90px;
-      line-height: 75px;
+      font-size: 40px;
+      line-height: 60px;
     }
 
     h3 {
@@ -65,8 +299,8 @@
     padding-left: 15%;
 
     h1 {
-      font-size: 90px;
-      line-height: 75px;
+      font-size: 40px;
+      line-height: 60px;
     }
 
     h3 {
@@ -81,10 +315,14 @@
     }
   }
 
+  // .earth-eco-package {
+  //   min-height: 180vh !important;
+  // }
+
   .earth-eco-package {
     h1 {
-      font-size: 90px;
-      line-height: 75px;
+      font-size: 40px;
+      line-height: 60px;
     }
 
     h3 {
@@ -119,8 +357,8 @@
 
     h1 {
       font-family: $fraunces;
-      font-size: 60px;
-      line-height: 35px;
+      font-size: 40px;
+      line-height: 60px;
       font-weight: $fw-bold;
     }
 
@@ -132,8 +370,8 @@
 
   .commercial-and-public-section {
     h1 {
-      font-size: 60px;
-      line-height: 50px;
+      font-size: 40px;
+      line-height: 60px;
     }
 
     p {
@@ -157,6 +395,20 @@
     line-height: 63px !important;
   }
 
+  .p-tellUs {
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+
+  .form-label {
+    font-size: 20px !important;
+    line-height: 35px !important;
+  }
+
+  .personal-data-input {
+    width: 50% !important;
+  }
+
   .form__container {
     p {
       font-size: 25px !important;
@@ -166,6 +418,13 @@
     label {
       font-size: 20px !important;
       line-height: 35px !important;
+    }
+  }
+
+  .my-carousel-item {
+    .japanese-slider-img {
+      width: 135px !important;
+      height: 131px !important;
     }
   }
 }

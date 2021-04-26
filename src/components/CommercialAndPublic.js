@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CommercialImage from "assets/images/commercial-image.png";
+import CommercialImage from "assets/images/svg/Ilustracje_nowe_5.svg";
 import { Button } from "react-bootstrap";
 
 export default class CommercialAndPublic extends Component {
@@ -7,10 +7,10 @@ export default class CommercialAndPublic extends Component {
     return (
       <section className="d-flex flex-column justify-content-center commercial-and-public-section py-5">
         <div className="row d-flex flex-column flex-lg-row justify-items-center pt-5">
-          <div className="col-12 col-lg-5 text-center">
-            <img className="img-fluid" src={CommercialImage} />
+          <div className="col-12 col-lg-6 text-center">
+            <img className="img-fluid commercial-img" src={CommercialImage} />
           </div>
-          <div className="col-12 col-lg-7 d-flex flex-column">
+          <div className="col-12 col-lg-6 d-flex flex-column">
             <h1>Commercial and public space care</h1>
             <p>
               Our Maintenance service doesn’t just deal in high quality personal

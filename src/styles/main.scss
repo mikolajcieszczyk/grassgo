@@ -6,12 +6,17 @@
 @import "aboutus";
 @import "packages";
 @import "form";
+@import "footer";
 
 @import "rwd";
 
 body {
   line-height: 40px;
   color: $dark;
+
+  input[type="date"]:invalid::-webkit-datetime-edit {
+    color: #757575 !important;
+  }
 
   p,
   ul,
@@ -54,20 +59,9 @@ body {
 }
 
 section {
-  min-height: 110vh;
+  height: 100%;
   padding-left: 10%;
   padding-right: 10%;
-
-  ul li {
-    background: url(https://img.icons8.com/small/16/000000/filled-circle.png)
-      no-repeat top left;
-    background-position: 0 8px;
-    line-height: 1.5625;
-    padding: 0 0 4px 30px;
-    margin-left: 5px;
-    font-size: 15px;
-    line-height: 30px;
-  }
 }
 
 header {
@@ -78,23 +72,34 @@ header {
   background-size: cover;
 }
 
-.slider-arrow-left {
-  position: relative;
-  top: 180px;
-  left: 30vw;
-
-  z-index: 10;
+.magic-dots.slick-dots li button:before {
+  color: $green !important;
 }
 
-.slider-arrow-right {
+.slick-slider {
   position: relative;
-  top: 180px;
-  right: 30vw;
-
-  z-index: 10;
 }
 
-.more-dots {
-  // position: relative;
+.slick-prev {
+  top: 105%;
+  left: 15%;
+  width: 30px;
+  height: 50px;
+}
 
+.slick-next {
+  top: 105%;
+  right: 15%;
+  width: 30px;
+  height: 50px;
+}
+
+.fill-me {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
 }
