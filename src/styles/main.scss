@@ -72,6 +72,11 @@ header {
   background-size: cover;
 }
 
+li {
+    list-style-type: none !important;
+}
+
+
 .magic-dots.slick-dots li button:before {
   color: $green !important;
 }
@@ -102,4 +107,12 @@ header {
   height: 0;
   width: 0;
   z-index: -1;
+}
+
+.slider-text {
+  font-family: $montserrat !important;
+  font-size: 17px !important;
+  line-height: 30px !important;
+  font-weight: 400 !important;
+  color: black !important;
 }

@@ -246,9 +246,40 @@ export default class DefaultForm extends Component {
   }
 
   oneMoreTime() {
+    choiceArr = [];
+
     this.setState({
-      success: false,
       whichServiceForm: true,
+      whichPackageForm: false,
+      whichOneOffForm: false,
+      personalDataForm: false,
+
+      onlyOneOffForm: false,
+      onlyOneOffPersonalDataForm: false,
+      onlyCommercialForm: false,
+
+      whichService: "",
+      whichPackage: "",
+
+      cleanup: "",
+      hedgeTrim: "",
+      treeSurgery: "",
+      lawnCare: "",
+      planting: "",
+      pruning: "",
+      knotweed: "",
+
+      name: "",
+      email: "",
+      tel: "",
+      address: "",
+      postcode: "",
+      date: "",
+      notes: "",
+
+      success: false,
+      error: null,
+      popup: false,
     });
   }
 

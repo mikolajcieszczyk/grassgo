@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import SkyImage from "assets/images/svg/Ilustracje_nowe_3.svg";
 import { Button } from "react-bootstrap";
-import PremiumPackageFormStory from "components/Form/Stories/packages/PremiumPackageFormStory";
+import PremiumPackageForm from "../Form/PremiumPackageForm";
+
 
 export default class SkyPremiumPackage extends Component {
   constructor() {
@@ -9,6 +10,7 @@ export default class SkyPremiumPackage extends Component {
 
     this.state = {
       hidden: true,
+      form: false,
     };
 
     this.hideShowContent = this.hideShowContent.bind(this);
@@ -79,7 +81,7 @@ export default class SkyPremiumPackage extends Component {
                   <li className="mb-4">planting new plants</li>
                 </ul>
                   <ul className="second-list ml-md-5 ml-lg-0">
-                  <li className="mb-4">monitoring gardens</li>
+                  <li className="mb-4">pruning</li>
                   <li className="mb-4">hedge and shrub trimming</li>
                   <li className="mb-4">leaf removal</li>
                   <li className="mb-4">deadheading</li>
@@ -90,25 +92,25 @@ export default class SkyPremiumPackage extends Component {
                 </ul>
               </div>
             </div>
-            <div className="row">
-              <p className="col-12 col-lg-9 date-p">
-                1 visit per fortnight during the vegetation season (March –
+              <div className="row">
+                <div className="col-lg-5"></div>
+                <div className="col-12 col-lg-6 d-flex flex-column flex-lg-row">
+                  <p className="col-12 col-lg-6 date-p small-text">
+                    1 visit per fortnight during the vegetation season (March –
                 November)<br></br>1 visit per 4 weeks in winter season (December
                 – February)
               </p>
-              <div className="col-12 col-lg-3 text-center align-self-center">
-                  <Button onClick={this.hideShowForm} className="book-now-btn">book now</Button>
+                  <div className="col-12 col-lg-6 text-center">
+                    <Button onClick={this.hideShowForm} className="book-now-btn book-now-up">book now</Button>
+                  </div>
+                </div>
               </div>
-            </div>
           </div>
         </div>
       </section>
-
-        {
-          this.state.form && (
-            <PremiumPackageFormStory />
-          )
-        }
+        <div className={this.state.form ? "container-fluid" : "d-none"}>
+          <PremiumPackageForm />
+        </div>
       </>
     );
   }

@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import EarthImage from "assets/images/svg/Ilustracje_nowe_2.svg";
 import { Button } from "react-bootstrap";
+import EcoBasicForm from "../Form/EcoBasicForm";
+import EcoIntermediateForm from "../Form/EcoIntermediateForm";
+import EcoAdvancedForm from "../Form/EcoAdvancedForm";
+
 
 export default class EarthEcoPackage extends Component {
   constructor() {
@@ -11,6 +15,9 @@ export default class EarthEcoPackage extends Component {
       firstBigCardExpanded: false,
       secondBigCardExpanded: false,
       thirdBigCardExpanded: false,
+      basicForm: false,
+      intermediateForm: false,
+      advancedForm: false,
     };
 
     this.hideShowContent = this.hideShowContent.bind(this);
@@ -18,6 +25,33 @@ export default class EarthEcoPackage extends Component {
     this.expandSecondBigCard = this.expandSecondBigCard.bind(this);
     this.expandThirdBigCard = this.expandThirdBigCard.bind(this);
     this.takeMeBackToAllPackages = this.takeMeBackToAllPackages.bind(this);
+    this.hideShowBasicForm = this.hideShowBasicForm.bind(this);
+    this.hideShowIntermediateForm = this.hideShowIntermediateForm.bind(this);
+    this.hideShowAdvancedForm = this.hideShowAdvancedForm.bind(this);
+  }
+
+  hideShowBasicForm() {
+    this.setState({
+      basicForm: !this.state.basicForm,
+      intermediateForm: false,
+      advancedForm: false,
+    });
+  }
+
+  hideShowIntermediateForm() {
+    this.setState({
+      intermediateForm: !this.state.intermediateForm,
+      basicForm: false,
+      advancedForm: false,
+    });
+  }
+
+  hideShowAdvancedForm() {
+    this.setState({
+      advancedForm: !this.state.advancedForm,
+      basicForm: false,
+      intermediateForm: false,
+    });
   }
 
   hideShowContent() {
@@ -53,8 +87,13 @@ export default class EarthEcoPackage extends Component {
       secondBigCardExpanded: false,
       thirdBigCardExpanded: false,
       hidden: false,
+      basicForm: false,
+      intermediateForm: false,
+      advancedForm: false,
     });
   }
+
+  
 
   render() {
     return (
@@ -194,8 +233,8 @@ export default class EarthEcoPackage extends Component {
               <div className="big-card p-4 w-100 h-100">
                 <div>
                   <div className="big-card-title">
-                    <h1 className="d-inline">2</h1>
-                    <span>intermediate</span>
+                    <h1 className="d-inline">1</h1>
+                    <span>basic</span>
                   </div>
                 </div>
 
@@ -245,7 +284,7 @@ export default class EarthEcoPackage extends Component {
                     </Button>
                   </div>
                   <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                    <Button className="book-now-btn eco-book-now">
+                    <Button onClick={this.hideShowBasicForm}  className="book-now-btn eco-book-now">
                       book now
                     </Button>
                   </div>
@@ -319,7 +358,7 @@ export default class EarthEcoPackage extends Component {
                     </Button>
                   </div>
                   <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                    <Button className="book-now-btn eco-book-now">
+                    <Button onClick={this.hideShowIntermediateForm}  className="book-now-btn eco-book-now">
                       book now
                     </Button>
                   </div>
@@ -410,7 +449,7 @@ export default class EarthEcoPackage extends Component {
                     </Button>
                   </div>
                   <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                    <Button className="book-now-btn eco-book-now">
+                    <Button onClick={this.hideShowAdvancedForm} className="book-now-btn eco-book-now">
                       book now
                     </Button>
                   </div>
@@ -419,6 +458,15 @@ export default class EarthEcoPackage extends Component {
             </div>
           </div>
         </section>
+        <div className={this.state.basicForm ? "container-fluid" : "d-none"}>
+          <EcoBasicForm />
+        </div>
+        <div className={this.state.intermediateForm ? "container-fluid" : "d-none"}>
+          <EcoIntermediateForm />
+        </div>
+        <div className={this.state.advancedForm ? "container-fluid" : "d-none"}>
+          <EcoAdvancedForm />
+        </div>
       </>
     );
   }

@@ -27,7 +27,7 @@ export default class AboutUs extends Component {
 
   render() {
     return (
-      <section className="about-us d-flex align-items-center justify-content-center my-5">
+      <section id="#aboutUsId" className="about-us d-flex align-items-center justify-content-center my-3">
         <div
           className={this.state.firstSlide ? "about-us__first-slide" : "d-none"}
         >

@@ -1,10 +1,28 @@
 import React, { Component } from "react";
 import CommercialImage from "assets/images/svg/Ilustracje_nowe_5.svg";
 import { Button } from "react-bootstrap";
+import CommercialForm from "../components/Form/CommercialForm";
+
 
 export default class CommercialAndPublic extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      form: false,
+    };
+
+    this.hideShowForm = this.hideShowForm.bind(this);
+  }
+
+  hideShowForm() {
+    this.setState({
+      form: !this.state.form,
+    });
+  }
     render() {
     return (
+      <>
       <section className="d-flex flex-column justify-content-center commercial-and-public-section py-5">
         <div className="row d-flex flex-column flex-lg-row justify-items-center pt-5">
           <div className="col-12 col-lg-6 text-center">
@@ -24,11 +42,15 @@ export default class CommercialAndPublic extends Component {
               site.
             </p>
             <div className="col-12 order-5 mt-5 d-flex justify-content-center justify-content-lg-end">
-              <Button className="book-now-btn">book now</Button>
+                <Button onClick={this.hideShowForm} className="book-now-btn">book now</Button>
             </div>
           </div>
         </div>
       </section>
+      <div className={this.state.form ? "container-fluid" : "d-none"}>
+          <CommercialForm />
+        </div>
+        </>
     );
   }
 }

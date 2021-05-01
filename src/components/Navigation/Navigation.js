@@ -9,6 +9,7 @@ import {
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 
+
 export default class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -48,7 +49,7 @@ export default class Navigation extends Component {
 
           <ul className="list-unstyled my-0 py-0">
             <li>
-              <a href="#about-us">about us</a>
+              <a id="aboutUsBtn" href="#">about us</a>
             </li>
             <li>
               <span onClick={this.toggleCollapseFirstLevel}>
