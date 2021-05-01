@@ -2,12 +2,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap");
 /* line 1, header.scss */
-.sidebar {
+header {
+  height: 100vh;
+  background-image: url("../assets/images/svg/Ilustracje_v3.1_Desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 8, header.scss */
+header .open-nav {
+  cursor: pointer;
+}
+
+/* line 13, header.scss */
+nav {
   width: 250px;
   height: 100vh;
   position: fixed;
   top: 0;
-  left: -255px;
   z-index: 998;
   background: #001819;
   color: #FFFCFB;
@@ -19,13 +30,25 @@
   text-align: left;
   line-height: 20px;
 }
+/* line 29, header.scss */
+nav * div {
+  cursor: pointer;
+}
+/* line 33, header.scss */
+nav .close-nav {
+  font-size: 30px;
+  font-weight: normal;
+  position: relative;
+  right: 20%;
+  cursor: pointer;
+}
 
-/* line 19, header.scss */
+/* line 60, header.scss */
 .sidebar.active {
   left: 0;
 }
 
-/* line 23, header.scss */
+/* line 64, header.scss */
 .content {
   width: 10%;
   -webkit-transition: all 0.3s;
@@ -38,12 +61,12 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 30, header.scss */
+/* line 71, header.scss */
 .content:hover {
   text-decoration: none;
 }
 
-/* line 35, header.scss */
+/* line 76, header.scss */
 .open-menu {
   position: fixed;
   top: 3%;
@@ -51,28 +74,27 @@
   z-index: 997;
 }
 
-/* line 42, header.scss */
+/* line 83, header.scss */
 .nav__content-hamburger-signature {
   display: block;
   line-height: 0;
   font-family: Montserrat, sans-serif !important;
   font-size: 15px;
-  color: white;
 }
 
-/* line 50, header.scss */
+/* line 90, header.scss */
 a.btn-customized {
   margin-left: 5%;
   color: #001819;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-/* line 55, header.scss */
+/* line 95, header.scss */
 a.btn-customized:hover {
   text-decoration: none;
 }
 
-/* line 60, header.scss */
+/* line 100, header.scss */
 .dismiss {
   width: 30px;
   height: 30px;
@@ -84,12 +106,12 @@ a.btn-customized:hover {
   cursor: pointer;
 }
 
-/* line 70, header.scss */
+/* line 110, header.scss */
 .sidebar .hide-sidebar-btn {
   padding: 40px 20px;
 }
 
-/* line 74, header.scss */
+/* line 114, header.scss */
 .sidebar ul li a,
 .sidebar ul li span {
   display: block;
@@ -100,12 +122,12 @@ a.btn-customized:hover {
   margin-left: 10%;
 }
 
-/* line 84, header.scss */
+/* line 124, header.scss */
 .sidebar ul li a:hover {
   text-decoration: none;
 }
 
-/* line 88, header.scss */
+/* line 128, header.scss */
 .nav-collapse__first-level {
   display: block;
   list-style-type: none;
@@ -113,28 +135,28 @@ a.btn-customized:hover {
   text-indent: 5%;
   line-height: 30px;
 }
-/* line 95, header.scss */
+/* line 135, header.scss */
 .nav-collapse__first-level li {
   font-weight: 500;
 }
 
-/* line 100, header.scss */
+/* line 140, header.scss */
 .nav-collapse__second-level {
   display: block;
   list-style-type: none;
 }
-/* line 103, header.scss */
+/* line 143, header.scss */
 .nav-collapse__second-level li {
   font-weight: 500;
   line-height: 30px;
 }
 
-/* line 109, header.scss */
+/* line 149, header.scss */
 .collapse-inactive {
   display: none;
 }
 
-/* line 113, header.scss */
+/* line 153, header.scss */
 .rotate-180-start {
   -webkit-animation: rotate-180-start 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: rotate-180-start 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -160,7 +182,7 @@ a.btn-customized:hover {
     transform: rotate(180deg);
   }
 }
-/* line 139, header.scss */
+/* line 179, header.scss */
 .rotate-180-back {
   -webkit-animation: rotate-180-back 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: rotate-180-back 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -186,14 +208,8 @@ a.btn-customized:hover {
     transform: rotate(0);
   }
 }
-/* line 165, header.scss */
-.nav__footer {
-  position: absolute;
-  bottom: 50px;
-  left: 15%;
-}
-/* line 171, header.scss */
-.nav__footer .nav-footer-branding {
+/* line 206, header.scss */
+.nav-footer-branding {
   width: 150px;
   height: 100px;
   background: url("../assets/images/nav-footer-branding.png");
@@ -1523,30 +1539,22 @@ section {
   padding-right: 10%;
 }
 
-/* line 67, main.scss */
-header {
-  height: 100vh;
-  background-image: url("../assets/images/svg/Ilustracje_v3.1_Desktop.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* line 75, main.scss */
+/* line 69, main.scss */
 li {
   list-style-type: none !important;
 }
 
-/* line 80, main.scss */
+/* line 74, main.scss */
 .magic-dots.slick-dots li button:before {
   color: #006466 !important;
 }
 
-/* line 84, main.scss */
+/* line 78, main.scss */
 .slick-slider {
   position: relative;
 }
 
-/* line 88, main.scss */
+/* line 82, main.scss */
 .slick-prev {
   top: 105%;
   left: 15%;
@@ -1554,7 +1562,7 @@ li {
   height: 50px;
 }
 
-/* line 95, main.scss */
+/* line 89, main.scss */
 .slick-next {
   top: 105%;
   right: 15%;
@@ -1562,7 +1570,7 @@ li {
   height: 50px;
 }
 
-/* line 102, main.scss */
+/* line 96, main.scss */
 .fill-me {
   opacity: 0;
   position: absolute;
@@ -1573,7 +1581,7 @@ li {
   z-index: -1;
 }
 
-/* line 112, main.scss */
+/* line 106, main.scss */
 .slider-text {
   font-family: Montserrat, sans-serif !important;
   font-size: 17px !important;
