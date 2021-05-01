@@ -97,7 +97,7 @@ export default function App() {
           className="open-nav position-fixed ml-3 pt-4"
           onClick={() => setShowNav(!showNav)}
         >
-          <FontAwesomeIcon icon={faBars} className="fa-3x" />
+          <FontAwesomeIcon icon={faBars} className="open-nav-icon fa-3x" />
           <span className="nav__content-hamburger-signature">menu</span>
         </div>
         {showNav && (

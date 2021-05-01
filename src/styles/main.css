@@ -12,8 +12,12 @@ header {
 header .open-nav {
   cursor: pointer;
 }
+/* line 11, header.scss */
+header .open-nav .open-nav-icon {
+  color: #0D3236;
+}
 
-/* line 13, header.scss */
+/* line 17, header.scss */
 nav {
   width: 250px;
   height: 100vh;
@@ -30,11 +34,11 @@ nav {
   text-align: left;
   line-height: 20px;
 }
-/* line 29, header.scss */
+/* line 33, header.scss */
 nav * div {
   cursor: pointer;
 }
-/* line 33, header.scss */
+/* line 37, header.scss */
 nav .close-nav {
   font-size: 30px;
   font-weight: normal;
@@ -43,12 +47,12 @@ nav .close-nav {
   cursor: pointer;
 }
 
-/* line 60, header.scss */
+/* line 64, header.scss */
 .sidebar.active {
   left: 0;
 }
 
-/* line 64, header.scss */
+/* line 68, header.scss */
 .content {
   width: 10%;
   -webkit-transition: all 0.3s;
@@ -61,12 +65,12 @@ nav .close-nav {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 71, header.scss */
+/* line 75, header.scss */
 .content:hover {
   text-decoration: none;
 }
 
-/* line 76, header.scss */
+/* line 80, header.scss */
 .open-menu {
   position: fixed;
   top: 3%;
@@ -74,27 +78,28 @@ nav .close-nav {
   z-index: 997;
 }
 
-/* line 83, header.scss */
+/* line 87, header.scss */
 .nav__content-hamburger-signature {
   display: block;
   line-height: 0;
   font-family: Montserrat, sans-serif !important;
   font-size: 15px;
+  color: #0D3236 !important;
 }
 
-/* line 90, header.scss */
+/* line 95, header.scss */
 a.btn-customized {
   margin-left: 5%;
   color: #001819;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-/* line 95, header.scss */
+/* line 100, header.scss */
 a.btn-customized:hover {
   text-decoration: none;
 }
 
-/* line 100, header.scss */
+/* line 105, header.scss */
 .dismiss {
   width: 30px;
   height: 30px;
@@ -106,12 +111,12 @@ a.btn-customized:hover {
   cursor: pointer;
 }
 
-/* line 110, header.scss */
+/* line 115, header.scss */
 .sidebar .hide-sidebar-btn {
   padding: 40px 20px;
 }
 
-/* line 114, header.scss */
+/* line 119, header.scss */
 .sidebar ul li a,
 .sidebar ul li span {
   display: block;
@@ -122,12 +127,12 @@ a.btn-customized:hover {
   margin-left: 10%;
 }
 
-/* line 124, header.scss */
+/* line 129, header.scss */
 .sidebar ul li a:hover {
   text-decoration: none;
 }
 
-/* line 128, header.scss */
+/* line 133, header.scss */
 .nav-collapse__first-level {
   display: block;
   list-style-type: none;
@@ -135,28 +140,28 @@ a.btn-customized:hover {
   text-indent: 5%;
   line-height: 30px;
 }
-/* line 135, header.scss */
+/* line 140, header.scss */
 .nav-collapse__first-level li {
   font-weight: 500;
 }
 
-/* line 140, header.scss */
+/* line 145, header.scss */
 .nav-collapse__second-level {
   display: block;
   list-style-type: none;
 }
-/* line 143, header.scss */
+/* line 148, header.scss */
 .nav-collapse__second-level li {
   font-weight: 500;
   line-height: 30px;
 }
 
-/* line 149, header.scss */
+/* line 154, header.scss */
 .collapse-inactive {
   display: none;
 }
 
-/* line 153, header.scss */
+/* line 158, header.scss */
 .rotate-180-start {
   -webkit-animation: rotate-180-start 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: rotate-180-start 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -182,7 +187,7 @@ a.btn-customized:hover {
     transform: rotate(180deg);
   }
 }
-/* line 179, header.scss */
+/* line 184, header.scss */
 .rotate-180-back {
   -webkit-animation: rotate-180-back 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: rotate-180-back 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -208,7 +213,7 @@ a.btn-customized:hover {
     transform: rotate(0);
   }
 }
-/* line 206, header.scss */
+/* line 211, header.scss */
 .nav-footer-branding {
   width: 150px;
   height: 100px;

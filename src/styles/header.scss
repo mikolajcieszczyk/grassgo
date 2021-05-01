@@ -7,6 +7,10 @@ header {
 
   .open-nav {
     cursor: pointer;
+
+    .open-nav-icon {
+      color: $dark;
+    }
   }
 }
 
@@ -85,6 +89,7 @@ nav {
   line-height: 0;
   font-family: $montserrat !important;
   font-size: 15px;
+  color: $dark !important;
 }
 
 a.btn-customized {
