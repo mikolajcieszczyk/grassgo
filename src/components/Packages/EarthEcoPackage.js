@@ -5,7 +5,6 @@ import EcoBasicForm from "../Form/EcoBasicForm";
 import EcoIntermediateForm from "../Form/EcoIntermediateForm";
 import EcoAdvancedForm from "../Form/EcoAdvancedForm";
 
-
 export default class EarthEcoPackage extends Component {
   constructor() {
     super();
@@ -18,6 +17,8 @@ export default class EarthEcoPackage extends Component {
       basicForm: false,
       intermediateForm: false,
       advancedForm: false,
+
+      propsForDisplayBasic: false,
     };
 
     this.hideShowContent = this.hideShowContent.bind(this);
@@ -93,7 +94,31 @@ export default class EarthEcoPackage extends Component {
     });
   }
 
-  
+  componentDidMount() {
+    if (this.props.displayBasic) {
+      this.setState({
+        firstBigCardExpanded: true,
+        hidden: true,
+      });
+    } else if (this.props.displayIntermediate) {
+      this.setState({
+        secondBigCardExpanded: true,
+        hidden: true,
+      });
+    } else if (this.props.displayAdvanced) {
+      this.setState({
+        thirdBigCardExpanded: true,
+        hidden: true,
+      });
+    } else if (this.props.displayNormal) {
+      this.setState({
+        firstBigCardExpanded: false,
+        secondBigCardExpanded: false,
+        thirdBigCardExpanded: false,
+        hidden: true,
+      });
+    }
+  }
 
   render() {
     return (
@@ -107,6 +132,7 @@ export default class EarthEcoPackage extends Component {
             <div className="col-12 col-lg-6 d-flex flex-column earth-text">
               <h1>Earth</h1>
               <h3>Eco package</h3>
+
               <p>
                 Creating harmony between your garden, nature and you. Our brand
                 new, biologically focused, gardening service allows you to
@@ -284,7 +310,10 @@ export default class EarthEcoPackage extends Component {
                     </Button>
                   </div>
                   <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                    <Button onClick={this.hideShowBasicForm}  className="book-now-btn eco-book-now">
+                    <Button
+                      onClick={this.hideShowBasicForm}
+                      className="book-now-btn eco-book-now"
+                    >
                       book now
                     </Button>
                   </div>
@@ -358,7 +387,10 @@ export default class EarthEcoPackage extends Component {
                     </Button>
                   </div>
                   <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                    <Button onClick={this.hideShowIntermediateForm}  className="book-now-btn eco-book-now">
+                    <Button
+                      onClick={this.hideShowIntermediateForm}
+                      className="book-now-btn eco-book-now"
+                    >
                       book now
                     </Button>
                   </div>
@@ -449,7 +481,10 @@ export default class EarthEcoPackage extends Component {
                     </Button>
                   </div>
                   <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                    <Button onClick={this.hideShowAdvancedForm} className="book-now-btn eco-book-now">
+                    <Button
+                      onClick={this.hideShowAdvancedForm}
+                      className="book-now-btn eco-book-now"
+                    >
                       book now
                     </Button>
                   </div>
@@ -461,7 +496,9 @@ export default class EarthEcoPackage extends Component {
         <div className={this.state.basicForm ? "container-fluid" : "d-none"}>
           <EcoBasicForm />
         </div>
-        <div className={this.state.intermediateForm ? "container-fluid" : "d-none"}>
+        <div
+          className={this.state.intermediateForm ? "container-fluid" : "d-none"}
+        >
           <EcoIntermediateForm />
         </div>
         <div className={this.state.advancedForm ? "container-fluid" : "d-none"}>

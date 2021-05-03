@@ -7,7 +7,7 @@ import SeaStandardPackage from "components/Packages/SeaStandardPackage";
 import SkyPremiumPackage from "components/Packages/SkyPremiumPackage";
 import EarthEcoPackage from "components/Packages/EarthEcoPackage";
 import OneOffServicesPackage from "components/Packages/OneOffServicesPackage";
-import CommercialAndPublic from "components/CommercialAndPublic";
+import CommercialAndPublic from "components/Packages/CommercialAndPublic";
 import DefaultForm from "components/Form/DefaultForm";
 import Footer from "components/Footer/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -47,6 +47,11 @@ export default function App() {
   const oneOffSection = useRef(null);
   const commercialSection = useRef(null);
   const contactSection = useRef(null);
+  const ecoPackageSpecificSection = useRef(null);
+
+  const [ecoBasic, showEcoBasic] = useState(false);
+  const [ecoIntermediate, showEcoIntermediate] = useState(false);
+  const [ecoAdvanced, showEcoAdvanced] = useState(false);
 
   const goToAboutUsSection = () =>
     window.scrollTo({
@@ -66,11 +71,49 @@ export default function App() {
       behavior: "smooth",
     });
 
-  const goToEcoPackageSection = () =>
+  const goToEcoPackageSection = function () {
+    showEcoBasic(false);
+    showEcoIntermediate(false);
+    showEcoAdvanced(false);
+
     window.scrollTo({
       top: ecoPackageSection.current.offsetTop,
       behavior: "smooth",
     });
+  };
+
+  const goToEcoBasicPackageSection = function () {
+    showEcoBasic(!ecoBasic);
+    showEcoIntermediate(false);
+    showEcoAdvanced(false);
+
+    window.scrollTo({
+      top: ecoPackageSpecificSection.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
+  const goToEcoIntermediatePackageSection = function () {
+    showEcoIntermediate(!ecoIntermediate);
+    showEcoBasic(false);
+    showEcoAdvanced(false);
+
+    window.scrollTo({
+      top: ecoPackageSpecificSection.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
+  const goToEcoAdvancedPackageSection = function () {
+    showEcoAdvanced(!ecoAdvanced);
+    showEcoIntermediate(false);
+    showEcoBasic(false);
+
+    window.scrollTo({
+      top: ecoPackageSpecificSection.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
 
   const goToOneOffSection = () =>
     window.scrollTo({
@@ -129,27 +172,33 @@ export default function App() {
                       premium
                     </li>
                     <li className="mt-2">
-                      <span
+                      <span onClick={goToEcoPackageSection}>eco</span>
+                      <FontAwesomeIcon
+                        icon={showEcoPackagesNav ? faSortDown : faSortUp}
+                        className="ml-3"
                         onClick={() =>
                           setShowEcoPackagesNav(!showEcoPackagesNav)
                         }
-                      >
-                        eco{" "}
-                        <FontAwesomeIcon
-                          icon={showEcoPackagesNav ? faSortDown : faSortUp}
-                          className="ml-3"
-                        />
-                      </span>
+                      />
                     </li>
                     {showEcoPackagesNav && (
                       <ul className="container">
-                        <li className="my-2" onClick={goToEcoPackageSection}>
+                        <li
+                          className="my-2"
+                          onClick={goToEcoBasicPackageSection}
+                        >
                           basic
                         </li>
-                        <li className="my-2" onClick={goToEcoPackageSection}>
-                          medium
+                        <li
+                          className="my-2"
+                          onClick={goToEcoIntermediatePackageSection}
+                        >
+                          intermediate
                         </li>
-                        <li className="mt-2" onClick={goToEcoPackageSection}>
+                        <li
+                          className="mt-2"
+                          onClick={goToEcoAdvancedPackageSection}
+                        >
                           advanced
                         </li>
                       </ul>
@@ -207,7 +256,20 @@ export default function App() {
       <span ref={premiumPackageSection}></span>
       <SkyPremiumPackage />
       <span ref={ecoPackageSection}></span>
-      <EarthEcoPackage />
+      {ecoBasic && (!ecoIntermediate || !ecoAdvanced) && (
+        <EarthEcoPackage displayBasic={true} />
+      )}
+      {ecoIntermediate && (!ecoBasic || !ecoAdvanced) && (
+        <EarthEcoPackage displayIntermediate={true} />
+      )}
+      {ecoAdvanced && (!ecoBasic || !ecoIntermediate) && (
+        <EarthEcoPackage displayAdvanced={true} />
+      )}
+
+      {!ecoBasic && !ecoIntermediate && !ecoAdvanced && (
+        <EarthEcoPackage displayNormal={true} />
+      )}
+      <span ref={ecoPackageSpecificSection}></span>
       <span ref={oneOffSection}></span>
       <OneOffServicesPackage />
       <span ref={commercialSection}></span>
