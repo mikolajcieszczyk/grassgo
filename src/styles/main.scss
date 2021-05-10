@@ -59,17 +59,41 @@ body {
 }
 
 section {
-  height: 100%;
   padding-left: 10%;
   padding-right: 10%;
 }
 
+.green-button {
+  background: $green;
+  font-size: 15px;
+  line-height: 35px;
+  color: white;
+  font-family: $montserrat !important;
+  width: 218px;
+  height: 45px;
+  border-radius: 23px;
+  font-weight: 700;
+  border: none;
+}
+
+.orange-button {
+  background: $orange !important;
+}
+
+.nh-btn-link {
+  width: 378px !important;
+  font-size: 20px !important;
+  font-weight: bold;
+}
 
 
 li {
     list-style-type: none !important;
 }
 
+.my-carousel-item {
+  height: 250px !important;
+}
 
 .magic-dots.slick-dots li button:before {
   color: $green !important;
@@ -104,9 +128,33 @@ li {
 }
 
 .slider-text {
+  margin-top: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
   font-family: $montserrat !important;
-  font-size: 17px !important;
-  line-height: 30px !important;
+  font-size: 15px !important;
+  line-height: 15px !important;
   font-weight: 400 !important;
-  color: black !important;
+  color: $dark !important;
+  text-align: left;
+}
+
+.japanese-div {
+  .japanese-title {
+    line-height: 25px !important;
+  }
+  p {
+    line-height: 15px !important;
+    margin-top: 5px;
+  }
+
+  .japanese-slider-img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
+.eco-exact-span{
+  position: relative;
+  top: 570px;
 }

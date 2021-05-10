@@ -6,15 +6,13 @@ import "react-magic-slider-dots/dist/magic-dots.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
-
-import SmallCleaning from "assets/images/small/small-cleaning.svg";
-import SmallHedgeTrim from "assets/images/small/small-hedgetrim.svg";
-import SmallKnotweed from "assets/images/small/small-knotweed.svg";
-import SmallLawnCare from "assets/images/small/small-lawncare.svg";
-import SmallPlanting from "assets/images/small/small-planting.svg";
-import SmallPruning from "assets/images/small/small-pruning.svg";
-import SmallTreeSurgery from "assets/images/small/small-treesurgery.svg";
+import SmallCleaning from "assets/images/svg/latest/small-cleaning.svg";
+import SmallHedgeTrim from "assets/images/svg/latest/small-hedgetrim.svg";
+import SmallKnotweed from "assets/images/svg/latest/small-knotweed.svg";
+import SmallLawnCare from "assets/images/svg/latest/small-lawncare.svg";
+import SmallPlanting from "assets/images/svg/latest/small-planting.svg";
+import SmallPruning from "assets/images/svg/latest/small-pruning.svg";
+import SmallTreeSurgery from "assets/images/svg/latest/small-treesurgery.svg";
 
 import ArrowRight from "assets/images/svg/strzalka-right.svg";
 import ArrowLeft from "assets/images/svg/strzalka-left.svg";
@@ -34,12 +32,7 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
-    <img
-      src={ArrowLeft}
-      className="slick-prev"
-      alt="arrow"
-      onClick={onClick}
-    />
+    <img src={ArrowLeft} className="slick-prev" alt="arrow" onClick={onClick} />
   );
 }
 
@@ -59,8 +52,8 @@ export default class MultipleItems extends Component {
 
     this.hideShowCleanUpTxt = this.hideShowCleanUpTxt.bind(this);
     this.hideHedgeTrimTxt = this.hideHedgeTrimTxt.bind(this);
-    this.hideShowTreeSurgeryTxt = this.hideShowCleanUpTxt.bind(this);
-    this.hideShowLawnCareTxt = this.hideShowCleanUpTxt.bind(this);
+    this.hideShowTreeSurgeryTxt = this.hideShowTreeSurgeryTxt.bind(this);
+    this.hideShowLawnCareTxt = this.hideShowLawnCareTxt.bind(this);
     this.hideShowPlantingTxt = this.hideShowPlantingTxt.bind(this);
     this.hideShowPruningTxt = this.hideShowPruningTxt.bind(this);
     this.hideShowKnotweedTxt = this.hideShowKnotweedTxt.bind(this);
@@ -197,12 +190,17 @@ export default class MultipleItems extends Component {
           >
             <p>clean up</p>
             <p
-              className={this.state.cleanupTxt ? "d-block slider-text" : "d-none"}
+              className={
+                this.state.cleanupTxt ? "d-block slider-text" : "d-none"
+              }
             >
-              Veniam eu id amet et ex commodo est. Qui ea culpa deserunt excepteur esse aliqua. Qui cillum minim commodo enim voluptate.
+              This service is for gardens which a helping hand with the removal
+              of overgrown weeds, bushes and other plants. Eyesores such as
+              litter, debris and garden waste can also be dealt with as part of
+              this service.
             </p>
             <img
-              style={{ width: "150px", height: "150px"}}
+              style={{ width: "160px", height: "160px" }}
               className={this.state.cleanupTxt ? "d-none" : "img-fluid mx-auto"}
               src={SmallCleaning}
               alt="carousel"
@@ -217,10 +215,12 @@ export default class MultipleItems extends Component {
             <p
               className={this.state.trimTxt ? "d-block slider-text" : "d-none"}
             >
-              Veniam eu id amet et ex commodo est. Qui ea culpa deserunt excepteur esse aliqua. Qui cillum minim commodo enim voluptate.
+              Whether is be a yew, box or beech we can get your hedges looking
+              sharp again! Size is no matter, for we can take care of any sized
+              hedge you may have.
             </p>
             <img
-              style={{ width: "150px", height: "150px" }}
+              style={{ width: "160px", height: "160px" }}
               className={this.state.trimTxt ? "d-none" : "img-fluid mx-auto"}
               src={SmallHedgeTrim}
               alt="carousel"
@@ -233,13 +233,19 @@ export default class MultipleItems extends Component {
           >
             <p>tree surgery</p>
             <p
-              className={this.state.treeSurgeryTxt ? "d-block slider-text" : "d-none"}
+              className={
+                this.state.treeSurgeryTxt ? "d-block slider-text" : "d-none"
+              }
             >
-              Veniam eu id amet et ex commodo est. Qui ea culpa deserunt excepteur esse aliqua. Qui cillum minim commodo enim voluptate.
+              Our qualified tree surgeons are highly skilled in taking care of
+              all your tree’s needs. Whether your trees need pruning, felling or
+              treating for disease, we can fulfil all your requirements.
             </p>
             <img
-              style={{ width: "150px", height: "150px" }}
-              className={this.state.treeSurgeryTxt ? "d-none" : "img-fluid mx-auto"}
+              style={{ width: "160px", height: "160px" }}
+              className={
+                this.state.treeSurgeryTxt ? "d-none" : "img-fluid mx-auto"
+              }
               src={SmallTreeSurgery}
               alt="carousel"
             />
@@ -251,13 +257,20 @@ export default class MultipleItems extends Component {
           >
             <p>lawn care</p>
             <p
-              className={this.state.lawnCareTxt ? "d-block slider-text" : "d-none"}
+              className={
+                this.state.lawnCareTxt ? "d-block slider-text" : "d-none"
+              }
             >
-              Veniam eu id amet et ex commodo est. Qui ea culpa deserunt excepteur esse aliqua. Qui cillum minim commodo enim voluptate.
+              If your lawn needs a simple trim, or a more complex treatment from
+              one of our lovely gardeners we can help. Our gardeners are highly
+              skilled in aeration, scarification, sanding and cutting lawns in
+              patterns.
             </p>
             <img
-              style={{ width: "150px", height: "150px" }}
-              className={this.state.lawnCareTxt ? "d-none" : "img-fluid mx-auto"}
+              style={{ width: "160px", height: "160px" }}
+              className={
+                this.state.lawnCareTxt ? "d-none" : "img-fluid mx-auto"
+              }
               src={SmallLawnCare}
               alt="carousel"
             />
@@ -269,13 +282,18 @@ export default class MultipleItems extends Component {
           >
             <p>planting</p>
             <p
-              className={this.state.plantingTxt ? "d-block slider-text" : "d-none"}
+              className={
+                this.state.plantingTxt ? "d-block slider-text" : "d-none"
+              }
             >
-              Veniam eu id amet et ex commodo est. Qui ea culpa deserunt excepteur esse aliqua. Qui cillum minim commodo enim voluptate.
+              We cater for all your planting needs! From dainty annuals for
+              planters, to establishing new hedges we can be of service.
             </p>
             <img
-              style={{ width: "150px", height: "150px" }}
-              className={this.state.plantingTxt ? "d-none" : "img-fluid mx-auto"}
+              style={{ width: "160px", height: "160px" }}
+              className={
+                this.state.plantingTxt ? "d-none" : "img-fluid mx-auto"
+              }
               src={SmallPlanting}
               alt="carousel"
             />
@@ -287,12 +305,16 @@ export default class MultipleItems extends Component {
           >
             <p>pruning</p>
             <p
-              className={this.state.pruningTxt ? "d-block slider-text" : "d-none"}
+              className={
+                this.state.pruningTxt ? "d-block slider-text" : "d-none"
+              }
             >
-              Veniam eu id amet et ex commodo est. Qui ea culpa deserunt excepteur esse aliqua. Qui cillum minim commodo enim voluptate.
+              Our shrubs, trees and bushes all need some TLC to keep them
+              looking their best. Our gardeners are all skilled in encouraging
+              optimum plant health.
             </p>
             <img
-              style={{ width: "150px", height: "150px" }}
+              style={{ width: "160px", height: "160px" }}
               className={this.state.pruningTxt ? "d-none" : "img-fluid mx-auto"}
               src={SmallPruning}
               alt="carousel"
@@ -301,17 +323,29 @@ export default class MultipleItems extends Component {
           <div
             onClick={this.hideShowKnotweedTxt}
             className="my-carousel-item text-center japanese-div"
-            style={{ height: 250, width: 230, }}
+            style={{ height: 250, width: 230 }}
           >
-            <p>japaneese knotweed removal</p>
+            <p className="japanese-title">
+              japaneese <br /> knotweed removal
+            </p>
             <p
-              className={this.state.knotweedTxt ? "d-block slider-text japanese-div" : "d-none"}
+              className={
+                this.state.knotweedTxt
+                  ? "d-block slider-text japanese-div"
+                  : "d-none"
+              }
             >
-              Veniam eu id amet et ex commodo est. Qui ea culpa deserunt excepteur esse aliqua. Qui cillum minim commodo enim voluptate.
+              This troublesome species can be a brut if allowed to establish
+              itself. Our knotweed specialist is qualified in treating knotweed
+              and making sure it is eliminated before damage is done.
             </p>
             <img
-              style={{ width: "150px", height: "150px" }}
-              className={this.state.knotweedTxt ? "d-none" : "img-fluid mx-auto japanese-slider-img"}
+              style={{ width: "160px", height: "160px" }}
+              className={
+                this.state.knotweedTxt
+                  ? "d-none"
+                  : "img-fluid mx-auto japanese-slider-img"
+              }
               src={SmallKnotweed}
               alt="carousel"
             />

@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import SeaImage from "assets/images/svg/seaImg.svg";
+import SeaImage from "assets/images/svg/latest/Ilustracje_4_Sea_group-01.svg";
 import { Button } from "react-bootstrap";
 import StandardPackageForm from "../Form/StandardPackageForm";
+import SkyImage from "../../assets/images/svg/latest/Ilustracje_4_Sky_grouped.svg";
+import { GreenButton } from "../Buttons";
 
 export default class SeaStandardPackage extends Component {
   constructor() {
@@ -33,14 +35,14 @@ export default class SeaStandardPackage extends Component {
       <>
         <section
           id="standard"
-          className="d-flex flex-column align-content-center justify-content-center sea-standard-package py-5"
+          className="d-flex sea-standard-package flex-column align-content-center justify-content-center py-5"
         >
-          <div className="row d-flex flex-column flex-lg-row align-content-center justify-items-center">
-            <div className="col-12 col-lg-6 text-center px-0">
-              <img alt="sea" className="sea-img mx-auto" src={SeaImage} />
+          <div className="row d-flex flex-column flex-lg-row justify-items-center">
+            <div className="col-12 col-lg-6 text-center">
+              <img alt="sky" style={{ width: "90%" }} src={SkyImage} />
             </div>
 
-            <div className="sea-text col-12 col-lg-6 d-flex flex-column pl-0">
+            <div className="col-12 col-lg-6 d-flex flex-column sky-text">
               <h1>Sea</h1>
               <h3>Standard package</h3>
               <p>
@@ -54,16 +56,15 @@ export default class SeaStandardPackage extends Component {
                 as all general gardening requirements are included as part of
                 the service.
               </p>
-              <Button
+              <GreenButton
+                title="see more"
                 onClick={this.hideShowContent}
                 className={
                   this.state.hidden
-                    ? "see-more-btn align-self-center align-self-lg-end"
+                    ? "align-self-center align-self-lg-end"
                     : "d-none"
                 }
-              >
-                see more
-              </Button>
+              />
             </div>
 
             <div
@@ -72,8 +73,8 @@ export default class SeaStandardPackage extends Component {
               }
             >
               <div className="row sea-list">
-                <div className="col-lg-5"></div>
-                <div className="col-lg-6 d-md-flex pl-lg-5 ml-lg-1">
+                <div className="col-lg-6"></div>
+                <div className="col-lg-6 d-md-flex pl-2">
                   <ul className="mb-0 pb-0 list-unstyled">
                     <li className="mb-4">monitoring gardens</li>
                     <li className="mb-4">grass cutting</li>
@@ -90,9 +91,9 @@ export default class SeaStandardPackage extends Component {
                 </div>
               </div>
               <div className="row">
-                <div className="col-lg-5"></div>
+                <div className="col-lg-6"></div>
                 <div className="col-12 col-lg-6 d-flex flex-column flex-lg-row">
-                  <p className="col-12 col-lg-6 date-p small-text">
+                  <p className="col-12 col-lg-6 date-p small-text pl-0">
                     1 visit per fortnight during the vegetation season (March –
                     November)<br></br>1 visit per 4 weeks in winter season
                     (December – February)

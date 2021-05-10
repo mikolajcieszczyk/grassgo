@@ -81,10 +81,11 @@ nav {
   position: fixed;
   top:  3%;
   left: -2%;
-  z-index: 997;
+  z-index: 999;
 }
 
 .nav__content-hamburger-signature {
+  z-index: 999;
   display: block;
   line-height: 0;
   font-family: $montserrat !important;

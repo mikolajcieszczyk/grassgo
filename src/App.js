@@ -36,7 +36,7 @@ const ScrollIndicator = () => {
 };
 
 export default function App() {
-  const [showNav, setShowNav] = useState(true);
+  const [showNav, setShowNav] = useState(false);
   const [showPackagesNav, setShowPackagesNav] = useState(false);
   const [showEcoPackagesNav, setShowEcoPackagesNav] = useState(false);
 
@@ -256,6 +256,7 @@ export default function App() {
       <span ref={premiumPackageSection}></span>
       <SkyPremiumPackage />
       <span ref={ecoPackageSection}></span>
+      <span ref={ecoPackageSpecificSection} className="eco-exact-span"></span>
       {ecoBasic && (!ecoIntermediate || !ecoAdvanced) && (
         <EarthEcoPackage displayBasic={true} />
       )}
@@ -269,13 +270,12 @@ export default function App() {
       {!ecoBasic && !ecoIntermediate && !ecoAdvanced && (
         <EarthEcoPackage displayNormal={true} />
       )}
-      <span ref={ecoPackageSpecificSection}></span>
       <span ref={oneOffSection}></span>
       <OneOffServicesPackage />
       <span ref={commercialSection}></span>
       <CommercialAndPublic />
-      <span ref={contactSection}></span>
       <DefaultForm />
+      <span ref={contactSection}></span>
       <Footer />
     </div>
   );

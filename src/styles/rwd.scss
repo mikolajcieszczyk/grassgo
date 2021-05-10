@@ -3,41 +3,8 @@
   //   min-height: 220vh !important;
   // }
 
-  .about-us {
-    height: 100% !important;
-  }
 
-  .first-slide--img,
-  .sea-img,
-  .second-slide--img {
-    // margin-top: -200px !important;
-    width: 500px !important;
-  }
 
-  .sky-img {
-    width: 360px !important;
-  }
-
-  .earth-img {
-    width: 500px !important;
-  }
-
-  .one-off-img {
-    width: 500px !important;
-  }
-
-  .commercial-img {
-    width: 500px !important;
-    margin-bottom: 50px;
-  }
-
-  .slick-prev {
-    left: 30% !important;
-  }
-
-  .slick-next {
-    right: 30% !important;
-  }
 
   .form__title {
     font-size: 50px !important;
@@ -48,18 +15,15 @@
     width: 75% !important;
   }
 
-  .first-slide--arrow {
-    left: 40% !important;
-  }
-
-  .second-slide--arrow {
-    right: 40% !important;
-  }
 
   .japanese-div {
     p {
-      line-height: 27px !important;
+      line-height: 15px !important;
       margin-top: 5px;
+    }
+
+    .japanese-title {
+      line-height: 25px !important;
     }
 
     .japanese-slider-img {
@@ -69,17 +33,8 @@
   }
 
   .cards-container {
-    // min-height: 390px;
-
-    // height: 390px;
-
     .small-card {
-      // background: $creme;
-      // color: $dark;
-      // border-radius: 10px;
-
       .small-card-title {
-        // color: $green;
 
         h1 {
           font-size: 100px !important;
@@ -108,10 +63,6 @@
     }
 
     .big-card {
-      // background: $creme;
-      // color: $dark;
-      // border-radius: 10px;
-
       .big-card-title {
         h1 {
           font-size: 100px !important;
@@ -132,6 +83,11 @@
           font-family: $montserrat !important;
           font-size: 17px !important;
           line-height: 30px !important;
+        }
+
+        .p-third-big-card {
+          font-size: 15px !important;
+          line-height: 15px !important;
         }
 
         .big-card-buttons {
@@ -160,40 +116,29 @@
 }
 
   .small-text {
-  margin-left: 7%;
+  //margin-left: 7%;
   line-height: 20px !important;
 }
 
-  .sea-text {
-    margin-left: -30px;
-  }
-  .sky-text {
-    margin-left: -45px;
-  }
 
-  .earth-text {
-    margin-left: -10px;
-  }
+
+
 
   .big-card {
     height: 600px !important;
+
+    .buttons-down {
+      margin-top: 75px !important;
+    }
 
     .big-card-buttons {
       position: relative !important;
       bottom: 45px !important;
       left: 20px !important;
 
-      // .take-me-back-btn {
-      //   background-color: $green !important;
-      //   color: $white;
-      //   width: 218px;
-      //   height: 45px;
-      //   margin-right: 60px;
-      // }
-
       .all-packages-btn {
         background-color: $green !important;
-        color: $white;
+        color: white;
         margin-right: 83px !important;
         margin-top: 7px !important;
       }
@@ -206,15 +151,7 @@
         margin-left: 0.5% !important;
         margin-bottom: 10px;
       }
-
-      .eco-book-now {
-        // margin-left: 45px !important;
-      }
     }
-  }
-
-  .first-slide--img {
-    margin-top: 0 !important;
   }
 
   .small-card {
@@ -261,7 +198,6 @@
   }
 
   .about-us {
-    height: 110vh !important;
 
     h1 {
       font-size: 40px;
@@ -282,7 +218,6 @@
     background: $creme;
 
     color: $green;
-    padding-left: 15%;
 
     h1 {
       font-size: 40px;
@@ -305,7 +240,6 @@
     background: $white;
 
     color: $green;
-    padding-left: 15%;
 
     h1 {
       font-size: 40px;
@@ -344,6 +278,8 @@
       font-size: 20px;
       line-height: 40px;
     }
+
+
 
     .package-card {
       h1 {
@@ -432,8 +368,8 @@
 
   .my-carousel-item {
     .japanese-slider-img {
-      width: 135px !important;
-      height: 131px !important;
+      width: 180px !important;
+      height: 180px !important;
     }
   }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import EarthImage from "assets/images/svg/Ilustracje_nowe_2.svg";
+import EarthImage from "assets/images/svg/latest/Ilustracje_4_Earth_group.svg";
 import { Button } from "react-bootstrap";
 import EcoBasicForm from "../Form/EcoBasicForm";
 import EcoIntermediateForm from "../Form/EcoIntermediateForm";
@@ -126,13 +126,12 @@ export default class EarthEcoPackage extends Component {
         <section className="d-flex flex-column align-content-center justify-content-center earth-eco-package py-5">
           <div className="row d-flex flex-column flex-lg-row justify-items-center">
             <div className="col-12 col-lg-6 text-center">
-              <img className="img-fluid earth-img" alt="sky" src={EarthImage} />
+              <img alt="sky" style={{ width: "90%" }} src={EarthImage} />
             </div>
 
             <div className="col-12 col-lg-6 d-flex flex-column earth-text">
               <h1>Earth</h1>
               <h3>Eco package</h3>
-
               <p>
                 Creating harmony between your garden, nature and you. Our brand
                 new, biologically focused, gardening service allows you to
@@ -377,7 +376,7 @@ export default class EarthEcoPackage extends Component {
                     </p>
                   </div>
                 </div>
-                <div className="big-card-buttons row d-flex flex-column justify-content-center align-items-center flex-lg-row justify-content-lg-between my-5">
+                <div className="big-card-buttons buttons-down row d-flex flex-column justify-content-center align-items-center flex-lg-row justify-content-lg-between my-5">
                   <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-3">
                     <Button
                       onClick={this.takeMeBackToAllPackages}
@@ -417,7 +416,7 @@ export default class EarthEcoPackage extends Component {
 
                 <div className="row big-card-body d-flex flex-column flex-lg-row flex-grow-1">
                   <div className="col-12 col-lg-4 pr-lg-0">
-                    <p>
+                    <p className="p-third-big-card mt-1">
                       The Advanced Package is a personalised service, tailored
                       to your garden’s specific needs. Encouraging more
                       biodiversity and restoring habitats for wildlife is an
@@ -430,18 +429,18 @@ export default class EarthEcoPackage extends Component {
                   </div>
                   <div className="col-12 col-lg-4">
                     <h2>Ecosystem Management Evaluation (EMA)</h2>
-                    <p>
+                    <p className="p-third-big-card">
                       An EMA assesses your garden potential and sets in place a
                       plan to maximise its growth.
                     </p>
                     <h2>Biodiversity surveys</h2>
-                    <p>
+                    <p className="p-third-big-card">
                       Periodic surveys of the species living in your garden will
                       help indicate your gardens progress in becoming eco-
                       friendly
                     </p>
                     <h2>Conversion of hedges to mixed native species</h2>
-                    <p>
+                    <p className="p-third-big-card">
                       Native hedgerows require fewer fertilisers, pesticides and
                       volumes of water. They also reduce air pollution and
                       provide shelter for wildlife.
@@ -450,14 +449,14 @@ export default class EarthEcoPackage extends Component {
                   <div className="col-12 col-lg-4">
                     <h2>Wildflower meadow establishment</h2>
 
-                    <p>
+                    <p className="p-third-big-card">
                       A wildflower meadow provides habitat to a great number of
                       species, including birds, bees and butterflies
                     </p>
 
                     <h2>Compost teas and foliar applications</h2>
 
-                    <p>
+                    <p className="p-third-big-card">
                       Feeding the plants through both their roots and also,
                       through their leaves helps give them an extra boost,
                       brightening your garden even more.
@@ -465,7 +464,7 @@ export default class EarthEcoPackage extends Component {
 
                     <h2>Kitchen Garden</h2>
 
-                    <p>
+                    <p className="p-third-big-card">
                       Crops of fruits, vegetables and herbs are raised to supply
                       you with fresh, delicious produce
                     </p>

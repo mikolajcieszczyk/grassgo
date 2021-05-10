@@ -75,11 +75,12 @@ nav .close-nav {
   position: fixed;
   top: 3%;
   left: -2%;
-  z-index: 997;
+  z-index: 999;
 }
 
 /* line 87, header.scss */
 .nav__content-hamburger-signature {
+  z-index: 999;
   display: block;
   line-height: 0;
   font-family: Montserrat, sans-serif !important;
@@ -87,19 +88,19 @@ nav .close-nav {
   color: #0D3236 !important;
 }
 
-/* line 95, header.scss */
+/* line 96, header.scss */
 a.btn-customized {
   margin-left: 5%;
   color: #001819;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-/* line 100, header.scss */
+/* line 101, header.scss */
 a.btn-customized:hover {
   text-decoration: none;
 }
 
-/* line 105, header.scss */
+/* line 106, header.scss */
 .dismiss {
   width: 30px;
   height: 30px;
@@ -111,12 +112,12 @@ a.btn-customized:hover {
   cursor: pointer;
 }
 
-/* line 115, header.scss */
+/* line 116, header.scss */
 .sidebar .hide-sidebar-btn {
   padding: 40px 20px;
 }
 
-/* line 119, header.scss */
+/* line 120, header.scss */
 .sidebar ul li a,
 .sidebar ul li span {
   display: block;
@@ -127,12 +128,12 @@ a.btn-customized:hover {
   margin-left: 10%;
 }
 
-/* line 129, header.scss */
+/* line 130, header.scss */
 .sidebar ul li a:hover {
   text-decoration: none;
 }
 
-/* line 133, header.scss */
+/* line 134, header.scss */
 .nav-collapse__first-level {
   display: block;
   list-style-type: none;
@@ -140,28 +141,28 @@ a.btn-customized:hover {
   text-indent: 5%;
   line-height: 30px;
 }
-/* line 140, header.scss */
+/* line 141, header.scss */
 .nav-collapse__first-level li {
   font-weight: 500;
 }
 
-/* line 145, header.scss */
+/* line 146, header.scss */
 .nav-collapse__second-level {
   display: block;
   list-style-type: none;
 }
-/* line 148, header.scss */
+/* line 149, header.scss */
 .nav-collapse__second-level li {
   font-weight: 500;
   line-height: 30px;
 }
 
-/* line 154, header.scss */
+/* line 155, header.scss */
 .collapse-inactive {
   display: none;
 }
 
-/* line 158, header.scss */
+/* line 159, header.scss */
 .rotate-180-start {
   -webkit-animation: rotate-180-start 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: rotate-180-start 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -187,7 +188,7 @@ a.btn-customized:hover {
     transform: rotate(180deg);
   }
 }
-/* line 184, header.scss */
+/* line 185, header.scss */
 .rotate-180-back {
   -webkit-animation: rotate-180-back 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: rotate-180-back 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -213,7 +214,7 @@ a.btn-customized:hover {
     transform: rotate(0);
   }
 }
-/* line 211, header.scss */
+/* line 212, header.scss */
 .nav-footer-branding {
   width: 150px;
   height: 100px;
@@ -221,65 +222,22 @@ a.btn-customized:hover {
   background-size: contain;
 }
 
-/* line 1, aboutus.scss */
-.about-us {
-  height: 100% !important;
-}
-/* line 4, aboutus.scss */
+/* line 3, aboutus.scss */
 .about-us h1 {
   font-size: 25px;
   line-height: 40px;
+  font-family: Fraunces, sans-serif;
+  font-weight: bold;
+  color: #006466;
 }
-/* line 9, aboutus.scss */
+/* line 11, aboutus.scss */
 .about-us p {
   font-size: 15px;
   line-height: 30px;
+  color: #0D3236;
+  font-family: Montserrat, sans-serif;
 }
-/* line 16, aboutus.scss */
-.about-us .first-slide--img {
-  width: 350px;
-  margin-bottom: 20px;
-}
-/* line 22, aboutus.scss */
-.about-us .second-slide--img {
-  width: 350px;
-  margin-bottom: 20px;
-}
-/* line 27, aboutus.scss */
-.about-us .first-slide--arrow,
-.about-us .second-slide--arrow {
-  position: absolute;
-  width: 30px;
-  height: 50px;
-}
-/* line 35, aboutus.scss */
-.about-us .first-slide--arrow {
-  left: 30%;
-}
-/* line 39, aboutus.scss */
-.about-us .second-slide--arrow {
-  right: 30%;
-}
-/* line 44, aboutus.scss */
-.about-us .light-dot,
-.about-us .dark-dot {
-  width: 10px;
-  height: 10px;
-}
-/* line 50, aboutus.scss */
-.about-us .go-northill-btn {
-  border-radius: 23px;
-  background-color: #006466;
-  font-weight: 700;
-  border: none;
-}
-/* line 56, aboutus.scss */
-.about-us .go-northill-btn a {
-  color: #FFFCFB;
-  border: none;
-  text-decoration: none;
-}
-/* line 63, aboutus.scss */
+/* line 18, aboutus.scss */
 .about-us .slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
@@ -320,7 +278,7 @@ a.btn-customized:hover {
   width: 100%;
   height: 200px;
   background-color: #006466;
-  color: #FFFCFB;
+  color: #FAEBDC;
 }
 /* line 13, packages.scss */
 .packages__bar .arrow-down {
@@ -346,53 +304,28 @@ a.btn-customized:hover {
   background: #FAEBDC;
   color: #006466;
 }
-/* line 40, packages.scss */
-.sea-standard-package .sea-img {
-  width: 350px;
-  margin-bottom: 20px;
-}
-/* line 45, packages.scss */
-.sea-standard-package .sky-img {
-  width: 350px;
-  margin-bottom: 20px;
-}
-/* line 50, packages.scss */
-.sea-standard-package .earth-img {
-  width: 350px;
-  margin-bottom: 20px;
-}
-/* line 55, packages.scss */
-.sea-standard-package .one-off-img {
-  width: 350px;
-  margin-bottom: 20px;
-}
-/* line 60, packages.scss */
-.sea-standard-package .commercial-img {
-  width: 350px;
-  margin-bottom: 20px;
-}
-/* line 65, packages.scss */
+/* line 39, packages.scss */
 .sea-standard-package h1 {
   font-size: 35px;
   line-height: 40px;
 }
-/* line 70, packages.scss */
+/* line 44, packages.scss */
 .sea-standard-package h3 {
   font-size: 20px;
   font-family: Montserrat, sans-serif !important;
   line-height: 24px;
 }
-/* line 76, packages.scss */
+/* line 50, packages.scss */
 .sea-standard-package p {
   font-size: 15px;
   line-height: 30px;
   color: #0D3236;
 }
-/* line 82, packages.scss */
+/* line 56, packages.scss */
 .sea-standard-package ul li {
   color: #0D3236;
 }
-/* line 90, packages.scss */
+/* line 60, packages.scss */
 .sea-standard-package .see-more-btn,
 .sea-standard-package .book-now-btn {
   width: 218px;
@@ -402,208 +335,185 @@ a.btn-customized:hover {
   font-weight: 700;
   border: none;
 }
-/* line 99, packages.scss */
+/* line 69, packages.scss */
 .sea-standard-package .see-more-btn a,
 .sea-standard-package .book-now-btn a {
-  color: #FFFCFB;
+  color: white;
   border: none;
   text-decoration: none;
 }
-/* line 107, packages.scss */
+/* line 77, packages.scss */
 .sea-standard-package .booking-info p {
   font-size: 10px;
   line-height: 25px;
 }
-/* line 113, packages.scss */
+/* line 83, packages.scss */
 .sea-standard-package .book-now-btn {
   background-color: #FF8864;
   justify-self: flex-end;
 }
 
-/* line 119, packages.scss */
+/* line 89, packages.scss */
 .sky-premium-package {
   background: #FFFCFB;
   color: #006466;
-  padding-left: 15%;
 }
-/* line 125, packages.scss */
+/* line 94, packages.scss */
 .sky-premium-package h1 {
   font-size: 35px;
   line-height: 40px;
 }
-/* line 130, packages.scss */
+/* line 99, packages.scss */
 .sky-premium-package h3 {
   font-size: 20px;
   line-height: 24px;
   font-family: Montserrat, sans-serif !important;
 }
-/* line 136, packages.scss */
+/* line 105, packages.scss */
 .sky-premium-package p {
   font-size: 15px;
   line-height: 30px;
+  color: #0D3236;
 }
-/* line 141, packages.scss */
-.sky-premium-package .see-more-btn,
-.sky-premium-package .book-now-btn {
-  width: 218px;
-  height: 45px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  border-radius: 23px;
-  background-color: #006466;
-  font-weight: 700;
-  border: none;
+/* line 111, packages.scss */
+.sky-premium-package ul li {
+  color: #0D3236;
 }
-/* line 151, packages.scss */
-.sky-premium-package .see-more-btn a,
-.sky-premium-package .book-now-btn a {
-  color: #FFFCFB;
-  border: none;
-  text-decoration: none;
-}
-/* line 158, packages.scss */
-.sky-premium-package .sea-content__hidden--list {
-  padding-left: 4% !important;
-}
-/* line 163, packages.scss */
+/* line 118, packages.scss */
 .sky-premium-package .booking-info p {
   font-size: 10px;
   line-height: 25px;
 }
-/* line 169, packages.scss */
+/* line 124, packages.scss */
 .sky-premium-package .book-now-btn {
   background-color: #FF8864;
   justify-self: flex-end;
 }
 
-/* line 175, packages.scss */
+/* line 130, packages.scss */
 .earth-eco-package {
-  height: auto;
   background: #006466;
   color: #FFFCFB;
 }
-/* line 180, packages.scss */
+/* line 134, packages.scss */
 .earth-eco-package h1 {
   font-size: 35px;
   line-height: 40px;
 }
-/* line 185, packages.scss */
+/* line 139, packages.scss */
 .earth-eco-package h3 {
   font-size: 20px;
   font-family: Montserrat, sans-serif !important;
   line-height: 24px;
 }
-/* line 191, packages.scss */
+/* line 145, packages.scss */
 .earth-eco-package p {
   font-size: 15px;
   line-height: 30px;
 }
-/* line 196, packages.scss */
-.earth-eco-package .cards-container {
-  height: auto;
-}
-/* line 199, packages.scss */
+/* line 152, packages.scss */
 .earth-eco-package .cards-container .small-card {
   background: #FAEBDC;
   color: #0D3236;
   border-radius: 10px;
   height: 400px;
 }
-/* line 206, packages.scss */
+/* line 159, packages.scss */
 .earth-eco-package .cards-container .small-card .small-card-title {
   color: #006466;
 }
-/* line 209, packages.scss */
+/* line 162, packages.scss */
 .earth-eco-package .cards-container .small-card .small-card-title h1 {
   font-family: Fraunces, sans-serif;
   font-size: 70px;
   line-height: 94px;
   font-weight: 800;
 }
-/* line 216, packages.scss */
+/* line 169, packages.scss */
 .earth-eco-package .cards-container .small-card .small-card-title span {
+  font-family: Fraunces, sans-serif;
   font-size: 30px;
   line-height: 40px;
   font-weight: bold;
 }
-/* line 223, packages.scss */
+/* line 177, packages.scss */
 .earth-eco-package .cards-container .small-card .small-card-text {
   font-family: Montserrat, sans-serif;
   color: #0D3236;
   font-size: 13px;
   line-height: 25px;
 }
-/* line 230, packages.scss */
+/* line 184, packages.scss */
 .earth-eco-package .cards-container .small-card .see-more-btn {
   background: #006466;
-  color: #FFFCFB;
+  color: white;
   font-size: 15px;
   line-height: 35px;
   font-weight: bold;
 }
-/* line 239, packages.scss */
+/* line 193, packages.scss */
 .earth-eco-package .cards-container .big-card {
   background: #FAEBDC;
   color: #0D3236;
   border-radius: 10px;
-  height: auto;
 }
-/* line 246, packages.scss */
+/* line 198, packages.scss */
 .earth-eco-package .cards-container .big-card .big-card-title {
   color: #006466;
 }
-/* line 249, packages.scss */
+/* line 201, packages.scss */
 .earth-eco-package .cards-container .big-card .big-card-title h1 {
   font-size: 70px;
   line-height: 94px;
   font-weight: bold;
 }
-/* line 255, packages.scss */
+/* line 207, packages.scss */
 .earth-eco-package .cards-container .big-card .big-card-title span {
   font-family: Fraunces, sans-serif;
   font-size: 30px;
   line-height: 40px;
   font-weight: bold;
 }
-/* line 264, packages.scss */
+/* line 216, packages.scss */
 .earth-eco-package .cards-container .big-card .big-card-body h2 {
   color: #006466;
   font-family: Fraunces, sans-serif;
+  font-weight: bold;
   font-size: 15px;
   line-height: 30px;
 }
-/* line 271, packages.scss */
+/* line 224, packages.scss */
 .earth-eco-package .cards-container .big-card .big-card-body p {
   color: #0D3236;
   font-family: Montserrat, sans-serif;
   font-size: 13px;
   line-height: 25px;
 }
-/* line 284, packages.scss */
+/* line 234, packages.scss */
 .earth-eco-package .cards-container .big-card .big-card-buttons .take-me-back-btn {
   background-color: #006466 !important;
   color: #FFFCFB;
   width: 218px;
   height: 45px;
 }
-/* line 291, packages.scss */
+/* line 241, packages.scss */
 .earth-eco-package .cards-container .big-card .big-card-buttons .all-packages-btn {
   width: 218px;
   height: 45px;
   border-radius: 23px;
   background-color: #006466;
-  color: #FAEBDC;
+  color: white;
   font-weight: 700;
   border: none;
 }
-/* line 301, packages.scss */
+/* line 251, packages.scss */
 .earth-eco-package .cards-container .big-card .big-card-buttons .book-now-btn {
   background-color: #FF8864;
   color: white;
   width: 218px;
   height: 45px;
 }
-/* line 315, packages.scss */
+/* line 261, packages.scss */
 .earth-eco-package .see-more-btn,
 .earth-eco-package .book-now-btn,
 .earth-eco-package .earth__see-more-btn {
@@ -617,30 +527,29 @@ a.btn-customized:hover {
   font-weight: 700;
   border: none;
 }
-/* line 327, packages.scss */
+/* line 273, packages.scss */
 .earth-eco-package .see-more-btn a,
 .earth-eco-package .book-now-btn a,
 .earth-eco-package .earth__see-more-btn a {
-  color: #FFFCFB;
+  color: white;
   border: none;
   text-decoration: none;
 }
-/* line 334, packages.scss */
+/* line 280, packages.scss */
 .earth-eco-package .earth__see-more-btn {
   background: #FAEBDC;
   color: #006466;
 }
-/* line 339, packages.scss */
+/* line 285, packages.scss */
 .earth-eco-package .book-now-btn {
   background-color: #FF8864;
 }
 
-/* line 344, packages.scss */
+/* line 290, packages.scss */
 .one-off-package {
-  height: 100%;
   background: #fff;
 }
-/* line 348, packages.scss */
+/* line 293, packages.scss */
 .one-off-package h1 {
   font-family: Fraunces, sans-serif;
   font-size: 35px;
@@ -648,12 +557,12 @@ a.btn-customized:hover {
   font-weight: 700;
   color: #006466;
 }
-/* line 356, packages.scss */
+/* line 301, packages.scss */
 .one-off-package p {
   font-size: 15px;
   line-height: 30px;
 }
-/* line 361, packages.scss */
+/* line 306, packages.scss */
 .one-off-package .book-now-btn {
   font-weight: bold;
   width: 218px;
@@ -663,7 +572,7 @@ a.btn-customized:hover {
   border-radius: 23px;
 }
 
-/* line 371, packages.scss */
+/* line 316, packages.scss */
 #root
 > div
 > section.d-flex.flex-column.justify-content-center.one-off-package.py-2
@@ -679,18 +588,7 @@ a.btn-customized:hover {
   margin-left: 10px;
 }
 
-/* line 387, packages.scss */
-.japanese-div p {
-  line-height: 25px !important;
-  margin-top: 5px;
-}
-/* line 392, packages.scss */
-.japanese-div .japanese-slider-img {
-  width: 130px !important;
-  height: 130px !important;
-}
-
-/* line 398, packages.scss */
+/* line 333, packages.scss */
 .my-carousel-item {
   margin: 5% auto;
   padding: 20px 0;
@@ -699,7 +597,7 @@ a.btn-customized:hover {
   -webkit-box-shadow: 0px 3px 6px 0px rgba(116, 104, 104, 0.75);
   box-shadow: 0px 3px 6px 0px rgba(116, 104, 104, 0.75);
 }
-/* line 407, packages.scss */
+/* line 342, packages.scss */
 .my-carousel-item p {
   font-size: 25px;
   line-height: 35px;
@@ -708,24 +606,24 @@ a.btn-customized:hover {
   margin-bottom: 0;
 }
 
-/* line 416, packages.scss */
+/* line 351, packages.scss */
 .commercial-and-public-section {
   background: #FAEBDC;
   color: #006466;
 }
-/* line 421, packages.scss */
+/* line 355, packages.scss */
 .commercial-and-public-section h1 {
   font-weight: 700;
   font-size: 35px;
   line-height: 40px;
 }
-/* line 427, packages.scss */
+/* line 361, packages.scss */
 .commercial-and-public-section p {
   font-size: 15px;
   line-height: 30px;
   color: #0D3236;
 }
-/* line 433, packages.scss */
+/* line 367, packages.scss */
 .commercial-and-public-section .see-more-btn,
 .commercial-and-public-section .book-now-btn {
   width: 218px;
@@ -735,23 +633,23 @@ a.btn-customized:hover {
   font-weight: 700;
   border: none;
 }
-/* line 442, packages.scss */
+/* line 376, packages.scss */
 .commercial-and-public-section .see-more-btn a,
 .commercial-and-public-section .book-now-btn a {
-  color: #FFFCFB;
+  color: white;
   border: none;
   text-decoration: none;
 }
-/* line 449, packages.scss */
+/* line 383, packages.scss */
 .commercial-and-public-section .sea-content__hidden--list {
   padding-left: 4% !important;
 }
-/* line 454, packages.scss */
+/* line 388, packages.scss */
 .commercial-and-public-section .booking-info p {
   font-size: 10px;
   line-height: 25px;
 }
-/* line 460, packages.scss */
+/* line 394, packages.scss */
 .commercial-and-public-section .book-now-btn {
   background-color: #FF8864;
   justify-self: flex-end;
@@ -808,22 +706,11 @@ a.btn-customized:hover {
   height: 23px;
   background: #D1D3D1;
 }
-/* line 63, form.scss */
+/* line 51, form.scss */
 .form-section .styled-checkbox:checked + label:before {
   background: #006466;
 }
-/* line 68, form.scss */
-.form-section .styled-checkbox:disabled + label {
-  color: #b8b8b8;
-  cursor: auto;
-}
-/* line 74, form.scss */
-.form-section .styled-checkbox:disabled + label:before {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background: #ddd;
-}
-/* line 80, form.scss */
+/* line 55, form.scss */
 .form-section .styled-checkbox:checked + label:after {
   content: '\2713';
   position: absolute;
@@ -836,15 +723,15 @@ a.btn-customized:hover {
   -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
           box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
 }
-/* line 100, form.scss */
+/* line 74, form.scss */
 .form-section input[type='radio'] + label {
   cursor: pointer;
 }
-/* line 105, form.scss */
+/* line 79, form.scss */
 .form-section input[type='radio'] + label::before {
   cursor: pointer;
 }
-/* line 109, form.scss */
+/* line 83, form.scss */
 .form-section input[type='radio']:after {
   cursor: pointer;
   width: 20px;
@@ -859,7 +746,7 @@ a.btn-customized:hover {
   visibility: visible;
   border: 2px solid white;
 }
-/* line 124, form.scss */
+/* line 98, form.scss */
 .form-section input[type='radio']:checked:after {
   width: 20px;
   height: 20px;
@@ -873,33 +760,33 @@ a.btn-customized:hover {
   visibility: visible;
   border: 2px solid white;
 }
-/* line 138, form.scss */
+/* line 112, form.scss */
 .form-section .japanese {
   width: 150% !important;
 }
-/* line 142, form.scss */
+/* line 116, form.scss */
 .form-section .form__mail {
   font-family: Montserrat, sans-serif;
   font-size: 25px;
   line-height: 35px;
   color: #0D3236;
 }
-/* line 149, form.scss */
+/* line 123, form.scss */
 .form-section .p-success {
   font-size: 30px;
   line-height: 45px;
   color: #006466;
 }
-/* line 161, form.scss */
+/* line 135, form.scss */
 .form-section input[type="date"]:invalid::-webkit-datetime-edit {
   color: #757575 !important;
 }
-/* line 165, form.scss */
+/* line 139, form.scss */
 .form-section #address,
 .form-section #postcode {
   padding-left: 2% !important;
 }
-/* line 170, form.scss */
+/* line 144, form.scss */
 .form-section .p-tellUs {
   font-size: 20px;
   line-height: 25px;
@@ -907,14 +794,14 @@ a.btn-customized:hover {
   font-weight: 700;
   color: #006466;
 }
-/* line 178, form.scss */
+/* line 152, form.scss */
 .form-section .form-label {
   font-size: 15px;
   line-height: 30px;
   font-family: Montserrat, sans-serif;
   color: #0D3236;
 }
-/* line 185, form.scss */
+/* line 159, form.scss */
 .form-section .next-btn {
   width: 218px;
   height: 45px;
@@ -925,13 +812,13 @@ a.btn-customized:hover {
   font-weight: 700;
   border: none;
 }
-/* line 195, form.scss */
+/* line 169, form.scss */
 .form-section .next-btn a {
   color: #FFFCFB;
   border: none;
   text-decoration: none;
 }
-/* line 203, form.scss */
+/* line 177, form.scss */
 .form-section .form__container .summary-p {
   font-family: Fraunces, sans-serif !important;
   font-weight: 700;
@@ -940,26 +827,26 @@ a.btn-customized:hover {
   line-height: 25px;
   text-align: center !important;
 }
-/* line 212, form.scss */
+/* line 186, form.scss */
 .form-section .form__container .message-p {
   font-size: 18px !important;
   line-height: 25px;
 }
-/* line 217, form.scss */
+/* line 191, form.scss */
 .form-section .form__container .answer-p {
   font-family: Fraunces, sans-serif !important;
   color: #006466;
   font-size: 20px;
   line-height: 25px;
 }
-/* line 224, form.scss */
+/* line 198, form.scss */
 .form-section .form__container label {
   color: #0D3236;
   font-family: Montserrat, sans-serif !important;
   font-size: 15px;
   line-height: 30px;
 }
-/* line 232, form.scss */
+/* line 206, form.scss */
 .form-section .back-btn {
   font-family: Montserrat, sans-serif !important;
   font-weight: 700;
@@ -967,7 +854,7 @@ a.btn-customized:hover {
   line-height: 35px;
   cursor: pointer;
 }
-/* line 240, form.scss */
+/* line 214, form.scss */
 .form-section input#name,
 .form-section input#email,
 .form-section input#tel,
@@ -982,7 +869,7 @@ a.btn-customized:hover {
   font-family: Montserrat, sans-serif !important;
   font-size: 20px;
 }
-/* line 254, form.scss */
+/* line 228, form.scss */
 .form-section input#name:focus,
 .form-section input#email:focus,
 .form-section input#tel:focus,
@@ -992,11 +879,11 @@ a.btn-customized:hover {
 .form-section #notes:focus {
   outline: none !important;
 }
-/* line 259, form.scss */
+/* line 233, form.scss */
 .form-section input#postcode {
   border-left: 12px solid white;
 }
-/* line 263, form.scss */
+/* line 237, form.scss */
 .form-section .form-popup__bg {
   position: fixed;
   bottom: 0;
@@ -1017,7 +904,7 @@ a.btn-customized:hover {
 * ----------------------------------------
 */
 }
-/* line 272, form.scss */
+/* line 246, form.scss */
 .form-section .form-popup__bg .form-popup {
   position: relative;
   width: 100vw;
@@ -1026,15 +913,15 @@ a.btn-customized:hover {
   color: #FFFCFB;
   z-index: 51;
 }
-/* line 280, form.scss */
+/* line 254, form.scss */
 .form-section .form-popup__bg .form-popup .flower-img {
   width: 100px;
 }
-/* line 284, form.scss */
+/* line 258, form.scss */
 .form-section .form-popup__bg .form-popup p {
   font-family: Fraunces, sans-serif !important;
 }
-/* line 288, form.scss */
+/* line 262, form.scss */
 .form-section .form-popup__bg .form-popup .rotate-center {
   -webkit-animation: rotate-center 2s linear infinite both;
   animation: rotate-center 2s linear infinite both;
@@ -1063,104 +950,68 @@ a.btn-customized:hover {
 footer {
   font-family: Montserrat, sans-serif !important;
   font-size: 13px !important;
-  line-height: 35px !important;
+  line-height: 20px;
   color: #0D3236;
-  height: 304px;
+  height: 154px;
+}
+/* line 8, footer.scss */
+footer a {
+  color: #0D3236;
+}
+/* line 11, footer.scss */
+footer a:hover {
+  color: #0D3236;
+  text-decoration: none;
+}
+/* line 17, footer.scss */
+footer .copyright {
+  line-height: 35px;
 }
 
 @media (min-width: 767px) {
-  /* line 6, rwd.scss */
-  .about-us {
-    height: 100% !important;
-  }
-
-  /* line 10, rwd.scss */
-  .first-slide--img,
-  .sea-img,
-  .second-slide--img {
-    width: 500px !important;
-  }
-
-  /* line 17, rwd.scss */
-  .sky-img {
-    width: 360px !important;
-  }
-
-  /* line 21, rwd.scss */
-  .earth-img {
-    width: 500px !important;
-  }
-
-  /* line 25, rwd.scss */
-  .one-off-img {
-    width: 500px !important;
-  }
-
-  /* line 29, rwd.scss */
-  .commercial-img {
-    width: 500px !important;
-    margin-bottom: 50px;
-  }
-
-  /* line 34, rwd.scss */
-  .slick-prev {
-    left: 30% !important;
-  }
-
-  /* line 38, rwd.scss */
-  .slick-next {
-    right: 30% !important;
-  }
-
-  /* line 42, rwd.scss */
+  /* line 9, rwd.scss */
   .form__title {
     font-size: 50px !important;
     line-height: 35px !important;
   }
 
-  /* line 47, rwd.scss */
+  /* line 14, rwd.scss */
   .personal-data-input {
     width: 75% !important;
   }
 
-  /* line 51, rwd.scss */
-  .first-slide--arrow {
-    left: 40% !important;
-  }
-
-  /* line 55, rwd.scss */
-  .second-slide--arrow {
-    right: 40% !important;
-  }
-
-  /* line 60, rwd.scss */
+  /* line 20, rwd.scss */
   .japanese-div p {
-    line-height: 27px !important;
+    line-height: 15px !important;
     margin-top: 5px;
   }
-  /* line 65, rwd.scss */
+  /* line 25, rwd.scss */
+  .japanese-div .japanese-title {
+    line-height: 25px !important;
+  }
+  /* line 29, rwd.scss */
   .japanese-div .japanese-slider-img {
     width: 105px !important;
     height: 100px !important;
   }
 
-  /* line 84, rwd.scss */
+  /* line 39, rwd.scss */
   .cards-container .small-card .small-card-title h1 {
     font-size: 100px !important;
     line-height: 133px !important;
   }
-  /* line 89, rwd.scss */
+  /* line 44, rwd.scss */
   .cards-container .small-card .small-card-title span {
     font-size: 30px;
     line-height: 40px;
     font-weight: bold;
   }
-  /* line 96, rwd.scss */
+  /* line 51, rwd.scss */
   .cards-container .small-card .small-card-text {
     font-size: 17px !important;
     line-height: 30px !important;
   }
-  /* line 101, rwd.scss */
+  /* line 56, rwd.scss */
   .cards-container .small-card .see-more-btn {
     background: #006466;
     color: #FFFCFB;
@@ -1168,86 +1019,79 @@ footer {
     line-height: 35px;
     font-weight: bold;
   }
-  /* line 116, rwd.scss */
+  /* line 67, rwd.scss */
   .cards-container .big-card .big-card-title h1 {
     font-size: 100px !important;
     line-height: 133px !important;
   }
-  /* line 123, rwd.scss */
+  /* line 74, rwd.scss */
   .cards-container .big-card .big-card-body h2 {
     color: #006466 !important;
     font-family: Fraunces, sans-serif !important;
     font-size: 20px !important;
     line-height: 30px !important;
   }
-  /* line 130, rwd.scss */
+  /* line 81, rwd.scss */
   .cards-container .big-card .big-card-body p {
     color: #0D3236 !important;
     font-family: Montserrat, sans-serif !important;
     font-size: 17px !important;
     line-height: 30px !important;
   }
-  /* line 137, rwd.scss */
+  /* line 88, rwd.scss */
+  .cards-container .big-card .big-card-body .p-third-big-card {
+    font-size: 15px !important;
+    line-height: 15px !important;
+  }
+  /* line 93, rwd.scss */
   .cards-container .big-card .big-card-body .big-card-buttons {
     position: relative;
     bottom: 50px;
   }
-  /* line 141, rwd.scss */
+  /* line 97, rwd.scss */
   .cards-container .big-card .big-card-body .big-card-buttons .book-now-btn {
     background-color: #FF8864;
     color: white;
   }
 }
 @media (min-width: 992px) {
-  /* line 153, rwd.scss */
+  /* line 109, rwd.scss */
   body ul li {
     font-size: 20px !important;
   }
 
-  /* line 158, rwd.scss */
+  /* line 114, rwd.scss */
   .book-now-up {
     top: 40px;
   }
 
-  /* line 162, rwd.scss */
+  /* line 118, rwd.scss */
   .small-text {
-    margin-left: 7%;
     line-height: 20px !important;
   }
 
-  /* line 167, rwd.scss */
-  .sea-text {
-    margin-left: -30px;
-  }
-
-  /* line 170, rwd.scss */
-  .sky-text {
-    margin-left: -45px;
-  }
-
-  /* line 174, rwd.scss */
-  .earth-text {
-    margin-left: -10px;
-  }
-
-  /* line 178, rwd.scss */
+  /* line 127, rwd.scss */
   .big-card {
     height: 600px !important;
   }
-  /* line 181, rwd.scss */
+  /* line 130, rwd.scss */
+  .big-card .buttons-down {
+    margin-top: 75px !important;
+  }
+  /* line 134, rwd.scss */
   .big-card .big-card-buttons {
     position: relative !important;
     bottom: 45px !important;
     left: 20px !important;
   }
-  /* line 194, rwd.scss */
+  /* line 139, rwd.scss */
   .big-card .big-card-buttons .all-packages-btn {
     background-color: #006466 !important;
-    color: #FFFCFB;
+    color: white;
     margin-right: 83px !important;
     margin-top: 7px !important;
   }
-  /* line 201, rwd.scss */
+  /* line 146, rwd.scss */
   .big-card .big-card-buttons .book-now-btn {
     background-color: #FF8864;
     color: white;
@@ -1257,237 +1101,226 @@ footer {
     margin-bottom: 10px;
   }
 
-  /* line 216, rwd.scss */
-  .first-slide--img {
-    margin-top: 0 !important;
-  }
-
-  /* line 220, rwd.scss */
+  /* line 157, rwd.scss */
   .small-card {
     height: 600px !important;
   }
 
-  /* line 224, rwd.scss */
+  /* line 161, rwd.scss */
   .slick-prev {
     left: 40% !important;
   }
 
-  /* line 228, rwd.scss */
+  /* line 165, rwd.scss */
   .slick-next {
     right: 40% !important;
   }
 
-  /* line 232, rwd.scss */
+  /* line 169, rwd.scss */
   button {
     font-size: 20px !important;
   }
 
-  /* line 236, rwd.scss */
+  /* line 173, rwd.scss */
   .second-list {
     margin-left: 2%;
   }
 
-  /* line 240, rwd.scss */
+  /* line 177, rwd.scss */
   .dark-dot,
   .light-dot {
     margin-top: 20px;
   }
 
-  /* line 245, rwd.scss */
+  /* line 182, rwd.scss */
   .first-slide--arrow {
     left: 44% !important;
     top: 7px;
   }
 
-  /* line 250, rwd.scss */
+  /* line 187, rwd.scss */
   .second-slide--arrow {
     right: 44% !important;
     top: 7px;
   }
 
-  /* line 255, rwd.scss */
+  /* line 192, rwd.scss */
   .dot-second-slide {
     margin-top: 95px;
   }
 
-  /* line 259, rwd.scss */
+  /* line 196, rwd.scss */
   .arrow-second-slide {
     top: 75px !important;
   }
 
-  /* line 263, rwd.scss */
-  .about-us {
-    height: 110vh !important;
-  }
-  /* line 266, rwd.scss */
+  /* line 202, rwd.scss */
   .about-us h1 {
     font-size: 40px;
     line-height: 60px;
   }
-  /* line 271, rwd.scss */
+  /* line 207, rwd.scss */
   .about-us p {
     font-size: 20px;
     line-height: 35px;
   }
-  /* line 276, rwd.scss */
+  /* line 212, rwd.scss */
   .about-us .second-slide--img {
     width: 100%;
   }
 
-  /* line 281, rwd.scss */
+  /* line 217, rwd.scss */
   .sea-standard-package {
     background: #FAEBDC;
     color: #006466;
-    padding-left: 15%;
   }
-  /* line 287, rwd.scss */
+  /* line 222, rwd.scss */
   .sea-standard-package h1 {
     font-size: 40px;
     line-height: 60px;
   }
-  /* line 292, rwd.scss */
+  /* line 227, rwd.scss */
   .sea-standard-package h3 {
     font-size: 30px;
     font-family: Montserrat, sans-serif !important;
     line-height: 37px;
   }
-  /* line 298, rwd.scss */
+  /* line 233, rwd.scss */
   .sea-standard-package p {
     font-size: 20px;
     line-height: 40px;
   }
 
-  /* line 304, rwd.scss */
+  /* line 239, rwd.scss */
   .sky-premium-package {
     background: #FFFCFB;
     color: #006466;
-    padding-left: 15%;
   }
-  /* line 310, rwd.scss */
+  /* line 244, rwd.scss */
   .sky-premium-package h1 {
     font-size: 40px;
     line-height: 60px;
   }
-  /* line 315, rwd.scss */
+  /* line 249, rwd.scss */
   .sky-premium-package h3 {
     font-size: 30px;
     font-family: Montserrat, sans-serif;
     line-height: 37px;
   }
-  /* line 321, rwd.scss */
+  /* line 255, rwd.scss */
   .sky-premium-package p {
     font-size: 20px;
     line-height: 40px;
   }
 
-  /* line 332, rwd.scss */
+  /* line 266, rwd.scss */
   .earth-eco-package h1 {
     font-size: 40px;
     line-height: 60px;
   }
-  /* line 337, rwd.scss */
+  /* line 271, rwd.scss */
   .earth-eco-package h3 {
     font-size: 30px;
     font-family: Montserrat, sans-serif;
     line-height: 37px;
   }
-  /* line 343, rwd.scss */
+  /* line 277, rwd.scss */
   .earth-eco-package p {
     font-size: 20px;
     line-height: 40px;
   }
-  /* line 349, rwd.scss */
+  /* line 285, rwd.scss */
   .earth-eco-package .package-card h1 {
     font-size: 100px;
     line-height: 133px;
   }
-  /* line 354, rwd.scss */
+  /* line 290, rwd.scss */
   .earth-eco-package .package-card p {
     font-size: 17px;
   }
-  /* line 358, rwd.scss */
+  /* line 294, rwd.scss */
   .earth-eco-package .package-card h2 {
     font-size: 20px;
   }
 
-  /* line 364, rwd.scss */
+  /* line 300, rwd.scss */
   .one-off-package {
     background: #fff;
   }
-  /* line 367, rwd.scss */
+  /* line 303, rwd.scss */
   .one-off-package h1 {
     font-family: Fraunces, sans-serif;
     font-size: 40px;
     line-height: 60px;
     font-weight: 700;
   }
-  /* line 374, rwd.scss */
+  /* line 310, rwd.scss */
   .one-off-package p {
     font-size: 20px;
     line-height: 40px;
   }
 
-  /* line 381, rwd.scss */
+  /* line 317, rwd.scss */
   .commercial-and-public-section h1 {
     font-size: 40px;
     line-height: 60px;
   }
-  /* line 386, rwd.scss */
+  /* line 322, rwd.scss */
   .commercial-and-public-section p {
     font-size: 20px;
     line-height: 40px;
   }
 
-  /* line 392, rwd.scss */
+  /* line 328, rwd.scss */
   .form__title {
     font-size: 50px;
     line-height: 35px;
   }
 
-  /* line 397, rwd.scss */
+  /* line 333, rwd.scss */
   .form__phone-number {
     font-size: 30px !important;
     line-height: 63px !important;
   }
 
-  /* line 402, rwd.scss */
+  /* line 338, rwd.scss */
   .form__mail {
     font-size: 30px !important;
     line-height: 63px !important;
   }
 
-  /* line 407, rwd.scss */
+  /* line 343, rwd.scss */
   .p-tellUs {
     font-size: 30px !important;
     line-height: 35px !important;
   }
 
-  /* line 412, rwd.scss */
+  /* line 348, rwd.scss */
   .form-label {
     font-size: 20px !important;
     line-height: 35px !important;
   }
 
-  /* line 417, rwd.scss */
+  /* line 353, rwd.scss */
   .personal-data-input {
     width: 50% !important;
   }
 
-  /* line 422, rwd.scss */
+  /* line 358, rwd.scss */
   .form__container p {
     font-size: 25px !important;
     line-height: 25px !important;
   }
-  /* line 427, rwd.scss */
+  /* line 363, rwd.scss */
   .form__container label {
     font-size: 20px !important;
     line-height: 35px !important;
   }
 
-  /* line 434, rwd.scss */
+  /* line 370, rwd.scss */
   .my-carousel-item .japanese-slider-img {
-    width: 135px !important;
-    height: 131px !important;
+    width: 180px !important;
+    height: 180px !important;
   }
 }
 /* line 13, main.scss */
@@ -1539,27 +1372,57 @@ body .about-us h1 {
 
 /* line 61, main.scss */
 section {
-  height: 100%;
   padding-left: 10%;
   padding-right: 10%;
 }
 
-/* line 69, main.scss */
+/* line 66, main.scss */
+.green-button {
+  background: #006466;
+  font-size: 15px;
+  line-height: 35px;
+  color: white;
+  font-family: Montserrat, sans-serif !important;
+  width: 218px;
+  height: 45px;
+  border-radius: 23px;
+  font-weight: 700;
+  border: none;
+}
+
+/* line 79, main.scss */
+.orange-button {
+  background: #FF8864 !important;
+}
+
+/* line 83, main.scss */
+.nh-btn-link {
+  width: 378px !important;
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+/* line 90, main.scss */
 li {
   list-style-type: none !important;
 }
 
-/* line 74, main.scss */
+/* line 94, main.scss */
+.my-carousel-item {
+  height: 250px !important;
+}
+
+/* line 98, main.scss */
 .magic-dots.slick-dots li button:before {
   color: #006466 !important;
 }
 
-/* line 78, main.scss */
+/* line 102, main.scss */
 .slick-slider {
   position: relative;
 }
 
-/* line 82, main.scss */
+/* line 106, main.scss */
 .slick-prev {
   top: 105%;
   left: 15%;
@@ -1567,7 +1430,7 @@ li {
   height: 50px;
 }
 
-/* line 89, main.scss */
+/* line 113, main.scss */
 .slick-next {
   top: 105%;
   right: 15%;
@@ -1575,7 +1438,7 @@ li {
   height: 50px;
 }
 
-/* line 96, main.scss */
+/* line 120, main.scss */
 .fill-me {
   opacity: 0;
   position: absolute;
@@ -1586,13 +1449,38 @@ li {
   z-index: -1;
 }
 
-/* line 106, main.scss */
+/* line 130, main.scss */
 .slider-text {
+  margin-top: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
   font-family: Montserrat, sans-serif !important;
-  font-size: 17px !important;
-  line-height: 30px !important;
+  font-size: 15px !important;
+  line-height: 15px !important;
   font-weight: 400 !important;
-  color: black !important;
+  color: #0D3236 !important;
+  text-align: left;
+}
+
+/* line 143, main.scss */
+.japanese-div .japanese-title {
+  line-height: 25px !important;
+}
+/* line 146, main.scss */
+.japanese-div p {
+  line-height: 15px !important;
+  margin-top: 5px;
+}
+/* line 151, main.scss */
+.japanese-div .japanese-slider-img {
+  width: 150px !important;
+  height: 150px !important;
+}
+
+/* line 157, main.scss */
+.eco-exact-span {
+  position: relative;
+  top: 570px;
 }
 
 /*# sourceMappingURL=main.css.map */

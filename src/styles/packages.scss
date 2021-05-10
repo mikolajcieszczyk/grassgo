@@ -8,7 +8,7 @@
   height: 200px;
 
   background-color: $green;
-  color: $white;
+  color: #FAEBDC;
 
   .arrow-down {
     width: 50px;
@@ -35,32 +35,6 @@
   background: $creme;
 
   color: $green;
-  // padding-left: 15%;
-
-  .sea-img {
-    width: 350px;
-    margin-bottom: 20px;
-  }
-
-  .sky-img {
-    width: 350px;
-    margin-bottom: 20px;
-  }
-
-  .earth-img {
-    width: 350px;
-    margin-bottom: 20px;
-  }
-
-  .one-off-img {
-    width: 350px;
-    margin-bottom: 20px;
-  }
-
-  .commercial-img {
-    width: 350px;
-    margin-bottom: 20px;
-  }
 
   h1 {
     font-size: 35px;
@@ -83,10 +57,6 @@
     color: $dark;
   }
 
-  .sea-img {
-    //
-  }
-
   .see-more-btn,
   .book-now-btn {
     width: 218px;
@@ -97,7 +67,7 @@
     border: none;
 
     a {
-      color: $white;
+      color: white;
       border: none;
       text-decoration: none;
     }
@@ -120,7 +90,6 @@
   background: $white;
 
   color: $green;
-  padding-left: 15%;
 
   h1 {
     font-size: 35px;
@@ -136,28 +105,14 @@
   p {
     font-size: 15px;
     line-height: 30px;
+    color: $dark;
   }
 
-  .see-more-btn,
-  .book-now-btn {
-    width: 218px;
-    height: 45px;
-    align-self: flex-end;
-    border-radius: 23px;
-    background-color: $green;
-    font-weight: 700;
-    border: none;
-
-    a {
-      color: $white;
-      border: none;
-      text-decoration: none;
-    }
+  ul li {
+    color: $dark;
   }
 
-  .sea-content__hidden--list {
-    padding-left: 4% !important;
-  }
+
 
   .booking-info {
     p {
@@ -173,7 +128,6 @@
 }
 
 .earth-eco-package {
-  height: auto;
   background: $green;
   color: $white;
 
@@ -194,7 +148,6 @@
   }
 
   .cards-container {
-    height: auto;
 
     .small-card {
       background: $creme;
@@ -214,6 +167,7 @@
         }
 
         span {
+          font-family: $fraunces;
           font-size: 30px;
           line-height: 40px;
           font-weight: bold;
@@ -229,7 +183,7 @@
 
       .see-more-btn {
         background: $green;
-        color: $white;
+        color: white;
         font-size: 15px;
         line-height: 35px;
         font-weight: bold;
@@ -240,8 +194,6 @@
       background: $creme;
       color: $dark;
       border-radius: 10px;
-
-      height: auto;
 
       .big-card-title {
         color: $green;
@@ -264,6 +216,7 @@
         h2 {
           color: $green;
           font-family: $fraunces;
+          font-weight: bold;
           font-size: 15px;
           line-height: 30px;
         }
@@ -276,11 +229,8 @@
         }
       }
 
-      .big-card-buttons {
-        // position: relative;
-        // bottom: 38px;
-        // left: 34px;
 
+      .big-card-buttons {
         .take-me-back-btn {
           background-color: $green !important;
           color: $white;
@@ -293,7 +243,7 @@
           height: 45px;
           border-radius: 23px;
           background-color: $green;
-          color: $creme;
+          color: white;
           font-weight: 700;
           border: none;
         }
@@ -304,10 +254,6 @@
           width: 218px;
           height: 45px;
         }
-
-        //   .eco-book-now {
-        //     margin-left: 45px;
-        //   }
       }
     }
   }
@@ -325,7 +271,7 @@
     border: none;
 
     a {
-      color: $white;
+      color: white;
       border: none;
       text-decoration: none;
     }
@@ -342,7 +288,6 @@
 }
 
 .one-off-package {
-  height: 100%;
   background: #fff;
 
   h1 {
@@ -383,17 +328,7 @@
   margin-left: 10px;
 }
 
-.japanese-div {
-  p {
-    line-height: 25px !important;
-    margin-top: 5px;
-  }
 
-  .japanese-slider-img {
-    width: 130px !important;
-    height: 130px !important;
-  }
-}
 
 .my-carousel-item {
   margin: 5% auto;
@@ -415,7 +350,6 @@
 
 .commercial-and-public-section {
   background: $creme;
-
   color: $green;
 
   h1 {
@@ -440,7 +374,7 @@
     border: none;
 
     a {
-      color: $white;
+      color: white;
       border: none;
       text-decoration: none;
     }

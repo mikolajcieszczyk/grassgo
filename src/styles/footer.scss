@@ -1,7 +1,20 @@
 footer {
     font-family: $montserrat !important;
     font-size: 13px !important;
-    line-height: 35px !important;
+    line-height: 20px;
     color: $dark;
-    height: 304px;
+    height: 154px;
+
+    a {
+        color: $dark;
+
+        &:hover {
+            color: $dark;
+            text-decoration: none;
+        }
+    }
+
+    .copyright {
+        line-height: 35px;
+    }
 }
