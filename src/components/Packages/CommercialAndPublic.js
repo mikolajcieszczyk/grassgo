@@ -3,7 +3,7 @@ import CommercialImage from "assets/images/svg/Ilustracje_nowe_5.svg";
 import { Button } from "react-bootstrap";
 import CommercialForm from "../Form/CommercialForm";
 import SkyImage from "../../assets/images/svg/latest/Ilustracje_4_Sky_grouped.svg";
-import { GreenButton } from "../Buttons";
+import { OrangeButton } from "../Buttons";
 
 export default class CommercialAndPublic extends Component {
   constructor() {
@@ -45,8 +45,8 @@ export default class CommercialAndPublic extends Component {
                 waste from premises if there are not suitable disposal
                 facilities on site.
               </p>
-              <GreenButton
-                title="see more"
+              <OrangeButton
+                title="book now"
                 onClick={this.hideShowForm}
                 className={
                   this.state.form

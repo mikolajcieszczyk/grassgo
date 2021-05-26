@@ -29,10 +29,12 @@ if ($_POST)
 	$planting = $_POST['planting'];
 	$pruning = $_POST['pruning'];
 	$knotweed = $_POST['knotweed'];
+	$other = $_POST['other'];
 
 	$oneOffArr = array();
 
-	array_push($oneOffArr, $cleanup, $hedgeTrim, $treeSurgery, $lawnCare, $planting, $pruning, $knotweed);
+	array_push($oneOffArr, $cleanup, $hedgeTrim, $treeSurgery, $lawnCare,
+	$planting, $pruning, $knotweed, $other);
 
 	$cleaned_array = array_filter($oneOffArr);
 
@@ -45,8 +47,8 @@ if ($_POST)
 	Hello,<br>
 	my name is <b>$name</b> and I wanted to <u>book a visit</u>.<br>
 	My preffered date of service is <b>$date</b>.<br>
-	I have chosen:
-	<p>Which type of service:<b>$whichService</b></p> 
+	<u>I have chosen:</u>
+	<p>Which type of service: <b>$whichService</b></p>
 	<p><b>$whichPackage</b></p> 
 	<b>one-off services</b>:<br>
 	<p>$printOneOffArr</p>

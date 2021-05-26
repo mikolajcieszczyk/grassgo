@@ -33,6 +33,7 @@ export default class PremiumPackageForm extends Component {
       planting: "",
       pruning: "",
       knotweed: "",
+      other: "",
 
       name: "",
       email: "",
@@ -113,6 +114,7 @@ export default class PremiumPackageForm extends Component {
       planting: "",
       pruning: "",
       knotweed: "",
+      other: "",
 
       name: "",
       email: "",
@@ -282,8 +284,6 @@ export default class PremiumPackageForm extends Component {
       whichServiceForm: true,
     });
   }
-
-  
 
   translateCleanup(e) {
     if (e.target.checked) {
@@ -612,7 +612,7 @@ export default class PremiumPackageForm extends Component {
                 Advanced
               </label>
             </div>
-            <div className="row mt-3 w-100 d-flex justify-items-between">
+            <div className="row mt-3 text-center w-100 d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between">
               <div className="col-3 col-md-6 text-center">
                 <span
                   className="back-btn"
@@ -742,9 +742,22 @@ export default class PremiumPackageForm extends Component {
                   japanese knotweed removal
                 </label>
               </div>
+              <div className="d-flex flex-column">
+                <label className="mx-3 form-label" htmlFor="other">
+                  other:
+                </label>
+                <input
+                  onChange={(e) => this.setState({ other: e.target.value })}
+                  type="text"
+                  id="other"
+                  className="ml-3 w-100"
+                  name="other"
+                  value={this.state.other}
+                />
+              </div>
             </div>
 
-            <div className="row mt-3 w-100 d-flex justify-items-between">
+            <div className="row mt-3 text-center w-100 d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between">
               <div className="col-3 col-md-6 text-center">
                 <span
                   className="back-btn"
@@ -847,7 +860,7 @@ export default class PremiumPackageForm extends Component {
               placeholder="Additional remarks"
               className="personal-data-input"
             />
-            <div className="row mt-3 w-100 d-flex justify-items-between">
+            <div className="row mt-3 text-center w-100 d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between">
               <div className="col-3 col-md-6 text-center">
                 <span
                   className="back-btn"
@@ -891,7 +904,10 @@ export default class PremiumPackageForm extends Component {
                   value="CleanUp"
                   class="my-checkbox styled-checkbox"
                 />
-                            <label className="ml-2 form-label" htmlFor="premium-cleanup-only">
+                <label
+                  className="ml-2 form-label"
+                  htmlFor="premium-cleanup-only"
+                >
                   cleanup
                 </label>
               </div>
@@ -904,7 +920,10 @@ export default class PremiumPackageForm extends Component {
                   value="Hedge Trim"
                   class="my-checkbox styled-checkbox"
                 />
-                            <label className="ml-2 form-label" htmlFor="premium-hedgeTrim-only">
+                <label
+                  className="ml-2 form-label"
+                  htmlFor="premium-hedgeTrim-only"
+                >
                   hedge trim
                 </label>
               </div>
@@ -917,7 +936,10 @@ export default class PremiumPackageForm extends Component {
                   value="Tree Surgery"
                   class="my-checkbox styled-checkbox"
                 />
-                            <label className="ml-2 form-label" htmlFor="premium-treeSurgery-only">
+                <label
+                  className="ml-2 form-label"
+                  htmlFor="premium-treeSurgery-only"
+                >
                   tree surgery
                 </label>
               </div>
@@ -930,7 +952,10 @@ export default class PremiumPackageForm extends Component {
                   value="Lawn care"
                   class="my-checkbox styled-checkbox"
                 />
-                            <label className="ml-2 form-label" htmlFor="premium-lawnCare-only">
+                <label
+                  className="ml-2 form-label"
+                  htmlFor="premium-lawnCare-only"
+                >
                   lawn care
                 </label>
               </div>
@@ -943,7 +968,10 @@ export default class PremiumPackageForm extends Component {
                   value="Planting"
                   class="my-checkbox styled-checkbox"
                 />
-                            <label className="ml-2 form-label" htmlFor="premium-planting-only">
+                <label
+                  className="ml-2 form-label"
+                  htmlFor="premium-planting-only"
+                >
                   planting
                 </label>
               </div>
@@ -956,7 +984,10 @@ export default class PremiumPackageForm extends Component {
                   value="Pruning"
                   class="my-checkbox styled-checkbox"
                 />
-                            <label className="ml-2 form-label" htmlFor="premium-pruning-only">
+                <label
+                  className="ml-2 form-label"
+                  htmlFor="premium-pruning-only"
+                >
                   pruning
                 </label>
               </div>
@@ -971,13 +1002,26 @@ export default class PremiumPackageForm extends Component {
                 />
                 <label
                   className="ml-2 form-label w-100 japanese"
-                                htmlFor="premium-knotweed-only"
+                  htmlFor="premium-knotweed-only"
                 >
                   japanese knotweed removal
                 </label>
               </div>
+              <div className="d-flex flex-column">
+                <label className="mx-3 form-label" htmlFor="other">
+                  other:
+                </label>
+                <input
+                  onChange={(e) => this.setState({ other: e.target.value })}
+                  type="text"
+                  id="other"
+                  className="ml-3 w-100"
+                  name="other"
+                  value={this.state.other}
+                />
+              </div>
             </div>
-            <div className="row mt-3 w-100 d-flex justify-items-between">
+            <div className="row mt-3 text-center w-100 d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between">
               <div className="col-3 col-md-6 text-center">
                 <span
                   className="back-btn"
@@ -1070,7 +1114,7 @@ export default class PremiumPackageForm extends Component {
               placeholder="Additional remarks"
               className="personal-data-input"
             />
-            <div className="row mt-3 w-100 d-flex justify-items-between">
+            <div className="row mt-3 text-center w-100 d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between">
               <div className="col-3 col-md-6 text-center">
                 <span
                   className="back-btn"
@@ -1163,7 +1207,7 @@ export default class PremiumPackageForm extends Component {
               placeholder="Additional remarks"
               className="personal-data-input"
             />
-            <div className="row mt-3 w-100 d-flex justify-items-between">
+            <div className="row mt-3 text-center w-100 d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between">
               <div className="col-3 col-md-6 text-center">
                 <span
                   className="back-btn"

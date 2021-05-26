@@ -5,11 +5,12 @@ import SepaLogo from "assets/images/sepa-logo.jpg";
 import InstaIcon from "assets/images/social-insta.svg";
 import TwitterIcon from "assets/images/social-twitter.svg";
 import FacebookIcon from "assets/images/social-fb.svg";
+import PinterestIcon from "assets/images/social-pinterest.svg";
 
 export default class Footer extends Component {
   render() {
     return (
-      <footer className="container row d-flex justify-items-center mx-auto text-center">
+      <footer className="container-fluid row d-flex justify-items-center mt-5 mx-auto text-center">
         <div className="col-12 col-lg-4 p-2 p-lg-0">
           <img
             src={GrassGoLogo}
@@ -24,7 +25,7 @@ export default class Footer extends Component {
             info@grassgo.co.uk
           </div>
 
-          <div className="d-flex justify-content-between w-75 my-1">
+          <div className="d-flex justify-content-center justify-content-lg-start mt-3">
             <a
               href="https://instagram.com/northhillgardens/"
               target="_blank"
@@ -53,6 +54,18 @@ export default class Footer extends Component {
             >
               <img
                 src={FacebookIcon}
+                style={{ width: "25px" }}
+                alt="instagram"
+              />
+            </a>
+            <a
+              href="https://pl.pinterest.com/NorthHillGardenDesign/_saved/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mr-2"
+            >
+              <img
+                src={PinterestIcon}
                 style={{ width: "25px" }}
                 alt="instagram"
               />

@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import axios from "axios";
-// import ReCAPTCHA from "react-google-recaptcha";
-import Checkbox from 'react-simple-checkbox';
 
 import FlowerImg from "assets/images/svg/kwiat-03.svg";
 
@@ -33,6 +31,7 @@ export default class DefaultForm extends Component {
       planting: "",
       pruning: "",
       knotweed: "",
+      other: "",
 
       name: "",
       email: "",
@@ -202,8 +201,8 @@ export default class DefaultForm extends Component {
       whichPackageForm: true,
     });
 
-    var inputs = document.querySelectorAll(".my-checkbox");
-    for (var i = 0; i < inputs.length; i++) {
+    let inputs = document.querySelectorAll(".my-checkbox");
+    for (let i = 0; i < inputs.length; i++) {
       inputs[i].checked = false;
     }
 
@@ -216,8 +215,8 @@ export default class DefaultForm extends Component {
       whichServiceForm: true,
     });
 
-    var inputs = document.querySelectorAll(".my-checkbox");
-    for (var i = 0; i < inputs.length; i++) {
+    let inputs = document.querySelectorAll(".my-checkbox");
+    for (let i = 0; i < inputs.length; i++) {
       inputs[i].checked = false;
     }
 
@@ -268,6 +267,7 @@ export default class DefaultForm extends Component {
       planting: "",
       pruning: "",
       knotweed: "",
+      other: "",
 
       name: "",
       email: "",
@@ -432,12 +432,15 @@ export default class DefaultForm extends Component {
       })
         .then((result) => {
           this.setState({
-            mailSent: result.data.sent,
+            mailSent: result.data,
             success: true,
             popup: false,
           });
         })
-        .catch((error) => this.setState({ error: error.message }));
+        .catch((error) => {
+          this.setState({ error: error.message });
+          alert(error.message);
+        });
     }
   };
 
@@ -477,7 +480,9 @@ export default class DefaultForm extends Component {
                 : "d-none"
             }
           >
-            <p className="p-tellUs text-center">Let us know which service would you like to book</p>
+            <p className="p-tellUs text-center">
+              Let us know which service would you like to book
+            </p>
 
             <div className="col-10 col-lg-4">
               <input
@@ -517,9 +522,12 @@ export default class DefaultForm extends Component {
             </div>
 
             <div className="col-12 text-center text-lg-right ml-lg-4">
-              <button className="next-btn ml-lg-auto mr-lg-5" onClick={this.goToWhichPackageForm}>
+              <button
+                className="next-btn ml-lg-auto mr-lg-5"
+                onClick={this.goToWhichPackageForm}
+              >
                 next
-            </button>
+              </button>
             </div>
           </form>
           {/* which service form finish */}
@@ -563,9 +571,9 @@ export default class DefaultForm extends Component {
               <label className="form-label ml-3" htmlFor="ecopackage">
                 Earth Eco Package
               </label>
-              <br></br>
+              <br />
               <input
-                class="ml-4"
+                className="ml-4"
                 onClick={this.whichPackageCatcher}
                 type="radio"
                 id="ecopackageBasic"
@@ -576,22 +584,25 @@ export default class DefaultForm extends Component {
                 Basic
               </label>
 
-              <br></br>
+              <br />
               <input
-                class="ml-4"
+                className="ml-4"
                 onClick={this.whichPackageCatcher}
                 type="radio"
                 id="ecopackageIntermediate"
                 name="whichPackageName"
                 value="Earth Eco Package: INTERMEDIATE"
               />
-              <label className="ml-3 form-label" htmlFor="ecopackageIntermediate">
+              <label
+                className="ml-3 form-label"
+                htmlFor="ecopackageIntermediate"
+              >
                 Intermediate
               </label>
 
-              <br></br>
+              <br />
               <input
-                class="ml-4"
+                className="ml-4"
                 onClick={this.whichPackageCatcher}
                 type="radio"
                 id="ecopackageAdvanced"
@@ -602,7 +613,7 @@ export default class DefaultForm extends Component {
                 Advanced
               </label>
             </div>
-            <div className="row mt-3 w-100 d-flex justify-items-between">
+            <div className="row mt-3 text-center w-100 d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between">
               <div className="col-3 col-md-6 text-center">
                 <span
                   className="back-btn"
@@ -643,7 +654,7 @@ export default class DefaultForm extends Component {
                   onClick={this.translateCleanup}
                   type="checkbox"
                   id="cleanup"
-                  class="my-checkbox styled-checkbox"
+                  className="my-checkbox styled-checkbox"
                   name="cleanup"
                   value="CleanUp"
                 />
@@ -656,7 +667,7 @@ export default class DefaultForm extends Component {
                   onClick={this.translateHedgeTrim}
                   type="checkbox"
                   id="hedgeTrim"
-                  class="my-checkbox styled-checkbox"
+                  className="my-checkbox styled-checkbox"
                   name="hedgeTrim"
                   value="Hedge Trim"
                 />
@@ -669,7 +680,7 @@ export default class DefaultForm extends Component {
                   onClick={this.translateTreeSurgery}
                   type="checkbox"
                   id="treeSurgery"
-                  class="my-checkbox styled-checkbox"
+                  className="my-checkbox styled-checkbox"
                   name="treeSurgery"
                   value="Tree Surgery"
                 />
@@ -682,7 +693,7 @@ export default class DefaultForm extends Component {
                   onClick={this.translateLawnCare}
                   type="checkbox"
                   id="lawnCare"
-                  class="my-checkbox styled-checkbox"
+                  className="my-checkbox styled-checkbox"
                   name="lawnCare"
                   value="Lawn care"
                 />
@@ -695,7 +706,7 @@ export default class DefaultForm extends Component {
                   onClick={this.translatePlanting}
                   type="checkbox"
                   id="planting"
-                  class="my-checkbox styled-checkbox"
+                  className="my-checkbox styled-checkbox"
                   name="planting"
                   value="Planting"
                 />
@@ -708,7 +719,7 @@ export default class DefaultForm extends Component {
                   onClick={this.translatePruning}
                   type="checkbox"
                   id="pruning"
-                  class="my-checkbox styled-checkbox"
+                  className="my-checkbox styled-checkbox"
                   name="pruning"
                   value="Pruning"
                 />
@@ -716,22 +727,39 @@ export default class DefaultForm extends Component {
                   pruning
                 </label>
               </div>
+
               <div>
                 <input
                   onClick={this.translateKnotweed}
                   type="checkbox"
                   id="knotweed"
-                  class="my-checkbox styled-checkbox"
+                  className="my-checkbox styled-checkbox"
                   name="knotweed"
                   value="Japanese Knotweed removal"
                 />
-                <label className="ml-3 form-label japanese w-100" htmlFor="knotweed">
+                <label
+                  className="ml-3 form-label japanese w-100"
+                  htmlFor="knotweed"
+                >
                   japanese knotweed removal
                 </label>
               </div>
+              <div className="d-flex flex-column">
+                <label className="mx-3 form-label" htmlFor="other">
+                  other:
+                </label>
+                <input
+                  onChange={(e) => this.setState({ other: e.target.value })}
+                  type="text"
+                  id="other"
+                  className="ml-3 w-100"
+                  name="other"
+                  value={this.state.other}
+                />
+              </div>
             </div>
 
-            <div className="row mt-3 w-100 d-flex justify-items-between">
+            <div className="row mt-3 text-center w-100 d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between">
               <div className="col-3 col-md-6 text-center">
                 <span
                   className="back-btn"
@@ -761,7 +789,7 @@ export default class DefaultForm extends Component {
             }
           >
             <p className="p-tellUs text-center">
-              You have chosen <b>{this.state.whichPackage} </b> 
+              You have chosen <b>{this.state.whichPackage} </b>
               <span className={choiceArr.length === 0 ? "d-none" : "d-inline"}>
                 and <b>{choiceArr.join(", ")}</b>
               </span>
@@ -822,7 +850,7 @@ export default class DefaultForm extends Component {
               type="date"
               id="date"
               name="date"
-              placeholder="Preffered date of service"
+              placeholder="Preferred date of service"
               className="personal-data-input"
             />
             <textarea
@@ -834,7 +862,7 @@ export default class DefaultForm extends Component {
               placeholder="Additional remarks"
               className="personal-data-input"
             />
-            <div className="row mt-3 w-100 d-flex justify-items-between">
+            <div className="row mt-3 text-center w-100 d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between">
               <div className="col-3 col-md-6 text-center">
                 <span
                   className="back-btn"
@@ -876,7 +904,7 @@ export default class DefaultForm extends Component {
                   id="cleanup-only"
                   name="cleanup"
                   value="CleanUp"
-                  class="my-checkbox styled-checkbox"
+                  className="my-checkbox styled-checkbox"
                 />
                 <label className="ml-2 form-label" htmlFor="cleanup-only">
                   cleanup
@@ -889,7 +917,7 @@ export default class DefaultForm extends Component {
                   id="hedgeTrim-only"
                   name="hedgeTrim"
                   value="Hedge Trim"
-                  class="my-checkbox styled-checkbox"
+                  className="my-checkbox styled-checkbox"
                 />
                 <label className="ml-2 form-label" htmlFor="hedgeTrim-only">
                   hedge trim
@@ -902,7 +930,7 @@ export default class DefaultForm extends Component {
                   id="treeSurgery-only"
                   name="treeSurgery"
                   value="Tree Surgery"
-                  class="my-checkbox styled-checkbox"
+                  className="my-checkbox styled-checkbox"
                 />
                 <label className="ml-2 form-label" htmlFor="treeSurgery-only">
                   tree surgery
@@ -915,7 +943,7 @@ export default class DefaultForm extends Component {
                   id="lawnCare-only"
                   name="lawnCare"
                   value="Lawn care"
-                  class="my-checkbox styled-checkbox"
+                  className="my-checkbox styled-checkbox"
                 />
                 <label className="ml-2 form-label" htmlFor="lawnCare-only">
                   lawn care
@@ -928,7 +956,7 @@ export default class DefaultForm extends Component {
                   id="planting-only"
                   name="planting"
                   value="Planting"
-                  class="my-checkbox styled-checkbox"
+                  className="my-checkbox styled-checkbox"
                 />
                 <label className="ml-2 form-label" htmlFor="planting-only">
                   planting
@@ -941,7 +969,7 @@ export default class DefaultForm extends Component {
                   id="pruning-only"
                   name="pruning"
                   value="Pruning"
-                  class="my-checkbox styled-checkbox"
+                  className="my-checkbox styled-checkbox"
                 />
                 <label className="ml-2 form-label" htmlFor="pruning-only">
                   pruning
@@ -954,14 +982,30 @@ export default class DefaultForm extends Component {
                   id="knotweed-only"
                   name="knotweed"
                   value="Japanese Knotweed removal"
-                  class="my-checkbox styled-checkbox"
+                  className="my-checkbox styled-checkbox"
                 />
-                <label className="ml-2 form-label w-100 japanese" htmlFor="knotweed-only">
+                <label
+                  className="ml-2 form-label w-100 japanese"
+                  htmlFor="knotweed-only"
+                >
                   japanese knotweed removal
                 </label>
               </div>
+              <div className="d-flex flex-column">
+                <label className="form-label ml-2" htmlFor="other">
+                  other:
+                </label>
+                <input
+                  onChange={(e) => this.setState({ other: e.target.value })}
+                  type="text"
+                  id="other"
+                  className="ml-2 w-100"
+                  name="other"
+                  value={this.state.other}
+                />
+              </div>
             </div>
-            <div className="row mt-3 w-100 d-flex justify-items-between">
+            <div className="row mt-3 text-center w-100 d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between">
               <div className="col-3 col-md-6 text-center">
                 <span
                   className="back-btn"
@@ -989,7 +1033,8 @@ export default class DefaultForm extends Component {
             }
           >
             <p className="p-tellUs text-center">
-              You have chosen <b>{this.state.whichService}</b>: <b>{choiceArr.join(", ")}</b>
+              You have chosen <b>{this.state.whichService}</b>:{" "}
+              <b>{choiceArr.join(", ")}</b>
             </p>
             <p className="p-tellUs text-center">
               Please give us some details, so we can plan the visit
@@ -1041,7 +1086,7 @@ export default class DefaultForm extends Component {
               type="date"
               id="date"
               name="date"
-              placeholder="Preffered date of service"
+              placeholder="Preferred date of service"
               className="personal-data-input"
             />
             <textarea
@@ -1053,7 +1098,7 @@ export default class DefaultForm extends Component {
               placeholder="Additional remarks"
               className="personal-data-input"
             />
-            <div className="row mt-3 w-100 d-flex justify-items-between">
+            <div className="row mt-3 text-center w-100 d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between">
               <div className="col-3 col-md-6 text-center">
                 <span
                   className="back-btn"
@@ -1134,7 +1179,7 @@ export default class DefaultForm extends Component {
               type="date"
               id="date"
               name="date"
-              placeholder="Preffered date of service"
+              placeholder="Preferred date of service"
               className="personal-data-input"
             />
             <textarea
@@ -1146,7 +1191,7 @@ export default class DefaultForm extends Component {
               placeholder="Additional remarks"
               className="personal-data-input"
             />
-            <div className="row mt-3 w-100 d-flex justify-items-between">
+            <div className="row mt-3 text-center w-100 d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between">
               <div className="col-3 col-md-6 text-center">
                 <span
                   className="back-btn"

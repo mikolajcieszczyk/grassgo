@@ -150,7 +150,7 @@
   }
 
   .form-label {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 30px;
     font-family: $montserrat;
     color: $dark;
@@ -217,7 +217,8 @@
   input#date,
   input#postcode,
   input#address,
-  #notes {
+  #notes,
+  #other {
     background: #f9f2ef;
     border: 0;
     margin-bottom: 2%;
@@ -252,11 +253,13 @@
       z-index: 51;
 
       .flower-img {
-        width: 100px;
+        width: 70px;
       }
 
       p {
         font-family: $fraunces !important;
+        font-weight: bold;
+        margin-top: 20px;
       }
 
       .rotate-center {

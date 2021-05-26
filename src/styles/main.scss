@@ -7,6 +7,7 @@
 @import "packages";
 @import "form";
 @import "footer";
+@import 'animations';
 
 @import "rwd";
 
@@ -91,10 +92,6 @@ li {
     list-style-type: none !important;
 }
 
-.my-carousel-item {
-  height: 250px !important;
-}
-
 .magic-dots.slick-dots li button:before {
   color: $green !important;
 }
@@ -128,15 +125,25 @@ li {
 }
 
 .slider-text {
-  margin-top: 5%;
+  margin-top: 10px;
   padding-left: 15%;
   padding-right: 15%;
   font-family: $montserrat !important;
   font-size: 15px !important;
-  line-height: 15px !important;
+  line-height: 20px !important;
   font-weight: 400 !important;
   color: $dark !important;
   text-align: left;
+}
+
+.my-carousel-item {
+  width: 85% !important;
+  height: 330px !important;
+  cursor: pointer;
+
+  img {
+    margin-top: 30px;
+  }
 }
 
 .japanese-div {
@@ -144,7 +151,7 @@ li {
     line-height: 25px !important;
   }
   p {
-    line-height: 15px !important;
+    line-height: 20px !important;
     margin-top: 5px;
   }
 

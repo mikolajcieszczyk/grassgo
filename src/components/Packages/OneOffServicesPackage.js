@@ -49,7 +49,10 @@ export default class OneOffServicesPackage extends Component {
             </div>
 
             <div className="col-12 order-5 my-5 d-flex justify-content-center justify-content-lg-end">
-              <Button onClick={this.hideShowForm} className="book-now-btn">
+              <Button
+                onClick={this.hideShowForm}
+                className="book-now-btn mt-3 mt-lg-0"
+              >
                 book now
               </Button>
             </div>

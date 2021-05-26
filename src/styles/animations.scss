@@ -1,0 +1,404 @@
+//main image animations
+
+#labedz-lewy {
+  -webkit-animation: moveXLong 25s infinite linear alternate;
+  animation: moveXLong 25s infinite linear alternate;
+}
+
+#labedz-srodkowy {
+  animation-name: moveXLong;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+#jakis-ptak {
+  animation-name: moveXWholeScreen;
+  animation-duration: 30s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+#drzewa-i-kobieta {
+  animation-name: moveXFromRight;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+@-webkit-keyframes moveXFromRight {
+  0% {
+    transform: translateX(101%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes moveXFromRight {
+  0% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes moveXWholeScreen {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes moveXWholeScreen {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+@-webkit-keyframes moveXLong {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes moveXLong {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+//about us aniomations
+#galazka-gorna {
+  animation-name: rotate-90-right-ccw;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+#galazka-srodkowa {
+  animation-name: rotate-90-right-ccw;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+#galazka-dolna {
+//
+}
+
+#listki-gorne {
+  animation-name: rotate-90-left-cw;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+#listki-dolne {
+  animation-name: rotate-90-left-cw;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+
+@keyframes rotate-90-left-cw {
+  0%{
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+  50%{
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+  100%{
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+}
+
+@keyframes rotate-90-right-ccw {
+  0%{
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+  }
+  50%{
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+  }
+  100%{
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+  }
+}
+
+//sea standard animations
+
+#b1 {
+//
+}
+
+#b2 {
+  animation-name: babelekGoraDol;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+}
+
+#b3 {
+  animation-name: babelekGoraDol;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: none;
+}
+
+#b4 {
+  animation-name: babelekGoraDol;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+}
+
+#b5 {
+  animation-name: babelekGoraDol;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: none;
+}
+
+#b6 {
+  animation-name: babelekGoraDol;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+}
+
+#ryba-zielona {
+  animation-name: rybkaAnimation;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#ryba-czerwona {
+  animation-name: rybkaAnimation2;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes rybkaAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-90px);
+  }
+}
+@keyframes rybkaAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-90px);
+  }
+}
+
+@-webkit-keyframes rybkaAnimation2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(180px);
+  }
+}
+@keyframes rybkaAnimation2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(180px);
+  }
+}
+
+@-webkit-keyframes babelekGoraDol {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-90px);
+  }
+}
+@keyframes babelekGoraDol {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-90px);
+  }
+}
+
+
+
+//sky premium package animations
+
+#small-bird {
+  -webkit-animation: moveX 1.5s infinite linear alternate;
+  animation: moveX 1.5s infinite linear alternate;
+}
+
+#bird {
+  -webkit-animation: moveY 1.5s infinite linear alternate;
+  animation: moveY 1.5s infinite linear alternate;
+
+}
+
+@-webkit-keyframes moveY {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes moveY {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+@-webkit-keyframes moveX {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-10px); }
+}
+@keyframes moveX {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-10px); }
+}
+
+// earth eco animations
+
+#galazka-duza {
+  animation-name: rotate-90-bottom-ccw;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+#galazka-mala {
+  animation-name: rotate-90-bottom-cw;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+@keyframes rotate-90-bottom-cw {
+  0%{
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+  }
+  50%{
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+  }
+  100%{
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+  }
+}
+
+@keyframes rotate-90-bottom-ccw {
+  0%{
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+  }
+  50%{
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+  }
+  100%{
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+  }
+}

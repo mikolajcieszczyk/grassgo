@@ -1,5 +1,14 @@
 .about-us {
 
+  a {
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
   h1 {
     font-size: 25px;
     line-height: 40px;
